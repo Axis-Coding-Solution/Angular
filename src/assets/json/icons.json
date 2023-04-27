@@ -1,0 +1,14 @@
+{
+    "iconImageFiles": [
+      {
+        "iconName": "a",
+        "iconPath": "/assets/icons/a.svg"
+      }
+    ],
+    "customIcons": [
+      {
+        "iconName": "academic-cap",
+        "iconData": "<svg xmlns=\"http://www.w3.org/2000/svg\" > <path d=\"...\" /> </svg>"
+      }
+    ]
+  }
