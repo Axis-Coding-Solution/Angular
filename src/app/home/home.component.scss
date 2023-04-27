@@ -57,7 +57,7 @@ mat-icon {
 
 .image-section img {
     display:block;
-    width: 100%;
+    width: 120%;
     height: auto;
 }
 .navbar a {
@@ -80,4 +80,36 @@ mat-form-field{
 }
 mat-option{
     color: white;
+}
+// .button-arrow:hover{
+//     stroke: black;
+// }
+// .GetAQuoteButton.GetAQouteText{
+//     transition-property: transform;
+//     transition-duration: 300ms;
+//     transform: translateX(10px);
+
+// }
+// .GetAQuoteButton.GetAQouteText:hover{
+//     transition-property: transform;
+//     transition-duration: 300ms;
+//     transform: translateX(10px);
+
+// }
+.GetAQuoteButton{
+    display: flex;
+}
+
+.GetAQuoteButton:hover span:first-child{
+    order: 2;
+    transition: .5s;
+}
+
+.GetAQuoteButton:hover span:last-child{
+    order: 1;
+    transition: 300ms;
+}
+.GetAQuoteButton:hover{
+    background-color: white !important;
+    transition: 300ms;
 }
