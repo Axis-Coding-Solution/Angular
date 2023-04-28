@@ -2611,6 +2611,20 @@ ajv@^8.0.0, ajv@^8.8.2, ajv@^8.9.0, ajv@8.12.0:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
+angular-svg-icon-preloader@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/angular-svg-icon-preloader/-/angular-svg-icon-preloader-5.0.0.tgz#f2d31bcc7043893f188af2591f5f531e76b8a6ef"
+  integrity sha512-xBRKzpof2riNKdW9hw+6sLMMtG8+jWC4S9J+dm1Nbu89sCPZfZFXDPN5kfsLRV7wfcrawCHmaMeLlTQXEQElIA==
+  dependencies:
+    tslib "^2.3.0"
+
+angular-svg-icon@^15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/angular-svg-icon/-/angular-svg-icon-15.0.0.tgz#70a472744dfeba3f286b3070476b941dac0fe29b"
+  integrity sha512-qurcOPbGri1ZveGd3Iol7CRSpveaxu21V1VCPwMSUfXlwwUT1hL4Aq3VE/RkJw5zZmFuR8akgaKeHLD+CFjjEQ==
+  dependencies:
+    tslib "^2.3.1"
+
 ansi-colors@4.1.3:
   version "4.1.3"
   resolved "https://registry.npmjs.org/ansi-colors/-/ansi-colors-4.1.3.tgz"
@@ -6663,6 +6677,11 @@ ts-interface-checker@^0.1.9:
   version "0.1.13"
   resolved "https://registry.npmjs.org/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
+
+tslib@2.5.0, tslib@^2.1.0, tslib@^2.3.0, tslib@^2.4.1:
+  version "2.5.0"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz"
+  integrity sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==
 
 tslib@^1.9.0:
   version "1.14.1"

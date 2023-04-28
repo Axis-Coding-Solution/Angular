@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import { AngularSvgIconPreloaderModule } from 'angular-svg-icon-preloader';
+import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
@@ -25,7 +28,12 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    AngularSvgIconModule.forRoot(),
+    AngularSvgIconPreloaderModule.forRoot({
+      configUrl: './assets/json/icons.json',
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
