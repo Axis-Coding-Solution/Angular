@@ -1,0 +1,99 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.top-header {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.phone,
+.timing,
+.mail {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    padding-left: 60px;
+}
+
+.social-icons {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+    padding-right: 0px;
+    vertical-align: middle;
+    display: flex;
+
+}
+
+mat-icon {
+    color: white;
+    margin-right: 20px;
+}
+
+.main-image {
+    height: 900px;
+    width: 100%
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 15, 40, 0.516);
+}
+
+.image-section {
+    position: relative;
+}
+
+.image-section img {
+    display:block;
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbar ul {
+    list-style-type: none;
+    color: white;
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    justify-self: center;
+    margin-left: 40px;
+    font-size: 24px;
+}
+nav{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    box-sizing: border-box ;
+}
+mat-form-field{
+    margin-top: 3%;
+    margin-right: 3%;
+    text-transform: uppercase;
+}
+mat-option{
+    color: white;
+}

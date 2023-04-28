@@ -1,0 +1,36 @@
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbar ul {
+    list-style-type: none;
+    color: white;
+    display: inline-flex;
+    margin-left: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    justify-self: center;
+    margin-left: 40px;
+    font-size: 24px;
+}
+nav{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    box-sizing: border-box ;
+}
+mat-form-field{
+    margin-top: 3%;
+    margin-right: 3%;
+    text-transform: uppercase;
+}
+mat-option{
+    color: white;
+}
