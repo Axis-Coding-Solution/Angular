@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 const routes: Routes = [
   {
     path:'',
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path:'footer',
     component: FooterComponent,
+  },
+  {
+    path:'portfolio',
+    component: PortfolioComponent,
   }
 ];
 
