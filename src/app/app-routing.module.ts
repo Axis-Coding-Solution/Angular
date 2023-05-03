@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 const routes: Routes = [
   {
     path:'',
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path:'portfolio',
     component: PortfolioComponent,
+  },
+  {
+    path:'testimonials',
+    component: TestimonialsComponent,
   }
 ];
 

@@ -14,6 +14,9 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-slider/testimonials-feedback-slider.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     ContactComponent,
     FooterComponent,
     CarouselComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    TestimonialsComponent,
+    TestimonialsFeedbackSliderComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     MaterialModule,
     FontAwesomeModule,
     HttpClientModule,
-
+    SwiperModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],

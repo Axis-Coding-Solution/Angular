@@ -1,0 +1,48 @@
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+.swiper {
+    height: 100%;
+    width: 120%;
+}
+
+.swiperSlide {
+    height: 100%;
+    width: 100%;
+}
+.swiper-pagination-bullet-active {
+    background-color: #FF4949 !important;
+}
+.swiper-pagination-bullet {
+    background-color: white;
+    border: 0.8px solid #FF4949;
+    width: 18px;
+    height: 18px;
+    opacity: 0.9
+}
+
+
+.Slider-card-image {
+    background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/Line-Bg.png);
+    background-position: center;
+    color: gray;
+}
+
+// .Slider-card-image:hover{
+
+// }
+.Slider-Card:hover .Slider-card-image {
+
+    background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/Line-Bg-1.png);
+    background-position: center;
+    color: white;
+    transition: 0.5s;
+}
+
+.Slider-Card:hover {
+    transform: translateY(-20px);
+    animation: move-up 2s forwards;
+    transition: 0.5s;
+    animation-timing-function: ease-in-out;
+}
