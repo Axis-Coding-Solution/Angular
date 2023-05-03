@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     NavbarComponent,
     ContactComponent,
     FooterComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
