@@ -6,6 +6,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { ServicesComponent } from './services/services.component';
+import { ErrorComponent } from './error/error.component';
 const routes: Routes = [
   {
     path:'',
@@ -30,6 +32,14 @@ const routes: Routes = [
   {
     path:'testimonials',
     component: TestimonialsComponent,
+  },
+  {
+    path:'services',
+    component: ServicesComponent,
+  },
+  {
+    path:'error',
+    component:ErrorComponent,
   }
 ];
 

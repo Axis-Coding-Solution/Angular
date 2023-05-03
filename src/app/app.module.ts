@@ -17,6 +17,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-slider/testimonials-feedback-slider.component';
 import { SwiperModule } from 'swiper/angular';
+import { ServicesComponent } from './services/services.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { SwiperModule } from 'swiper/angular';
     CarouselComponent,
     PortfolioComponent,
     TestimonialsComponent,
-    TestimonialsFeedbackSliderComponent
+    TestimonialsFeedbackSliderComponent,
+    ServicesComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
