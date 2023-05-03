@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
+import { ErrorComponent } from './error/error.component';
 const routes: Routes = [
   {
     path:'',
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path:'services',
     component: ServicesComponent,
+  },
+  {
+    path:'error',
+    component:ErrorComponent,
   }
 ];
 
