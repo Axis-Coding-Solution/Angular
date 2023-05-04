@@ -204,9 +204,10 @@ mat-option {
     content: "";
 }
 
-.ConsultingServices-1:hover p:first-of-type::after {
-    content: "It includes a business model, a plan of strategic steps for the transition to it, and the consolidation of the financial model in the future.";
-}
+// .ConsultingServices-1:hover p:first-of-type::after {
+//     content: "It includes a business model, a plan of strategic steps for the transition to it, and the consolidation of the financial model in the future.";
+// }
+
 .ConsultingServices-1 {
     background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
     background-repeat: no-repeat;
@@ -247,9 +248,10 @@ mat-option {
     content: "";
 }
 
-.ConsultingServices-2:hover p:first-of-type::after {
-    content: "Step-by-step development of the top-level company’s organizational structure, principles of distribution of functions and powers.";
-}
+// .ConsultingServices-2:hover p:first-of-type::after {
+//     content: "Step-by-step development of the top-level company’s organizational structure, principles of distribution of functions and powers.";
+// }
+
 .ConsultingServices-2 {
     background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
     background-repeat: no-repeat;
@@ -292,6 +294,7 @@ mat-option {
 .ConsultingServices-3:hover p:first-of-type::after {
     content: "we always use effective and key indicators to systematically monitor the implementation of our strategy for your business.";
 }
+
 .ConsultingServices-3 {
     background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
     background-repeat: no-repeat;
@@ -334,6 +337,7 @@ mat-option {
 .ConsultingServices-4:hover p:first-of-type::after {
     content: "Formation of a team with good theoretical and practical training, professional knowledge and high motivation for success."
 }
+
 .ConsultingServices-4 {
     background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
     background-repeat: no-repeat;
@@ -383,18 +387,22 @@ mat-option {
     background-position: bottom;
     background-position-x: right;
 }
-.team-div{
+
+.team-div {
     border-radius: 20px;
 }
-.team-div:hover .team-text{
+
+.team-div:hover .team-text {
     background-color: #FF4949;
     color: white;
     transition: all 300ms ease-in-out;
 }
-.team-text{
+
+.team-text {
     overflow: hidden;
 }
-.team-text div{
+
+.team-text div {
     height: 100%;
     width: 10px;
     background: #FF4949;
@@ -404,9 +412,10 @@ mat-option {
     color: #FF4949;
     // border-radius: 0px 0px 01px 0px;
 }
-.team-text img{
+
+.team-text img {
     position: absolute;
-    top:0 ;
+    top: 0;
     right: 0;
 }
 
@@ -415,6 +424,7 @@ mat-option {
     border-radius: 10px;
     width: 80%;
 }
-.LatestNewsCards:hover a:last-of-type{
+
+.LatestNewsCards:hover a:last-of-type {
     display: block;
 }
