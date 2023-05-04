@@ -14,6 +14,9 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-slider/testimonials-feedback-slider.component';
+import { SwiperModule } from 'swiper/angular';
 import { ServicesComponent } from './services/services.component';
 import { ErrorComponent } from './error/error.component';
 
@@ -28,6 +31,8 @@ import { ErrorComponent } from './error/error.component';
     FooterComponent,
     CarouselComponent,
     PortfolioComponent,
+    TestimonialsComponent,
+    TestimonialsFeedbackSliderComponent,
     ServicesComponent,
     ErrorComponent
   ],
@@ -38,7 +43,7 @@ import { ErrorComponent } from './error/error.component';
     MaterialModule,
     FontAwesomeModule,
     HttpClientModule,
-
+    SwiperModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
