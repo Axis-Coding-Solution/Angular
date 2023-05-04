@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 // interface WorkPlanning {
-  //   Title: string;
-  //   Subtitle: string;
-  //   svgId: string;
-  //   radius: string;
+    //   Title: string;
+    //   Subtitle: string;
+    //   svgId: string;
+    //   radius: string;
   // }
   
   @Component({
