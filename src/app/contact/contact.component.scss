@@ -37,18 +37,7 @@
     border-radius: 10px;
 }
 
-.contact-view-btn::after {
-    content: "_____";
-}
 
-.contact-view-btn:hover::before {
-    color: red;
-    content: "_____";
-}
-
-.contact-view-btn:hover::after {
-    content: "";
-}
 
 .card1:hover svg:first-child {
     fill: #ff4949;
