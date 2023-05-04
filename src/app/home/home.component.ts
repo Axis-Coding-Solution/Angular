@@ -32,3 +32,4 @@ export class HomeComponent {
   ]
   title = '2nd-Project';
 }
+  

@@ -212,15 +212,18 @@ mat-option {
 .team-div{
     border-radius: 20px;
 }
-.team-div:hover .team-text{
+
+.team-div:hover .team-text {
     background-color: #FF4949;
     color: white;
     transition: all 300ms ease-in-out;
 }
-.team-text{
+
+.team-text {
     overflow: hidden;
 }
-.team-text div{
+
+.team-text div {
     height: 100%;
     width: 10px;
     background: #FF4949;
@@ -230,9 +233,10 @@ mat-option {
     color: #FF4949;
     // border-radius: 0px 0px 01px 0px;
 }
-.team-text img{
+
+.team-text img {
     position: absolute;
-    top:0 ;
+    top: 0;
     right: 0;
 }
 
@@ -241,6 +245,7 @@ mat-option {
     border-radius: 10px;
     width: 80%;
 }
-.LatestNewsCards:hover a:last-of-type{
+
+.LatestNewsCards:hover a:last-of-type {
     display: block;
 }
