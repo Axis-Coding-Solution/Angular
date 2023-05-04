@@ -37,64 +37,21 @@
     </div>
 </section>
 <section class="flex rounded mx-auto w-full absolute justify-center items-center">
-    <div class="card1 grid grid-cols-3 w-4/5 -mt-24 z-10 bg-white shadow-lg rounded-xl ">
-        <div class="primary-color rounded-l-xl px-4 flex justify-around py-7  hover:text-white  transition-scss"
-            style="border-right: 0.5px solid lightgray; background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decors-2.png); background-repeat: no-repeat; background-size: cover;">
+    <div class="card1 grid grid-cols-3 w-4/5 -mt-24 z-10 bg-white shadow-lg rounded-xl  ">
+        <div *ngFor="let items of WorkPlanning" class="primary-color px-4 flex justify-around py-7  hover:text-white  transition-scss"
+            style="border-right: 0.5px solid lightgray; background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decors-2.png); background-repeat: no-repeat; background-size: cover;" [ngStyle]="{'border-top-left-radius': items.radius ==='left' ? '12px' : '',  'border-bottom-left-radius': items.radius ==='left' ? '12px' : '',
+            'border-top-right-radius': items.radius ==='right' ? '12px' : '',
+            'border-bottom-right-radius': items.radius ==='right' ? '12px' : '' }">
             <div class="mx-5 py-14">
                 <span>
-                    <svg class=" h-20 w-20 rounded-full fill-current text-white bg-black p-4">
-                        <use xlink:href="../assets/icons/sprite.svg#System_Approach" />
-                    </svg>
+                  <svg class="menu-item-svg h-20 w-20 rounded-full fill-current text-white bg-black p-4">
+                              <use [attr.xlink:href]="items.svgId"></use>
+                            </svg>
                 </span>
             </div>
             <div class="mx-5 pt-14">
-                <h4 class="font-sans text-2xl mb-2 font-semibold ">System Approach</h4>
-                <p>Help in building effective sytem of the business</p>
-                <button class="contact-view-btn text-white hidden mt-5 text-base font-sans font-semibold">Read
-                    More</button>
-            </div>
-        </div>
-        <div class="transition-scss flex justify-around py-7 px-4 primary-color
-            hover:text-white"
-            style="border-right: 0.5px solid lightgray; background-image:
-            url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decors-2.png);
-            background-repeat: no-repeat; background-size: cover;">
-            <div class="mx-5 py-14"> <span>
-                    <svg class=" h-20 w-20 rounded-full fill-current text-white bg-black p-4">
-                        <use xlink:href="../assets/icons/sprite.svg#Work_on_Results" />
-                    </svg>
-                </span>
-            </div>
-            <div class="mx-5 pt-14 ">
-                <h4 class="font-sans text-2xl mb-2 font-semibold ">Work on results</h4>
-                <p>Experts accompany you until you get the result.</p>
-                <button class="contact-view-btn text-white hidden mt-5 text-base font-sans font-semibold">Read
-                    More</button>
-            </div>
-        </div>
-        <div class="transition-scss flex justify-around py-7 px-4 rounded-r-xl primary-color hover:text-white"
-            style="background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decors-2.png); background-repeat: no-repeat; background-size: cover;">
-            <div class="mx-5 py-14"><span><svg class="h-20 w-20 rounded-full fill-current text-white bg-black p-4"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <title></title>
-                        <path d="M203,376a10,10,0,1,1-10-10A10,10,0,0,1,203,376Z"></path>
-                        <path d="M452,382H402V332a10,10,0,0,0-20,0v60a10,10,0,0,0,10,10h60a10,10,0,0,0,0-20Z">
-                        </path>
-                        <path d="M70,206h63a10,10,0,0,0,0-20H70a10,10,0,0,0,0,20Z"></path>
-                        <path d="M256,186H193a10,10,0,0,0,0,20h63a10,10,0,0,0,0-20Z"></path>
-                        <path d="M70,266h63a10,10,0,0,0,0-20H70a10,10,0,0,0,0,20Z"></path>
-                        <path d="M153,366H70a10,10,0,0,0,0,20h83a10,10,0,0,0,0-20Z"></path>
-                        <path d="M256,246H193a10,10,0,0,0,0,20h63a10,10,0,0,0,0-20Z"></path>
-                        <path d="M70,326h63a10,10,0,0,0,0-20H70a10,10,0,0,0,0,20Z"></path>
-                        <path d="M256,306H193a10,10,0,0,0,0,20h63a10,10,0,0,0,0-20Z"></path>
-                        <path d="M316,206h60a10,10,0,0,0,0-20H316a10,10,0,0,0,0,20Z"></path>
-                        <path
-                            d="M446,284.8V70a30.2,30.2,0,0,0-30-30H386V30a30,30,0,0,0-60,0V40H243V30a30,30,0,0,0-60,0V40H100V30a30,30,0,0,0-60,0V40H30A30.2,30.2,0,0,0,0,70V396a30.2,30.2,0,0,0,30,30H276.9A120,120,0,1,0,446,284.8ZM346,30a10,10,0,0,1,20,0V70a10,10,0,0,1-20,0ZM203,30a10,10,0,0,1,20,0V70a10,10,0,0,1-20,0ZM60,30a10,10,0,0,1,20,0V70a10,10,0,0,1-20,0ZM30,60H40V70a30,30,0,0,0,60,0V60h83V70a30,30,0,0,0,60,0V60h83V70a30,30,0,0,0,60,0V60h30a10,10,0,0,1,10,10v53H20V70A10,10,0,0,1,30,60ZM20,396V143H426V276.9a118.5,118.5,0,0,0-34-4.9A120.1,120.1,0,0,0,272,392a129.9,129.9,0,0,0,.8,14H30A10,10,0,0,1,20,396Zm372,96c-53.6,0-100-43.7-100-100A100,100,0,1,1,392,492Z">
-                        </path>
-                    </svg></span></div>
-            <div class="mx-5 pt-14">
-                <h4 class="font-sans text-2xl mb-2 font-semibold ">Smart planning</h4>
-                <p>In our work, we focus on facts and arguments.</p>
+                <h4 class="font-sans text-2xl mb-2 font-semibold ">{{items.Title}}</h4>
+                <p>{{items.Subtitle}}</p>
                 <button class="contact-view-btn text-white hidden mt-5 text-base font-sans font-semibold">Read
                     More</button>
             </div>
