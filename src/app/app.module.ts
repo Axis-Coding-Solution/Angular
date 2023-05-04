@@ -12,6 +12,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SwiperModule } from 'swiper/angular';
+import { WorkPlanningCardComponent } from './components/cards/work-planning-card/work-planning-card.component';
+import { ConsultingServicesCardsComponent } from './components/cards/consulting-services-cards/consulting-services-cards.component';
+import { BestTeamCardsComponent } from './components/cards/best-team-cards/best-team-cards.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { SwiperModule } from 'swiper/angular';
     HeaderComponent,
     NavbarComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    WorkPlanningCardComponent,
+    ConsultingServicesCardsComponent,
+    BestTeamCardsComponent
   ],
   imports: [
     BrowserModule,
