@@ -1,8 +1,8 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Component, ViewEncapsulation } from '@angular/core';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Swiper } from 'swiper';
 
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 
 @Component({
@@ -12,5 +12,11 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   encapsulation: ViewEncapsulation.None
 })
 export class TestimonialsFeedbackSliderComponent{
+   mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+  });
 }
 
