@@ -38,3 +38,24 @@
 .LatestNewsCards:hover a:last-of-type {
     display: block;
 }
+
+.Service {
+    display: flex;
+}
+
+.Service:hover span:first-child {
+    order: 2;
+
+}
+
+.Service:hover span:last-child {
+    order: 1;
+}
+
+.Service:hover {
+    background-color: black !important;
+}
+
+.Arrow {
+    fill: black !important;
+}
