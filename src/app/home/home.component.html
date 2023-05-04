@@ -36,9 +36,16 @@
           </button> -->
     </div>
 </section>
-<section class="flex rounded mx-auto w-full absolute justify-center items-center">
-    <div class="card1 grid grid-cols-3 w-4/5 -mt-24 z-10 bg-white shadow-lg rounded-xl  ">
-        <div *ngFor="let items of WorkPlanning" class="primary-color px-4 flex justify-around py-7  hover:text-white  transition-scss"
+
+<section >
+    <div class="flex md:flex-row flex-col rounded-xl md:mx-24 mx-0  absolute md:-mt-24   justify-center items-center">
+        <div *ngFor="let item of WorkPlanning" class=" grid z-10  bg-white shadow-lg">
+            <app-work-planning-card [item]="item"></app-work-planning-card>
+        </div>
+    </div>
+    
+        
+        <!-- <div *ngFor="let items of WorkPlanning" class="primary-color px-4 flex justify-around py-7  hover:text-white  transition-scss"
             style="border-right: 0.5px solid lightgray; background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decors-2.png); background-repeat: no-repeat; background-size: cover;" [ngStyle]="{'border-top-left-radius': items.radius ==='left' ? '12px' : '',  'border-bottom-left-radius': items.radius ==='left' ? '12px' : '',
             'border-top-right-radius': items.radius ==='right' ? '12px' : '',
             'border-bottom-right-radius': items.radius ==='right' ? '12px' : '' }">
@@ -55,8 +62,7 @@
                 <button class="contact-view-btn text-white hidden mt-5 text-base font-sans font-semibold">Read
                     More</button>
             </div>
-        </div>
-    </div>
+        </div> -->
 </section>
 <section class="p-10">
     <div class="grid grid-cols-2 relative mt-14">

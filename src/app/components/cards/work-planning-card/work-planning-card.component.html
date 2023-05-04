@@ -1,18 +1,20 @@
-<div *ngFor="let items of WorkPlanning" class="primary-color px-4 flex justify-around py-7  hover:text-white  transition-scss"
-style="border-right: 0.5px solid lightgray; background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decors-2.png); background-repeat: no-repeat; background-size: cover;" [ngStyle]="{'border-top-left-radius': items.radius ==='left' ? '12px' : '',  'border-bottom-left-radius': items.radius ==='left' ? '12px' : '',
-'border-top-right-radius': items.radius ==='right' ? '12px' : '',
-'border-bottom-right-radius': items.radius ==='right' ? '12px' : '' }">
-<div class="mx-5 py-14">
-    <span>
-      <svg class="menu-item-svg h-20 w-20 rounded-full fill-current text-white bg-black p-4">
-                  <use [attr.xlink:href]="items.svgId"></use>
-                </svg>
-    </span>
-</div>
-<div class="mx-5 pt-14">
-    <h4 class="font-sans text-2xl mb-2 font-semibold ">{{items.Title}}</h4>
-    <p>{{items.Subtitle}}</p>
-    <button class="contact-view-btn text-white hidden mt-5 text-base font-sans font-semibold">Read
-        More</button>
-</div>
+<div class=" grid-cols-3 primary-color px-4 flex justify-around py-7  hover:text-white  transition-scss"
+    style="border-right: 0.5px solid lightgray; background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decors-2.png); background-repeat: no-repeat; background-size: cover;"
+    [ngStyle]="{'border-top-left-radius': item.radius ==='left' ? '12px' : '',  'border-bottom-left-radius': item.radius ==='left' ? '12px' : '',
+'border-top-right-radius': item.radius ==='right' ? '12px' : '',
+'border-bottom-right-radius': item.radius ==='right' ? '12px' : '' }">
+    <div class="mx-5 py-14">
+        <span>
+            <svg class="menu-item-svg h-20 w-20 rounded-full fill-current text-white bg-black p-4">
+                <use [attr.xlink:href]="item.svgId"></use>
+                          
+            </svg>
+        </span>
+    </div>
+    <div class="mx-5 pt-14">
+        <h4 class="font-sans text-2xl mb-2 font-semibold ">{{item.Title}}</h4>
+        <p>{{item.Subtitle}}</p>
+        <button class="contact-view-btn text-white hidden mt-5 text-base font-sans font-semibold">Read
+            More</button>
+    </div>
 </div>
