@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ErrorComponent } from './error/error.component';
+import { SingleServiceComponent } from './single-service/single-service.component';
 const routes: Routes = [
   {
     path:'',
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path:'error',
     component:ErrorComponent,
+  },
+  {
+    path:'single-service',
+    component:SingleServiceComponent,
   }
 ];
 
