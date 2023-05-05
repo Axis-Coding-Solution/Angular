@@ -1,12 +1,13 @@
 <header>
-    <section class="image-section">
+    <section class="w-full image-section">
         <div class="flex justify-center items-center flex-col h-96
-            relative w-full bg-center bg-cover" style="background-color:
+            relative w-full bg-center bg-cover md:w-full"
+            style="background-color:
             rgba(000,000,000, .7);">
             <img
                 src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-301-scaled.jpg"
                 class="absolute mix-blend-overlay h-96 w-full">
-            <img class=" h-96 w-full"
+            <img class=" h-96 w-full md:w-full"
                 src="https://demo6.clientica.org/wp-content/uploads/2020/12/Group-1212-1.png"
                 alt="">
 
@@ -29,17 +30,25 @@
     </section>
 </header>
 <!-- --------------1st part----------------- -->
-<section class="container mx-auto flex justify-center items-center h-screen">
-    <div class="contact-div grid grid-cols-2 gap-28">
-        <div class="info-div flex flex-col justify-between gap-5">
-            <div class="flex flex-col gap-5">
-                <h5 class="font-bold">[ OUR STAFF ]</h5>
-                <h1 class=" text-5xl">Ways To Contact Us</h1>
-                <p>More than a hundred organizations of various sizes and
-                    structures
+<section class=" md:mx-auto mx-0 flex flex-col md:flex-row md:justify-center
+    md:items-center
+    mt-10">
+    <!-- left block -->
+
+    <div class="contact-div flex md:flex-row flex-col m-5 ">
+        <!-- Left Block -->
+        <div class="info-div flex flex-col mx-5 flex-1">
+            <div class="flex flex-col gap-5 ">
+                <h5 class="md:font-bold font-semibold ">[ OUR STAFF
+                    ]</h5>
+                <h1 class=" text-5xl ">Ways To Contact Us</h1>
+            </div>
+            <div>
+                <p class="ml-0 md:py-0 py-5">More than a hundred
+                    organizations of various sizes and structures
                     have already used our services.</p>
             </div>
-            <div class="flex gap-5">
+            <div class="md:flex md:gap-5 py-10 my-10">
                 <img class="w-24 rounded-full" src="
                     https://demo6.clientica.org/wp-content/uploads/2020/12/Image-59.jpg"
                     alt="pic">
@@ -47,12 +56,13 @@
                     <h1>
                         Christopher Jonathan Hammer</h1>
                     <h1>Business consultant</h1>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between flex-col md:flex-row ">
                         <div class="pr-7">
                             <i class="fa-solid fa-phone text-sm pr-2"
                                 style="color:
                                 #ff4949;"></i>
                             <a href="#">+1 234 567 8912</a>
+
                         </div>
                         <div>
                             <i class="fa-solid fa-envelope text-sm pr-2"
@@ -64,7 +74,8 @@
                 </div>
             </div>
             <hr>
-            <div class="flex gap-5">
+
+            <div class="flex gap-5 py-10 my-10">
                 <img class="w-24 rounded-full" src="
                     https://demo6.clientica.org/wp-content/uploads/2020/12/Image-60.jpg"
                     alt="pic">
@@ -72,7 +83,7 @@
                     <h1>
                         Angelina Marie Knightley</h1>
                     <h1>Sales manager</h1>
-                    <div class="flex justify-between">
+                    <div class="flex flex-col md:flex-row justify-between">
                         <div class="pr-7">
                             <i class="fa-solid fa-phone text-sm pr-2"
                                 style="color:
@@ -89,9 +100,11 @@
                 </div>
             </div>
         </div>
-        <div class="from-div relative">
+
+        <!-- Right block -->
+        <div class="from-div relative flex-1">
             <!-- grid justify-center content-center -->
-            <div class="mx-20 py-16">
+            <div class="mx-20 py-16 ">
                 <div class="text-3xl text-white pb-7">
                     <span><b>Send your request</b></span>
                 </div>
@@ -127,7 +140,7 @@
     </div>
 </section>
 <!-- ------------------2nd part------------------- -->
-<section>
+<!-- <section>
     <div class="mx-auto text-center">
         <div class="font-bold">
             <h3>[ OFFICES ]</h3>
@@ -195,8 +208,8 @@
                 on Map</button>
         </div>
     </div>
-</section>
-<section class="text-black body-font relative h-screen">
+</section> -->
+<!-- <section class="text-black body-font relative h-screen">
     <div style="color: #ededed;" class="absolute inset-0 my-10">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.8656993547684!2d74.44485857553865!3d31.52784837421054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f70ffcf0ec5%3A0x978abe2448e068f3!2sAxis%20Coding%20Solutions!5e0!3m2!1sen!2s!4v1682691169551!5m2!1sen!2s"
@@ -205,4 +218,4 @@
     </div>
     <div class="container px-5 py-24 mx-auto flex">
     </div>
-</section>
+</section> -->
