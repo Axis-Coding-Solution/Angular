@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +17,7 @@ import { ConsultingServicesCardsComponent } from './components/cards/consulting-
 import { BestTeamCardsComponent } from './components/cards/best-team-cards/best-team-cards.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { SendYourRequestComponent } from './components/cards/send-your-request/send-your-request.component';
+import { SingleServiceComponent } from './single-service/single-service.component'; 
 
 @NgModule({
   declarations: [
