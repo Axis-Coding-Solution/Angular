@@ -44,7 +44,7 @@ import { SingleServiceComponent } from './single-service/single-service.componen
     MaterialModule,
     FontAwesomeModule,
     HttpClientModule,
-
+    SwiperModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
