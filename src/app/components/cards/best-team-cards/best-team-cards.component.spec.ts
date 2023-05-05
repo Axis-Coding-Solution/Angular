@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PortfolioComponent } from './portfolio.component';
+import { BestTeamCardsComponent } from './best-team-cards.component';
 
-describe('PortfolioComponent', () => {
-  let component: PortfolioComponent;
-  let fixture: ComponentFixture<PortfolioComponent>;
+describe('BestTeamCardsComponent', () => {
+  let component: BestTeamCardsComponent;
+  let fixture: ComponentFixture<BestTeamCardsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PortfolioComponent ]
+      declarations: [ BestTeamCardsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PortfolioComponent);
+    fixture = TestBed.createComponent(BestTeamCardsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
