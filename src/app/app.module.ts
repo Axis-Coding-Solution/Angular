@@ -15,6 +15,7 @@ import { SwiperModule } from 'swiper/angular';
 import { WorkPlanningCardComponent } from './components/cards/work-planning-card/work-planning-card.component';
 import { ConsultingServicesCardsComponent } from './components/cards/consulting-services-cards/consulting-services-cards.component';
 import { BestTeamCardsComponent } from './components/cards/best-team-cards/best-team-cards.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BestTeamCardsComponent } from './components/cards/best-team-cards/best-
     CarouselComponent,
     WorkPlanningCardComponent,
     ConsultingServicesCardsComponent,
-    BestTeamCardsComponent
+    BestTeamCardsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
