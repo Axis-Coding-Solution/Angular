@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-
 interface WorkPlanning {
   Title: string;
   Subtitle: string;
