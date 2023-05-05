@@ -1,23 +1,20 @@
-<section style="background-color: #F5F6F7;">
-    <div>
-        <div class="text-2xl pt-52 text-center">[BEST TEAM]</div>
-        <h1 class="text-5xl mt-7 font-bold text-center">Our Key
-            Specialists</h1>
-        <p class="mt-5 px-96 text-lg pt-5 text-slate-700 text-center">
-            These are real professionals who are focused on success.
-            Each of them
-            learns new technologies and implements them.
-        </p>
-    </div>
+<section class=" md:mt-0" style="background-color: #F5F6F7; margin-top: 38rem;">
+
+    <div class="text-2xl md:pt-10 pt-52 text-center">[BEST TEAM]</div>
+    <h1 class="text-5xl mt-7 font-bold text-center">Our Key
+        Specialists</h1>
+    <p class="mt-5 px-12 text-lg pt-5 text-slate-700 text-center">
+        These are real professionals who are focused on success.
+        Each of them
+        <br /> new technologies and implements them.
+    </p>
+
     <div class="grid md:grid-cols-4 grid-cols-1 gap-5 py-10
-        px-5">
+        px-5 place-items-center">
         <div *ngFor="let item of bestteam">
-            <div
-                class="team-div max-w-sm bg-white border border-gray-200
+            <div class="team-div max-w-sm bg-white border border-gray-200
                 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <img class="rounded-t-lg"
-                    src={{item.Img}}
-                    alt="" />
+                <img class="rounded-t-lg" src={{item.Img}} alt="" />
                 <div class="px-5 py-7 text-center relative team-text">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight
                         text-gray-900 dark:text-white">
@@ -30,19 +27,15 @@
                     <div>
                         1
                     </div>
-                    <img
-                        src="https://demo6.clientica.org/wp-content/uploads/2020/12/Mask-Group3.svg"
-                        />
+                    <img src="https://demo6.clientica.org/wp-content/uploads/2020/12/Mask-Group3.svg" />
                 </div>
             </div>
 
         </div>
     </div>
 
-    <button
-        class="Service mt-4 px-14 py-5 text-black font-semibold mx-auto
-        hover:text-white hover:border-transparent rounded"
-        style="background-color: white; border: 1px solid black; ">
+    <button class="Service mt-4 px-14 py-5 text-black font-semibold mx-auto
+        hover:text-white hover:border-transparent rounded" style="background-color: white; border: 1px solid black; ">
         <span class="px-3">About Us</span>
         <span><i class="fa-solid fa-arrow-right-long"></i></span>
     </button>

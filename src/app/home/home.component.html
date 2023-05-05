@@ -1,24 +1,21 @@
-<section class="image-section">
-    <div class="relative">
-        <img class=" absolute w-full h-auto"
+<section class="image-section w-full">
+    <div class="md:relative relative">
+        <img class=" absolute md:absolute md:w-full md:h-auto w-full h-auto"
             src="https://demo6.clientica.org/wp-content/uploads/2021/04/Group-1212.png"
             alt="">
-        <img class="top-0 left-0 w-full h-auto"
+        <img class="w-full h-auto md:w-full md:h-auto"
             src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-441.jpg"
             alt="corporate">
     </div>
-    <div class="w-2/4">
-
-    </div>
     <div title="Main-Heading"
-        class="ml-36 mr-96 mt-80 pl-16 absolute top-0 left-0 w-2/4 h-full
+        class="md:ml-36 md:mr-96 md:mt-80 mt-40 pl-12 pr-12 md:pl-16 absolute top-0 left-0 md:w-3/5 w-full h-full
         items-center justify-center">
-        <span class="text-sm font-medium leading-relaxed text-white">[IN
+        <span class="text-sm font-medium pb-4 md:pb-0 leading-relaxed text-white">[IN
             CONSULTING]</span>
-        <h1 class="text-7xl font-bold leading-tight text-white">Business
+        <h1 class="md:text-7xl md:font-bold text-3xl font-semibold leading-tight text-white">Business
             Services From Experts</h1>
         <p></p>
-        <p class=" pt-3 text-base font-normal mr-56 leading-normal text-white
+        <p class=" pt-3 text-base font-normal md:mr-56  leading-normal text-white
             whitespace-normal">Help in building the
             effective system of the business. Consulting,
             audit, recruitment, Advisory support and support.</p>
@@ -35,8 +32,8 @@
 </section>
 
 <section class="rounded-xl">
-    <div class="flex md:flex-row flex-col rounded-xl md:mx-24 mx-0 absolute
-        md:-mt-24 justify-center items-center">
+    <div class="grid md:grid-cols-3 grid-cols-1 rounded-xl md:mx-24 mx-0 absolute
+        md:-mt-24 justify-center items-center md:w-auto w-full">
         <div *ngFor="let item of WorkPlanning" class=" grid z-10 bg-white
             shadow-lg">
             <app-work-planning-card [item]="item"></app-work-planning-card>
@@ -44,15 +41,14 @@
     </div>
 </section>
 <section class="p-10">
-    <div class="grid grid-cols-2 relative mt-14">
+    <div class="grid md:grid-cols-2 grid-cols-1 md:mt-14 mt-96 pt-72 ">
 
-        <div class="">
-            <div class="absolute top-24 h-[90%] w-3/5 py-20 pl-44
-                pr-10">
+            <div class="top-24 h-[90%]  w-full py-20 md:pl-0
+                md:pr-10 pr-0">
                 <h1 class="font-medium">[ABOUT US]</h1>
-                <h1 class="py-8 text-5xl font-bold">Specialist In
+                <h1 class="py-8 md:text-5xl md:font-bold text-3xl font-semibold">Specialist In
                     Consulting</h1>
-                <p class="text-lg pr-16 pt-2 text-gray-500 mr-9">We
+                <p class="text-lg md:text-base md:pr-16 pr-0 pt-2 text-gray-500 md:mr-9 mr-0">We
                     solve a
                     variety of tasks as part of developing a
                     strategy
@@ -64,59 +60,53 @@
                     experts who use modern marketing tools.
                 </p>
                 <div class="mt-20">
-                    <div class="flex justify-between mb-1" style="width:
-                        83%;">
+                    <div class="flex justify-between mb-1 md:w-4/5 w-full">
                         <span class="text-base font-medium text-black
                             dark:text-white">Strategic audit</span>
                         <span class="text-sm font-medium text-black
                             dark:text-white">86%</span>
                     </div>
                     <div class="bg-gray-200 rounded-full h-1.5
-                        dark:bg-gray-700"
-                        style="width: 83%;">
+                        dark:bg-gray-700 md:w-4/5 w-full"
+                        >
                         <div class="h-1.5 rounded-full" style="width:
                             86%;
                             background-color: #FF4949;"></div>
                     </div>
                 </div>
                 <div class="mt-4">
-                    <div class="flex justify-between mb-1" style="width:
-                        83%;">
+                    <div class="flex justify-between mb-1 md:w-4/5 w-full">
                         <span class="text-base font-medium text-black
                             dark:text-white">Optimization</span>
                         <span class="text-sm font-medium text-black
                             dark:text-white">94%</span>
                     </div>
                     <div class="bg-gray-200 rounded-full h-1.5
-                        dark:bg-gray-700"
-                        style="width: 83%;">
+                        dark:bg-gray-700 md:w-4/5 w-full">
                         <div class="h-1.5 rounded-full" style="width:
                             94%;
                             background-color: #FF4949;"></div>
                     </div>
                 </div>
                 <div class="mt-4">
-                    <div class="flex justify-between mb-1" style="width:
-                        83%;">
+                    <div class="flex justify-between mb-1 md:w-4/5 w-full">
                         <span class="text-base font-medium text-black
                             dark:text-white">Expertise</span>
                         <span class="text-sm font-medium text-black
                             dark:text-white">79%</span>
                     </div>
                     <div class="bg-gray-200 rounded-full h-1.5
-                        dark:bg-gray-700"
-                        style="width: 83%;">
+                        dark:bg-gray-700 md:w-4/5 w-full">
                         <div class="h-1.5 rounded-full" style="width:
                             79%;
                             background-color: #FF4949;"></div>
                     </div>
                 </div>
             </div>
-        </div>
 
         <div>
             <div class="mt-36 laptop-image-div">
-                <img class="laptop-image " style="height: 120%; width:
+                <img class="laptop-image md:w-full" style="height: 120%; width:
                     120%;"
                     src="https://demo6.clientica.org/wp-content/uploads/2021/04/Mockup-home1-1.png"
                     alt="">
@@ -124,11 +114,11 @@
         </div>
     </div>
 </section>
-<section class="-mt-12" style="background-color: #F5F6F7;">
+<section class="-mt-12" style="background-color: #F5F6F7; background-image:url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png); background-repeat: no-repeat; background-size: contain;" >
     <div class="flex-col">
-        <div class="absolute grid grid-cols-3 mt-56 mx-32">
+        <div class="md:absolute static grid md:grid-cols-3 grid-cols-1 md:mt-56 mt-10 md:mx-32 mx-5">
             <div>
-                <div class=" mr-10 pb-28">
+                <div class=" mr-10 md:pb-28 pb-10">
                     <h1 class="font-medium">[SERVICES]</h1>
                     <h1 class="py-8 text-5xl font-bold">Consulting
                         Services</h1>
@@ -150,7 +140,7 @@
             </div>
 
             <div *ngFor="let item of ConsultingServicesCards" class="mr-2 ml-2
-                mt-2 mb-2">
+                md:mt-2 md:mb-2 mt-5 mb-5">
                 <div class="ConsultingServices-1 hover:bg-red-500 rounded-2xl
                     shadow-2xl bg-white">
                     <div class="bg-red-500 rounded-tl-2xl rounded-tr-2xl h-2"></div>
@@ -181,9 +171,9 @@
                         <div class="-mt-10">
                             <h1 class="text-xl font-bold pb-2 pr-8">{{item.Title}}
                             </h1>
-                            <p class="pt-2 text-lg pb-40">{{item.Shorttext}}
+                            <p class="pt-2 text-lg md:pb-40 pb-20">{{item.Shorttext}}
                             </p>
-                            <P class="pt-2 text-lg pb-40 hidden">{{item.Longtext}}
+                            <P class="pt-2 text-lg md:pb-40 pb-20 hidden">{{item.Longtext}}
                             </P>
                             <div>
                                 <button
@@ -197,7 +187,7 @@
             </div>
         </div>
     </div>
-    <img class="-m-12"
+    <img class="-m-12 md:block hidden"
         src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png"
         alt="">
 </section>
@@ -211,30 +201,32 @@
             background-image:
             url(https://demo6.clientica.org/wp-content/uploads/2021/01/Decors-5.png);
             background-repeat: no-repeat; top: 88%;
-            left: 9%;" class="absolute grid grid-cols-4 mx-auto w-5/6
-            h-auto rounded-lg px-6 py-2">
-            <div *ngFor="let item of PerformanceCard" class="p-10">
-                <div class="flex pb-5">
+            left: 9%;" class="absolute grid md:grid-cols-4 grid-cols-1 mx-auto w-5/6
+            h-auto rounded-lg px-6 py-2 shadow-xl">
+            <div *ngFor="let item of PerformanceCard" class="p-8">
+                <div class="flex pb-5  justify-center">
                     <h1 class="font-extrabold text-8xl font-serif mr-2">{{item.Title}}</h1>
                     <h2 class="text-red-500 font-serif text-2xl
                         font-bold">{{item.Operand}}</h2>
                 </div>
-                <p class="text-base font-sans text-gray-700">{{item.Subtitle}}</p>
+                <p class="text-base text-center md:text-start font-sans text-gray-700">{{item.Subtitle}}</p>
             </div>
         </div>
     </div>
 </section>
+<section>
 <app-best-team-cards></app-best-team-cards>
+</section>
 <section style="background-color: #F5F6F7;">
-    <div class="flex pt-14">
+    <div class="flex md:flex-row flex-col pt-14">
         <div class="-ml-60">
-            <img class="rounded-r-xl "
+            <img class="md:rounded-r-xl rounded-none"
                 src="https://demo6.clientica.org/wp-content/uploads/2021/01/Image-661.jpg"
                 height="auto" alt="">
         </div>
-        <div class=" text-white my-28 -ml-56 w-full rounded-l-xl"
+        <div class=" text-white md:my-28 my-0 md:-ml-56 -ml-0 w-full md:rounded-l-xl rounded-none"
             style="background-color: #09111A;">
-            <div class="pt-36 pl-56 text-white">
+            <div class="md:pt-36 pt-20 md:pl-56 pl-5 text-white">
                 <div>
                     <h1 class="font-sans font-semibold text-base">[REVIEWS]</h1>
                     <h1 class="font-sans font-bold text-5xl pt-5">Testimonials</h1>
@@ -245,17 +237,16 @@
     </div>
 </section>
 <section>
-    <div class=" relative grid grid-cols-2 gap-28 overflow-hidden">
-        <img class="absolute top-36 left-2/4" height="200px"
+    <div class=" relative grid md:grid-cols-2 grid-cols-1 gap-28 overflow-hidden">
+        <img class="absolute md:block hidden top-36 left-2/4 " height="200px"
             width="200px" style="rotate: 90deg; fill: grey;"
             src="https://dbdzm869oupei.cloudfront.net/img/stickers/generated/35480-1-d4d4d4.png"
             alt="">
         <img class="absolute top-32 left-36"
             src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-6.png"
             alt="">
-        <div class="form-div relative m-48">
-            <!-- grid justify-center content-center -->
-            <div class="relative mx-20 py-16">
+        <div class="form-div md:w-4/5 w-full relative md:m-48 mt-16">
+             <div class="relative mx-20 py-16">
                 <div class="text-3xl text-white pb-7">
                     <span><b>Send your request</b></span>
                 </div>
@@ -288,26 +279,26 @@
                     alt="">
             </div>
         </div>
-        <div class="mt-20 absolute top-0 -right-56">
+        <div class="md:mt-20 mt-0  md:absolute static top-0  md:-right-56 -right-0">
             <img
                 src="https://demo6.clientica.org/wp-content/uploads/2021/04/Mockup-home1-2.png"
                 alt="">
         </div>
     </div>
-</section>
+</section> 
 <section style="background-color: #F5F6F7;">
     <div class="relative">
         <div class="pt-28 absolute w-full mx-auto">
             <div>
                 <h1 class="text-center">[OUR BLOG]</h1>
-                <h1 class="text-center pt-6 text-5xl font-sans
-                    font-bold">Latest News</h1>
-                <p class="text-center text-gray-700 px-96 pt-10">Subscribe
+                <h1 class="text-center md:pt-6 pt-3 md:text-5xl text-2xl font-sans
+                    md:font-bold font-semibold">Latest News</h1>
+                <p class="text-center text-gray-700 md:px-96 px-20 md:pt-10 pt-5">Subscribe
                     to our newsletter and get unique bonuses that
                     you can use when <br> ordering our services.</p>
             </div>
             <div class="grid grid-cols-3 pt-20">
-                <div *ngFor="let items of Ourblog" class="LatestNewsCards ml-5
+                <div *ngFor="let items of Ourblog" class="LatestNewsCards hidden ml-5
                     mr-2 bg-white
                     rounded-md shadow-2xl"
                     style="height: 678px; width: 470px;">
@@ -336,7 +327,7 @@
                             text-gray-700">{{items.Note}}</p>
                         <button class=" contact-view-btn my-7 ml-8 mr-20
                             text-base font-sans font-medium"
-                            style="color: #FF4949;">Read More</button>
+                            style="color: #FF4949;">All News</button>
                     </div>
                 </div>
 
