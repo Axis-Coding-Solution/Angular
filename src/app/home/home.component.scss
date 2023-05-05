@@ -195,9 +195,11 @@ mat-option {
 .ConsultingServices-1:hover p {
     padding-bottom: 80px;
 }
+
 .ConsultingServices-1:hover p:first-of-type {
     display: none;
 }
+
 .ConsultingServices-1:hover p:last-of-type {
     display: block;
 }
@@ -209,7 +211,7 @@ mat-option {
     background-position-x: right;
 }
 
-.team-div{
+.team-div {
     border-radius: 20px;
 }
 
@@ -240,11 +242,7 @@ mat-option {
     right: 0;
 }
 
-.form-div {
-    background-color: #212830;
-    border-radius: 10px;
-    width: 80%;
-}
+
 
 .LatestNewsCards:hover a:last-of-type {
     display: block;
