@@ -14,6 +14,10 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-slider/testimonials-feedback-slider.component';
+import { SwiperModule } from 'swiper/angular';
+import { ServicesComponent } from './services/services.component';
 import { ErrorComponent } from './error/error.component';
 import { SingleServiceComponent } from './single-service/single-service.component'; 
 
@@ -28,9 +32,10 @@ import { SingleServiceComponent } from './single-service/single-service.componen
     FooterComponent,
     CarouselComponent,
     PortfolioComponent,
-    ErrorComponent,
-    SingleServiceComponent
-    
+    TestimonialsComponent,
+    TestimonialsFeedbackSliderComponent,
+    ServicesComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,7 @@ import { SingleServiceComponent } from './single-service/single-service.componen
     BrowserAnimationsModule,
     MaterialModule,
     FontAwesomeModule,
-    HttpClientModule     
+    HttpClientModule,
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
