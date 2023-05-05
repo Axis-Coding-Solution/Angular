@@ -149,8 +149,10 @@
                 </div>
             </div>
 
-            <div *ngFor="let item of ConsultingServicesCards" class="mr-2 ml-2 mt-2 mb-2">
-                <div  class="ConsultingServices-1 hover:bg-red-500 rounded-2xl shadow-2xl bg-white">
+            <div *ngFor="let item of ConsultingServicesCards" class="mr-2 ml-2
+                mt-2 mb-2">
+                <div class="ConsultingServices-1 hover:bg-red-500 rounded-2xl
+                    shadow-2xl bg-white">
                     <div class="bg-red-500 rounded-tl-2xl rounded-tr-2xl h-2"></div>
                     <div class="pr-12 pl-12 pt-8 pb-16">
                         <div>
@@ -177,12 +179,16 @@
                             </span>
                         </div>
                         <div class="-mt-10">
-                            <h1 class="text-xl font-bold pb-2 pr-8">{{item.Title}} </h1>
-                            <p class="pt-2 text-lg pb-40">{{item.Shorttext}} </p>
-                            <P class="pt-2 text-lg pb-40 hidden">{{item.Longtext}} </P>
+                            <h1 class="text-xl font-bold pb-2 pr-8">{{item.Title}}
+                            </h1>
+                            <p class="pt-2 text-lg pb-40">{{item.Shorttext}}
+                            </p>
+                            <P class="pt-2 text-lg pb-40 hidden">{{item.Longtext}}
+                            </P>
                             <div>
                                 <button
-                                    class=" contact-view-btn  text-red-500 mt-5 text-lg font-sans font-semibold">Order
+                                    class=" contact-view-btn text-red-500 mt-5
+                                    text-lg font-sans font-semibold">Order
                                     Now</button>
                             </div>
                         </div>
@@ -301,14 +307,15 @@
                     you can use when <br> ordering our services.</p>
             </div>
             <div class="grid grid-cols-3 pt-20">
-                <div class="LatestNewsCards ml-5 mr-2 bg-white
+                <div *ngFor="let items of Ourblog" class="LatestNewsCards ml-5
+                    mr-2 bg-white
                     rounded-md shadow-2xl"
                     style="height: 678px; width: 470px;">
                     <div class="bg-red-500 h-2 rounded-t-md"></div>
                     <div class=" relative rounded-md">
                         <a href=""><img style="width: 470px; height:
                                 370px;"
-                                src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-411-1024x551.jpg"
+                                src={{items.Img}}
                                 alt=""></a>
                         <a class="hidden" href="">
                             <div class="flex justify-center items-center
@@ -322,93 +329,17 @@
                         </a>
                     </div>
                     <div>
-                        <p class="pt-10 pb-6 ml-8 mr-10 text-gray-700">December
-                            17,2020 | Useful</p>
+                        <p class="pt-10 pb-6 ml-8 mr-10 text-gray-700">{{items.Date}}</p>
                         <h1 class="text-2xl font-sans font-bold ml-8
-                            mr-20"><a href="">We are opening an office
-                                in
-                                Australia</a></h1>
+                            mr-20"><a href="">{{items.Heading}}</a></h1>
                         <p class="pt-4 font-sans ml-8 mr-20
-                            text-gray-700">Digital media, which includes
-                            Internet,
-                            social networking and social media</p>
+                            text-gray-700">{{items.Note}}</p>
                         <button class=" contact-view-btn my-7 ml-8 mr-20
                             text-base font-sans font-medium"
                             style="color: #FF4949;">Read More</button>
                     </div>
                 </div>
-                <div class="LatestNewsCards ml-3 mr-3 bg-white
-                    rounded-md shadow-2xl"
-                    style="height: 678px; width: 470px;">
-                    <div class="bg-red-500 h-2 rounded-t-md"></div>
-                    <div class=" relative rounded-md">
-                        <a href=""><img style="width: 470px; height:
-                                370px;"
-                                src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-401-1024x551.jpg"
-                                alt=""></a>
-                        <a class="hidden" href="">
-                            <div class="flex justify-center items-center
-                                absolute top-0 left-0"
-                                style="width: 470px; height: 370px;
-                                background-color:#00000050;">
-                                <div><img
-                                        src="https://demo6.clientica.org/wp-content/uploads/2021/04/Btn-Plus-1.svg"
-                                        alt=""></div>
-                            </div>
-                        </a>
 
-                    </div>
-                    <div>
-                        <p class="pt-10 pb-6 ml-8 mr-10 text-gray-700">December
-                            17,2020 | Discounts</p>
-                        <h1 class="text-2xl font-sans font-bold ml-8
-                            mr-20"><a href="">How to negotiate with your
-                                clients?</a></h1>
-                        <p class="pt-4 font-sans ml-8 mr-20
-                            text-gray-700">Mass communication has led to
-                            modern
-                            marketing strategies to continue</p>
-                        <button class=" contact-view-btn my-7 ml-8 mr-20
-                            text-base font-sans font-medium"
-                            style="color: #FF4949;">Read More</button>
-                    </div>
-                </div>
-                <div class="LatestNewsCards ml-2 mr-5 bg-white
-                    rounded-md shadow-2xl"
-                    style="height: 678px; width: 470px;">
-                    <div class="bg-red-500 h-2 rounded-t-md"></div>
-                    <div class=" relative rounded-md">
-                        <a href=""><img style="width: 470px; height:
-                                370px;"
-                                src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-391-1024x551.jpg"
-                                alt=""></a>
-                        <a class="hidden" href="">
-                            <div class="flex justify-center items-center
-                                absolute top-0 left-0"
-                                style="width: 470px; height: 370px;
-                                background-color:#00000050;">
-                                <div><img
-                                        src="https://demo6.clientica.org/wp-content/uploads/2021/04/Btn-Plus-1.svg"
-                                        alt=""></div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div>
-                        <p class="pt-10 pb-6 ml-8 mr-10 text-gray-700">December
-                            17,2020 | Services</p>
-                        <h1 class="text-2xl font-sans font-bold ml-8
-                            mr-20"><a href="">Achieving high business
-                                performance</a></h1>
-                        <p class="pt-4 font-sans ml-8 mr-20
-                            text-gray-700">Mass communication has led to
-                            modern
-                            marketing strategies to continue</p>
-                        <button class=" contact-view-btn my-7 ml-8 mr-20
-                            text-base font-sans font-medium"
-                            style="color: #FF4949;">Read More</button>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

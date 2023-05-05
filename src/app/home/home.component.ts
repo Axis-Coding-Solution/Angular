@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-
 interface WorkPlanning {
   Title: string;
   Subtitle: string;
@@ -16,6 +15,12 @@ interface PerformanceCard{
   Title: string;
   Operand: string;
   Subtitle: string;
+}
+interface Ourblog{
+  Date: string;
+  Heading:string;
+  Note:string;
+  Img:string;
 }
 @Component({
   selector: 'app-home',
@@ -41,6 +46,10 @@ export class HomeComponent {
     {Title:'50', Operand:'%', Subtitle:'Discount on our services is provided to VIP clients'},
     {Title:'24', Operand:'/7', Subtitle:'In this mode our specialists answer your questions'}
   ]
-  title = '2nd-Project';
+  Ourblog:Ourblog[]=[
+    {Date:'December 17,2020 | Useful',Heading:'We are opening an office in Australia',Note:'Digital media, which includes Internet, social networking and social media',Img:'https://demo6.clientica.org/wp-content/uploads/2020/12/Image-411-1024x551.jpg',},
+    {Date:'December 17,2020 | Useful',Heading:'How to negotiate with your clients?',Note:'Mass communication has led to modern marketing strategies to continue',Img:'https://demo6.clientica.org/wp-content/uploads/2020/12/Image-401-1024x551.jpg',},
+    {Date:'December 17,2020 | Useful',Heading:'Achieving high business performance',Note:'Mass communication has led to modern marketing strategies to continue',Img:'https://demo6.clientica.org/wp-content/uploads/2020/12/Image-391-1024x551.jpg',},
+  ]
 }
   
