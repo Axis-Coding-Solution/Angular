@@ -59,3 +59,12 @@
 .Arrow {
     fill: black !important;
 }
+
+@media screen and (max-width:768px){
+    .Best-team-section{
+        margin-top: 38rem !important;
+    }
+}
+.Best-team-section{
+    margin-top: 10rem;
+}
