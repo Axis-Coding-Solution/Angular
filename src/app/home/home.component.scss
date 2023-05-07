@@ -263,6 +263,17 @@ mat-option {
         width: 370px;
     }
 }
+.LatestNewsCardsOverlay {
+    height: 370px;
+   width: 444.36px;
+}
+
+@media screen and (max-width:678px) {
+
+    .LatestNewsCardsOverlay {
+        width: 370px;
+    }
+}
 PlayButton:hover span:first-child{
     fill: #FF4949 !important;
     
