@@ -40,19 +40,13 @@ mat-icon {
 }
 
 .image-overlay {
-    position: relative;
+    background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/04/Group-1212.png);
 }
 
-.image-overlay::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(8, 15, 40, 0.516);
-}
 
 .image-section {
-    position: relative;
+    // position: relative;
+    background-image:url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-441.jpg) ;
 }
 
 .image-section img {
@@ -195,9 +189,17 @@ mat-option {
 .ConsultingServices-1:hover p {
     padding-bottom: 80px;
 }
+
+@media screen and (max-width: 640px) {
+    .ConsultingServices-1:hover p {
+        padding-bottom: 20px;
+    }
+}
+
 .ConsultingServices-1:hover p:first-of-type {
     display: none;
 }
+
 .ConsultingServices-1:hover p:last-of-type {
     display: block;
 }
@@ -209,7 +211,7 @@ mat-option {
     background-position-x: right;
 }
 
-.team-div{
+.team-div {
     border-radius: 20px;
 }
 
@@ -247,4 +249,20 @@ mat-option {
 
 .LatestNewsCards:hover a:last-of-type {
     display: block;
+}
+
+.LatestNewsCards {
+    height: 678px;
+    width: 470px;
+}
+
+@media screen and (max-width:678px) {
+
+    .LatestNewsCards {
+        width: 393px;
+    }
+}
+PlayButton:hover span:first-child{
+    fill: #FF4949 !important;
+    
 }
