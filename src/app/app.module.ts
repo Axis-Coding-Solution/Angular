@@ -16,6 +16,7 @@ import { WorkPlanningCardComponent } from './components/cards/work-planning-card
 import { ConsultingServicesCardsComponent } from './components/cards/consulting-services-cards/consulting-services-cards.component';
 import { BestTeamCardsComponent } from './components/cards/best-team-cards/best-team-cards.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { SendYourRequestComponent } from './components/cards/send-your-request/send-your-request.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     WorkPlanningCardComponent,
     ConsultingServicesCardsComponent,
     BestTeamCardsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    SendYourRequestComponent
   ],
   imports: [
     BrowserModule,
