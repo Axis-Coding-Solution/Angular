@@ -16,6 +16,9 @@ import { WorkPlanningCardComponent } from './components/cards/work-planning-card
 import { ConsultingServicesCardsComponent } from './components/cards/consulting-services-cards/consulting-services-cards.component';
 import { BestTeamCardsComponent } from './components/cards/best-team-cards/best-team-cards.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { SendYourRequestComponent } from './components/cards/send-your-request/send-your-request.component';
+import { ServicesComponent } from './services/services.component';
+import { ErrorComponent } from './error/error.component';
 import { SingleServiceComponent } from './single-service/single-service.component'; 
 import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-slider/testimonials-feedback-slider.component';
 
