@@ -30,3 +30,43 @@
 .fa-brands {
     color: aliceblue;
 }
+
+.card-rounded {
+    border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 800px) {
+    .card-rounded {
+        border-radius: 10px;
+    }
+}
+
+.card-rounded-1 {
+    border-radius: 0px 10px 10px 0px;
+}
+
+@media (max-width: 800px) {
+    .card-rounded-1 {
+        border-radius: 10px;
+    }
+}
+
+
+.footer-card-info {
+    width: -webkit-fill-available;
+}
+
+
+@media (min-width: 1000px) {
+    .footer-card-info {
+        margin: 0px 20px !important;
+        width: -webkit-fill-available;
+    }
+}
+
+@media (min-width: 1300px) {
+    .footer-card-info {
+        margin: 0px 100px !important;
+        width: -webkit-fill-available;
+    }
+}
