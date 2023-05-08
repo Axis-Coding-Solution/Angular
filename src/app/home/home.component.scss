@@ -47,6 +47,8 @@ mat-icon {
 .image-section {
     // position: relative;
     background-image:url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-441.jpg) ;
+    width: 100%;
+    height: 146%;
 }
 
 .image-section img {
@@ -80,9 +82,9 @@ mat-option {
     color: white;
 }
 
-.GetAQuoteButton {
-    display: flex;
-}
+// .GetAQuoteButton {
+//     display: flex;
+// }
 
 .GetAQuoteButton:hover span:first-child {
     order: 2;
@@ -252,16 +254,16 @@ mat-option {
     display: block;
 }
 
-.LatestNewsCards {
-    height: 678px;
-    max-width: 453.51px;
-}
+// .LatestNewsCards {
+//     height: 678px;
+//     max-width: 453.51px;
+// }
 
 @media screen and (max-width:678px) {
 
-    .LatestNewsCards {
-        width: 370px;
-    }
+    // .LatestNewsCards {
+    //     width: 370px;
+    // }
 }
 .LatestNewsCardsOverlay {
     height: 370px;
@@ -277,4 +279,8 @@ mat-option {
 PlayButton:hover span:first-child{
     fill: #FF4949 !important;
     
+}
+
+.heading{
+    font-size: 38px;
 }
