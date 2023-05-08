@@ -29,8 +29,9 @@
     </section>
 </header>
 <!-- --------------1st part----------------- -->
-<section class="container mx-auto flex justify-center items-center h-screen">
-    <div class="contact-div grid grid-cols-2 gap-28">
+<section class="">
+    <div class=" grid lg:grid-cols-2 grid-cols-1 gap-28 md:mt-20
+        mt-14 lg:mx-16">
         <div class="info-div flex flex-col justify-between gap-5">
             <div class="flex flex-col gap-5">
                 <h5 class="font-bold">[ OUR STAFF ]</h5>
@@ -39,20 +40,22 @@
                     structures
                     have already used our services.</p>
             </div>
-            <div class="flex gap-5">
+            <div class="flex gap-5 md:flex-row flex-col lg:mx-0 md:mx-7 mx-0 ">
                 <img class="w-24 rounded-full" src="
                     https://demo6.clientica.org/wp-content/uploads/2020/12/Image-59.jpg"
                     alt="pic">
-                <div class="flex flex-col">
-                    <h1>
+                <div class="flex flex-col lg:px-0 md:px-10 px-0">
+                    <h1 class="font-semibold">
                         Christopher Jonathan Hammer</h1>
-                    <h1>Business consultant</h1>
-                    <div class="flex justify-between">
-                        <div class="pr-7">
+                    <h1 class="lg:mt-0 md:mt-5 mt-0" style="color: #808B97;">Business
+                        consultant</h1>
+                    <div class="flex w-96 lg:mt-0 md:mt-5 mt-0 md:flex-row
+                        flex-col md:mb-0 mb-16 ">
+                        <div class="pr-5">
                             <i class="fa-solid fa-phone text-sm pr-2"
                                 style="color:
                                 #ff4949;"></i>
-                            <a href="#">+1 234 567 8912</a>
+                            <span><a href="#">+1 234 567 8912</a></span>
                         </div>
                         <div>
                             <i class="fa-solid fa-envelope text-sm pr-2"
@@ -64,16 +67,18 @@
                 </div>
             </div>
             <hr>
-            <div class="flex gap-5">
+            <div class="flex gap-5 md:flex-row flex-col lg:mx-0 md:mx-7 mx-0 ">
                 <img class="w-24 rounded-full" src="
                     https://demo6.clientica.org/wp-content/uploads/2020/12/Image-60.jpg"
                     alt="pic">
-                <div class="flex flex-col">
-                    <h1>
+                <div class="flex flex-col lg:px-0 md:px-10 px-0">
+                    <h1 class="font-semibold">
                         Angelina Marie Knightley</h1>
-                    <h1>Sales manager</h1>
-                    <div class="flex justify-between">
-                        <div class="pr-7">
+                    <h1 class="lg:mt-0 md:mt-5 mt-0" style="color: #808B97;">Sales
+                        manager</h1>
+                    <div class="flex w-96 lg:mt-0 md:mt-5 mt-0 md:flex-row
+                        flex-col md:mb-0 mb-16">
+                        <div class="pr-5">
                             <i class="fa-solid fa-phone text-sm pr-2"
                                 style="color:
                                 #ff4949;"></i>
@@ -89,9 +94,15 @@
                 </div>
             </div>
         </div>
-        <div class="from-div relative">
-            <!-- grid justify-center content-center -->
-            <div class="mx-20 py-16">
+        <!-- -------------------left side-------------------- -->
+        <div class="from-div relative lg:mx-0 mx-5 "
+            style="background-image:
+            url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-position-y: bottom;">
+
+            <div class="md:mx-20 mx-2 py-12">
                 <div class="text-3xl text-white pb-7">
                     <span><b>Send your request</b></span>
                 </div>
@@ -109,25 +120,24 @@
                         rows="4"
                         placeholder="Enter your message"></textarea>
                 </div>
-                <div class="mt-10">
-                    <button class="GetAQuoteButton mt-4 px-14 py-4
+                <div class=" md:mt-10 mt-5">
+                    <button class="GetAQuoteButton md:mt-4 mt-2 md:px-14 px-4
+                        md:py-4 py-3
                         text-white
                         font-semibold hover:text-black border border-none
                         hover:border-transparent rounded"
                         style="background-color: #FF4949 ">
-                        <span class="px-3">Send Message</span>
+                        <span class="sm:px-0 px-3 ">Send Message</span>
                         <span><i class="fa-solid fa-arrow-right-long"></i></span>
                     </button>
                 </div>
-                <img class="absolute bottom-0 right-0 " src="
-                    https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.svg"
-                    alt="">
+
             </div>
         </div>
     </div>
 </section>
 <!-- ------------------2nd part------------------- -->
-<section>
+<section class="mt-20">
     <div class="mx-auto text-center">
         <div class="font-bold">
             <h3>[ OFFICES ]</h3>
@@ -136,7 +146,8 @@
             <p> Come To Our Office </p>
         </div>
     </div>
-    <div class="container mx-auto flex gap-5 justify-center items-center py-20">
+    <div class="container mx-auto flex gap-5 justify-center items-center py-20
+        md:flex-row flex-col">
         <div class="card1 team-div max-w-md text-center
             items-center
             p-10 rounded-lg hover:shadow-2xl border-r-2">
