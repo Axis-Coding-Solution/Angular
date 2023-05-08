@@ -4,27 +4,47 @@
         <img class="md:mt-20 mt-0 float-left"
             src="https://demo6.clientica.org/wp-content/uploads/2020/12/Logo-ABC-white.svg"
             alt="logo">
-        <ul class="inline-flex ml-5 list-none text-white">
-            <mat-toolbar
-                class="mt-20 capitalize text-lg font-sans font-semibold
-                tracking-wider items-center cursor-pointer from-white
-                hover:to-orange-700">
-                <Span routerLink="" class="mr-16 hover:text-red-600">HOME</Span>
-                <Span routerLink="" class="mr-16 hover:text-red-600">SERVICES</Span>
-                <Span routerLink="" class="mr-16 hover:text-red-600">ABOUT</Span>
-                <Span routerLink="" class="mr-16 hover:text-red-600"
-                    text>PORTFOLIO</Span>
-                <Span routerLink="" class="mr-16 hover:text-red-600"
-                    text>TESTIMONIALS</Span>
-                <Span routerLink="" class="mr-16 hover:text-red-600">CONTACT</Span>
-                <Span routerLink="" class="mr-16 hover:text-red-600">404</Span>
-                <Span routerLink="/contact" class="mr-16 hover:text-red-600">CONTACT</Span>
-                <Span routerLink="/error" class="mr-16 hover:text-red-600">404</Span>
-                <Span routerLink="/single-service" class="mr-16
-                    hover:text-red-600">Single Service</Span>
-
-                >>>>>>>>> Temporary merge branch 2
-            </mat-toolbar>
-        </ul>
+        <span class="inline-block md:hidden">
+            <button type="button" class="navbar-toggle"
+                (click)="toggleNavbar()">
+                <span class="navbar-toggle-icon"></span>
+                <span class="navbar-toggle-icon"></span>
+                <span class="navbar-toggle-icon"></span>
+            </button>
+        </span>
+        <div class="md:inline-flex hidden">
+            <ul class="inline-flex ml-5 list-none text-white">
+                <mat-toolbar class="mt-20 capitalize text-lg font-sans
+                    font-semibold
+                    tracking-wider items-center cursor-pointer from-white
+                    hover:to-orange-700">
+                    <Span routerLink="" class="mr-16 hover:text-red-600">HOME</Span>
+                    <Span routerLink="" class="mr-16 hover:text-red-600">SERVICES</Span>
+                    <Span routerLink="" class="mr-16 hover:text-red-600">ABOUT</Span>
+                    <Span routerLink="" class="mr-16 hover:text-red-600">PORTFOLIO</Span>
+                    <Span routerLink="" class="mr-16 hover:text-red-600">TESTIMONIALS</Span>
+                    <Span routerLink="" class="mr-16 hover:text-red-600">CONTACT</Span>
+                    <Span routerLink="" class="mr-16 hover:text-red-600">404</Span>
+                </mat-toolbar>
+            </ul>
+        </div>
+    </div>
+    <div class="fixed z-90 flex justify-center items-center bg-gray-900
+        opacity-0 duration-700"
+        [ngClass]="{'w-0 h-0 opacity-0': !isNavbarOpen, 'w-screen h-screen
+        opacity-95':isNavbarOpen}">
+        <!-- <a href="javascript:void(0)"
+                class="fixed top-6 right-8 text-white hover:text-amber-500 text-7xl font-semibold duration-300"
+                (click)="toggleNavbar()">&times;</a> -->
+        <div class="flex flex-col text-white text-center text-xl font-light
+            space-y-3">
+            <a class="hover:text-amber-500 duration-300" href="#">Home</a>
+            <a class="hover:text-amber-500 duration-300" href="#">Services</a>
+            <a class="hover:text-amber-500 duration-300" href="#">About</a>
+            <a class="hover:text-amber-500 duration-300" href="#">Portfolio</a>
+            <a class="hover:text-amber-500 duration-300" href="#">Testimonials</a>
+            <a class="hover:text-amber-500 duration-300" href="#">Contact</a>
+            <a class="hover:text-amber-500 duration-300" href="#">404</a>
+        </div>
     </div>
 </nav>
