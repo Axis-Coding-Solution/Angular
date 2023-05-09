@@ -19,8 +19,9 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { SendYourRequestComponent } from './components/cards/send-your-request/send-your-request.component';
 import { ServicesComponent } from './services/services.component';
 import { ErrorComponent } from './error/error.component';
-import { SingleServiceComponent } from './single-service/single-service.component'; 
+import { SingleServiceComponent } from './single-service/single-service.component';
 import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-slider/testimonials-feedback-slider.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-sli
     BestTeamCardsComponent,
     AboutUsComponent,
     SingleServiceComponent,
-    TestimonialsFeedbackSliderComponent
+    TestimonialsFeedbackSliderComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
