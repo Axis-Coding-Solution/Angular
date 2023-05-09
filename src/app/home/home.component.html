@@ -209,7 +209,6 @@
         src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png"
         alt="">
 </section>
-
 <!-- William Blanchard CEO -->
 <!-- About-Us Section -->
 <section>
@@ -219,16 +218,19 @@
             background-image:
             url(https://demo6.clientica.org/wp-content/uploads/2021/01/Decors-5.png);
             background-repeat: no-repeat; left: 5%;"
-            class="absolute grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1
+            class="absolute grid lg:grid-cols-4 md:grid-cols-2
+            grid-cols-1
             mx-auto lg:w-5/6 w-11/12
             h-auto rounded-lg px-6 py-2 shadow-xl -mt-24 ">
             <div *ngFor="let item of PerformanceCard" class="p-8">
                 <div class="flex pb-5 justify-center">
-                    <h1 class="font-extrabold text-8xl font-serif mr-2">{{item.Title}}</h1>
+                    <h1 class="font-extrabold text-8xl font-serif
+                        mr-2">{{item.Title}}</h1>
                     <h2 class="text-red-500 font-serif text-2xl
                         font-bold">{{item.Operand}}</h2>
                 </div>
-                <p class="text-base text-center md:text-start font-sans
+                <p class="text-base text-center md:text-start
+                    font-sans
                     text-gray-700">{{item.Subtitle}}</p>
             </div>
         </div>
@@ -260,7 +262,8 @@
 <section>
     <div class=" relative grid lg:grid-cols-2 grid-cols-1 gap-28
         overflow-hidden">
-        <img class="absolute lg:block hidden top-36 left-2/4 " height="200px"
+        <img class="absolute lg:block hidden top-36 left-2/4 "
+            height="200px"
             width="200px"
             style="rotate: 90deg; fill: grey;"
             src="https://dbdzm869oupei.cloudfront.net/img/stickers/generated/35480-1-d4d4d4.png"
@@ -268,7 +271,8 @@
         <img class="absolute top-32 left-36"
             src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-6.png"
             alt="">
-        <div class="form-div lg:w-4/5 w-full relative lg:m-48 mt-16">
+        <div class="form-div lg:w-4/5 w-full relative lg:m-48
+            mt-16">
             <div class="relative lg:mx-20 mx-5 py-16">
                 <div class="text-3xl text-white pb-7">
                     <span><b>Send your request</b></span>
@@ -282,7 +286,8 @@
                         placeholder="Phone number*">
                 </div>
                 <div class="my-3">
-                    <textarea class="p-4 w-full rounded-md" name="text" id=""
+                    <textarea class="p-4 w-full rounded-md"
+                        name="text" id=""
                         cols="30" rows="4"
                         placeholder="Enter your message"></textarea>
                 </div>
@@ -294,7 +299,8 @@
                         hover:border-transparent rounded"
                         style="background-color: #FF4949 ">
                         <span class="px-3">Send Message</span>
-                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <span><i class="fa-solid
+                                fa-arrow-right-long"></i></span>
                     </button>
                 </div>
                 <img class="absolute bottom-0 right-0 " src="
@@ -302,7 +308,8 @@
                     alt="">
             </div>
         </div>
-        <div class="lg:mt-20 mt-0 lg:absolute static top-0 lg:-right-56
+        <div class="lg:mt-20 mt-0 lg:absolute static top-0
+            lg:-right-56
             -right-0">
             <img
                 src="https://demo6.clientica.org/wp-content/uploads/2021/04/Mockup-home1-2.png"
@@ -319,18 +326,24 @@
             background-repeat: no-repeat;">
             <div>
                 <h1 class="text-center">[OUR BLOG]</h1>
-                <h1 class="text-center md:pt-6 pt-3 md:text-5xl text-2xl
+                <h1 class="text-center md:pt-6 pt-3 md:text-5xl
+                    text-2xl
                     font-sans
                     md:font-bold font-semibold">Latest News</h1>
-                <p class="text-center text-gray-700 px-20 md:pt-10 pt-5">Subscribe
+                <p class="text-center text-gray-700 px-20 md:pt-10
+                    pt-5">Subscribe
                     to our newsletter and get unique bonuses that
-                    you can use when <br class="md:block hidden"> ordering our
+                    you can use when <br class="md:block hidden">
+                    ordering our
                     services.</p>
             </div>
-            <div class="grid grid-flow-row md:grid-cols-3 grid-cols-1 pt-20 ">
-                <div *ngFor="let items of Ourblog" class="LatestNewsCards
+            <div class="grid grid-flow-row md:grid-cols-3
+                grid-cols-1 pt-20 ">
+                <div *ngFor="let items of Ourblog"
+                    class="LatestNewsCards
                     md:ml-2
-                    md:mr-2 mx-2 bg-white rounded-md shadow-2xl md:mb-0 mb-10">
+                    md:mr-2 mx-2 bg-white rounded-md shadow-2xl
+                    md:mb-0 mb-10">
                     <div class="bg-red-500 h-2 rounded-t-md"></div>
                     <div class=" relative rounded-md">
                         <a href="">
@@ -349,13 +362,16 @@
                         </a>
                     </div>
                     <div>
-                        <p class="pt-10 pb-6 ml-8 mr-10 text-gray-700">{{items.Date}}</p>
+                        <p class="pt-10 pb-6 ml-8 mr-10
+                            text-gray-700">{{items.Date}}</p>
                         <h1 class="text-2xl font-sans font-bold ml-8
                             mr-20"><a href="">{{items.Heading}}</a></h1>
                         <p class="pt-4 font-sans ml-8 mr-20
                             text-gray-700">{{items.Note}}</p>
-                        <button class=" contact-view-btn my-7 ml-8 mr-20
-                            text-base font-sans font-medium" style="color:
+                        <button class=" contact-view-btn my-7 ml-8
+                            mr-20
+                            text-base font-sans font-medium"
+                            style="color:
                             #FF4949;">Read More</button>
                     </div>
                 </div>
@@ -365,10 +381,13 @@
     </div>
     <!-- <img class="mt-20" src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-5.svg" alt=""> -->
     <div class="pb-36 md:mt-24 m-0 ">
-        <button class="md:hidden block Service mt-4 px-14 py-5 text-black
+        <button class="md:hidden block Service mt-4 px-14 py-5
+            text-black
             font-semibold
-            mx-auto hover:text-white hover:border-transparent rounded"
-            style="background-color: white; border: 1px solid black; ">
+            mx-auto hover:text-white hover:border-transparent
+            rounded"
+            style="background-color: white; border: 1px solid black;
+            ">
             <span class="px-3">All News</span>
             <span><i class="fa-solid fa-arrow-right-long"></i></span>
         </button>

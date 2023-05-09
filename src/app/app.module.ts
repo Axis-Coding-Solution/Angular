@@ -22,6 +22,7 @@ import { ErrorComponent } from './error/error.component';
 import { SingleServiceComponent } from './single-service/single-service.component';
 import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-slider/testimonials-feedback-slider.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +33,16 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     FooterComponent,
     CarouselComponent,
     WorkPlanningCardComponent,
-    ConsultingServicesCardsComponent,
     BestTeamCardsComponent,
     AboutUsComponent,
     SingleServiceComponent,
     TestimonialsFeedbackSliderComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ServicesComponent,
+    ConsultingServicesCardsComponent,
+    SendYourRequestComponent,
+    ErrorComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,9 +53,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     HttpClientModule,
     SwiperModule
   ],
+
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
 
