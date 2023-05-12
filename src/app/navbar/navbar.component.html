@@ -1,10 +1,10 @@
 <nav class="navbar">
     <div class="w-full flex mt-4 md:m-0 mx-5 md:mx-0 items-center
         justify-between">
-        <img class="md:mt-20 mt-0 float-left"
+        <img class="md:mt-20 mt-0 float-left ml-4"
             src="https://demo6.clientica.org/wp-content/uploads/2020/12/Logo-ABC-white.svg"
             alt="logo">
-        <span class="inline-block lg:hidden">
+        <span class="inline-block xl:hidden md:mt-20 mt-0 mr-4 float-right">
             <button type="button" class="navbar-toggle"
                 (click)="toggleNavbar()">
                 <span class="navbar-toggle-icon"></span>
@@ -12,16 +12,16 @@
                 <span class="navbar-toggle-icon"></span>
             </button>
         </span>
-        <div class="lg:inline-flex hidden">
-            <ul class="inline-flex ml-5 list-none text-white">
+        <div class="xl:inline-flex hidden float-right">
+            <ul class="inline-flex list-none text-white">
                 <div class="mt-20 capitalize text-lg font-sans font-semibold
                     tracking-wider items-center cursor-pointer from-white
                     hover:to-orange-700">
                     <Span routerLink="" class="mr-16 hover:text-red-600">HOME</Span>
-                    <!-- <Span routerLink="services" class="mr-16
+                    <Span routerLink="services" class="mr-16
                         hover:text-red-600">SERVICES</Span>
                     <Span routerLink="single-service" class="mr-16
-                        hover:text-red-600">SINGLE-SERVICE</Span> -->
+                        hover:text-red-600">SINGLE-SERVICE</Span>
                     <Span routerLink="about" class="mr-16 hover:text-red-600">ABOUT</Span>
                     <Span routerLink="portfolio" class="mr-16
                         hover:text-red-600">PORTFOLIO</Span>
@@ -35,8 +35,8 @@
     </div>
     <div class="fixed z-90 flex justify-center items-center bg-gray-900
         opacity-0 duration-700"
-        [ngClass]="{'w-0 h-0 opacity-0': !isNavbarOpen, 'w-screen h-screen
-        opacity-95':isNavbarOpen}">
+        [ngClass]="{'w-0 h-0 opacity-0 hidden': !isNavbarOpen, 'w-screen
+        h-screen opacity-95':isNavbarOpen}">
         <!-- <a href="javascript:void(0)"
                 class="fixed top-6 right-8 text-white hover:text-amber-500 text-7xl font-semibold duration-300"
                 (click)="toggleNavbar()">&times;</a> -->

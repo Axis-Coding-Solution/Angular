@@ -23,6 +23,7 @@ import { SingleServiceComponent } from './single-service/single-service.componen
 import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-slider/testimonials-feedback-slider.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     ConsultingServicesCardsComponent,
     SendYourRequestComponent,
     ErrorComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

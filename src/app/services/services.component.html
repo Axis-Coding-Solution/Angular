@@ -28,6 +28,93 @@
         </div>
     </section>
 </header>
-<section class="-mt-12" style="background-color: #F5F6F7;">
-    <!-- <app-consulting-services-cards></app-consulting-services-cards> -->
+<section class="-mt-12 py-24"
+    style="background-color: #F5F6F7;
+    background-image:url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png);
+    background-repeat: no-repeat; background-size: contain;">
+    <div class="flex-col">
+        <div class="md:absolute static grid xl:grid-cols-3 md:grid-cols-2
+            grid-cols-1 gap-6 p-3">
+            <div>
+                <div class=" md:pb-28 pb-10">
+                    <h1 class="font-medium">[SERVICES]</h1>
+                    <h1 class="py-8 md:text-5xl text-3xl font-bold">Consulting
+                        Services</h1>
+                    <p class="text-lg pt-2 text-gray-500">In our arsenal
+                        – a full range of services for your
+                        business, professional experience and our own
+                        experience.
+                    </p>
+                    <button class="Service mt-4 px-14 py-5 text-black
+                        font-semibold hover:text-white
+                        hover:border-transparent rounded"
+                        style="background-color: white; border: 1px
+                        solid black; ">
+                        <span class="px-3"> A Services</span>
+                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </button>
+                </div>
+            </div>
+
+            <div *ngFor="let item of ConsultingServicesCards" class="
+                md:mt-2 md:mb-2 mt-4 mb-4">
+                <div class="ConsultingServices-1 hover:bg-red-500 rounded-2xl
+                    shadow-2xl bg-white">
+                    <div class="bg-red-500 rounded-tl-2xl rounded-tr-2xl h-2"></div>
+                    <div class="pr-12 pl-12 pt-8 pb-16">
+                        <div>
+                            <span><img
+                                    src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-2.svg"
+                                    alt=""></span>
+                            <span>
+
+                                <svg class=" w-16 h-16 -mt-16 mb-20
+                                    ml-3">
+                                    <use [attr.xlink:href]="item.svgId"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="-mt-10">
+                            <h1 class="text-xl font-bold pb-2 ">{{item.Title}}
+                            </h1>
+                            <p class="pt-2 md:text-lg text-base md:pb-40 pb-20">{{item.Shorttext}}
+                            </p>
+                            <P class="pt-2 md:text-lg text-base md:pb-40 pb-20
+                                hidden">{{item.Longtext}}
+                            </P>
+                            <div>
+                                <button class=" contact-view-btn text-red-500
+                                    mt-5
+                                    text-lg font-sans font-semibold">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="-m-12 md:block hidden"
+        src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png"
+        alt="">
+</section>
+<section style="background-color: #F5F6F7;">
+    <div class="flex lg:flex-row flex-col pt-14">
+        <div class="-ml-60">
+            <img class="lg:rounded-r-xl rounded-none"
+                src="https://demo6.clientica.org/wp-content/uploads/2021/01/Image-681.jpg"
+                height="auto" alt="">
+        </div>
+        <div class=" text-white lg:my-28 my-0 lg:-ml-56 -ml-0 w-full
+            lg:rounded-l-xl rounded-none"
+            style="background-color: #09111A;">
+            <div class="lg:pt-36 pt-20 lg:pl-56 pl-5 text-white">
+                <div>
+                    <h1 class="font-sans font-semibold text-base">[REVIEWS]</h1>
+                    <h1 class="font-sans font-bold text-5xl pt-5">Testimonials</h1>
+                    <app-carousel></app-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
