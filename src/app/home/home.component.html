@@ -1,316 +1,321 @@
 <main class="container-fluid">
-<section class="hero-section relative image-section  w-full h-full bg-cover bg-no-repeat bg-center py-64">
-  <div class="absolute image-overlay w-full h-full bg-cover bg-no-repeat opacity-100 top-0 left-0"
-    style="height: 100%; width: 100%;">
-  </div>
-  <div class="relative text-white p-3 xl:mx-20 mx-0">[
-    <span class="text-sm font-medium pb-4 md:pb-0 leading-relaxed text-white">IN
-      CONSULTING</span>]
-    <h1 class="md:text-7xl text-4xl font-bold leading-tight md:pr-20 pr-2 pt-4 pb-3 text-white">Business
-      Services From Experts</h1>
-    <div>
-      <p class="text-base font-normal leading-normal text-white mt-5
+  <!-- Hero Section -->
+  <section class="hero-section relative image-section  w-full h-full bg-cover bg-no-repeat bg-center py-64">
+    <div class="absolute image-overlay w-full h-full bg-cover bg-center-y bg-no-repeat opacity-100 top-0 left-0"
+      style="height: 100%; width: 100%;">
+    </div>
+    <div class="relative text-white p-3 xl:mx-20 mx-0">[
+      <span class="text-sm font-medium pb-4 md:pb-0 leading-relaxed text-white">IN
+        CONSULTING</span>]
+      <h1 class="md:text-7xl text-4xl font-bold leading-tight md:pr-20 pr-2 pt-4 pb-3 text-white">Business
+        Services From Experts</h1>
+      <div>
+        <p class="text-base font-normal leading-normal text-white mt-5
             whitespace-normal">Help in building the
-        effective system of the business. Consulting,
-        audit, recruitment, Advisory support and support.</p>
+          effective system of the business. Consulting,
+          audit, recruitment, Advisory support and support.</p>
 
-      <div class="flex items-start flex-col sm:inline-flex sm:flex-row mt-10">
-        <button class="GetAQuoteButton  w-52 p-4 text-white font-semibold
+        <div class="flex items-start flex-col sm:inline-flex sm:flex-row mt-10">
+          <button class="GetAQuoteButton  w-52 p-4 text-white font-semibold
             hover:text-black border border-none hover:border-transparent
             rounded" style="background-color: #FF4949 ">
-          <span class="px-3">Get
-            A Quote
-          </span>
-          <span><i class="fa-solid fa-arrow-right-long"></i></span>
-        </button>
-        <a href="#"
-          class="PlayButton border-solid py-5 sm:mt-0 mt-8 sm:ml-8 ml-0 rounded-full flex justify-center items-center w-16 h-16 text-center hover:bg-white"
-          style="background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Bg-1.png); background-repeat: no-repeat; background-position: center center; background-size: contain;">
-          <span class="" style="fill: #FF4949;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 14 16"
-              style="user-select: auto;">
-              <path
-                d="M12.8594 7.1738L2.54688 1.08005C1.69727 0.582001 0.4375 1.08005 0.4375 2.28122V14.4687C0.4375 15.582 1.60938 16.2558 2.54688 15.6992L12.8594 9.60544C13.7676 9.0488 13.7676 7.73044 12.8594 7.1738Z"
+            <span class="px-3">Get
+              A Quote
+            </span>
+            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+          </button>
+          <a href="#"
+            class="PlayButton border-solid py-5 sm:mt-0 mt-8 sm:ml-8 ml-0 rounded-full flex justify-center items-center w-16 h-16 text-center hover:bg-white"
+            style="background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Bg-1.png); background-repeat: no-repeat; background-position: center center; background-size: contain;">
+            <span class="" style="fill: #FF4949;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 14 16"
                 style="user-select: auto;">
-              </path>
-            </svg>
-          </span>
-        </a>
+                <path
+                  d="M12.8594 7.1738L2.54688 1.08005C1.69727 0.582001 0.4375 1.08005 0.4375 2.28122V14.4687C0.4375 15.582 1.60938 16.2558 2.54688 15.6992L12.8594 9.60544C13.7676 9.0488 13.7676 7.73044 12.8594 7.1738Z"
+                  style="user-select: auto;">
+                </path>
+              </svg>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-</section>
+  </section>
 
-<section class="rounded-xl">
-  <div class="grid xl:grid-cols-3 grid-cols-1 rounded-xl xl:mx-24 absolute
+
+
+  <section class="rounded-xl">
+    <div class="grid xl:grid-cols-3 grid-cols-1 rounded-xl xl:mx-24 absolute
         -mt-24 justify-center items-center xl:w-auto w-full">
-    <div *ngFor="let item of WorkPlanning" class=" grid z-10 bg-white xl:mx-0 xl:rounded-none rounded-xl mr-3 ml-3
+      <div *ngFor="let item of WorkPlanning" class=" grid z-10 bg-white xl:mx-0 xl:rounded-none rounded-xl mr-3 ml-3
             shadow-lg">
-      <app-work-planning-card [item]="item"></app-work-planning-card>
+        <app-work-planning-card [item]="item"></app-work-planning-card>
+      </div>
     </div>
-  </div>
-</section>
-<section class="py-20">
-  <div class="grid xl:grid-cols-2 grid-cols-1 xl:mt-14 mt-96  xl:pt-14 pt-80 ">
+  </section>
+  <section class="py-20">
+    <div class="grid xl:grid-cols-2 grid-cols-1 xl:mt-14 mt-96  xl:pt-14 pt-80 ">
 
-    <div class="top-24 h-[90%]  p-3 xl:mx-20 mx-0">
-      <h1 class="font-medium">[ABOUT US]</h1>
-      <h1 class="py-8 md:text-5xl md:font-bold text-3xl sm:text-xl font-semibold">Specialist In
-        Consulting</h1>
-      <p
-        class="md:text-lg text-base md:text-left sm:text-sm text-justify md:pr-16 pr-0 pt-2 text-gray-500 md:mr-9 mr-0">
-        We solve a variety of tasks as part of developing a strategy and implementing recommendations. More than a hundred organizations of various sizes and structures have already used our services. Our company employs experienced
-        experts who use modern marketing tools.
-      </p>
-      <div class="mt-20">
-        <div class="flex justify-between mb-1 md:w-4/5 w-full">
-          <span class="text-base font-medium text-black
+      <div class="top-24 h-[90%]  p-3 xl:mx-20 mx-0">
+        <h1 class="font-medium">[ABOUT US]</h1>
+        <h1 class="py-8 md:text-5xl md:font-bold text-3xl sm:text-xl font-semibold">Specialist In
+          Consulting</h1>
+        <p
+          class="md:text-lg text-base md:text-left sm:text-sm text-justify md:pr-16 pr-0 pt-2 text-gray-500 md:mr-9 mr-0">
+          We solve a variety of tasks as part of developing a strategy and implementing recommendations. More than a
+          hundred organizations of various sizes and structures have already used our services. Our company employs
+          experienced
+          experts who use modern marketing tools.
+        </p>
+        <div class="mt-20">
+          <div class="flex justify-between mb-1 md:w-4/5 w-full">
+            <span class="text-base font-medium text-black
                             dark:text-white">Strategic audit</span>
-          <span class="text-sm font-medium text-black
+            <span class="text-sm font-medium text-black
                             dark:text-white">86%</span>
-        </div>
-        <div class="bg-gray-200 rounded-full h-1.5
+          </div>
+          <div class="bg-gray-200 rounded-full h-1.5
                         dark:bg-gray-700 md:w-4/5 w-full">
-          <div class="h-1.5 rounded-full" style="width:
+            <div class="h-1.5 rounded-full" style="width:
                             86%;
                             background-color: #FF4949;"></div>
+          </div>
         </div>
-      </div>
-      <div class="mt-4">
-        <div class="flex justify-between mb-1 md:w-4/5 w-full">
-          <span class="text-base font-medium text-black
+        <div class="mt-4">
+          <div class="flex justify-between mb-1 md:w-4/5 w-full">
+            <span class="text-base font-medium text-black
                             dark:text-white">Optimization</span>
-          <span class="text-sm font-medium text-black
+            <span class="text-sm font-medium text-black
                             dark:text-white">94%</span>
-        </div>
-        <div class="bg-gray-200 rounded-full h-1.5
+          </div>
+          <div class="bg-gray-200 rounded-full h-1.5
                         dark:bg-gray-700 md:w-4/5 w-full">
-          <div class="h-1.5 rounded-full" style="width:
+            <div class="h-1.5 rounded-full" style="width:
                             94%;
                             background-color: #FF4949;"></div>
+          </div>
         </div>
-      </div>
-      <div class="mt-4">
-        <div class="flex justify-between mb-1 md:w-4/5 w-full">
-          <span class="text-base font-medium text-black
+        <div class="mt-4">
+          <div class="flex justify-between mb-1 md:w-4/5 w-full">
+            <span class="text-base font-medium text-black
                             dark:text-white">Expertise</span>
-          <span class="text-sm font-medium text-black
+            <span class="text-sm font-medium text-black
                             dark:text-white">79%</span>
-        </div>
-        <div class="bg-gray-200 rounded-full h-1.5
+          </div>
+          <div class="bg-gray-200 rounded-full h-1.5
                         dark:bg-gray-700 md:w-4/5 w-full">
-          <div class="h-1.5 rounded-full" style="width:
+            <div class="h-1.5 rounded-full" style="width:
                             79%;
                             background-color: #FF4949;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="md:mt-36 mt-10 laptop-image-div">
+          <img class="laptop-image md:w-full" style="height: 120%; width:
+                    120%;" src="https://demo6.clientica.org/wp-content/uploads/2021/04/Mockup-home1-1.png" alt="">
         </div>
       </div>
     </div>
-
-    <div>
-      <div class="md:mt-36 mt-10 laptop-image-div">
-        <img class="laptop-image md:w-full" style="height: 120%; width:
-                    120%;" src="https://demo6.clientica.org/wp-content/uploads/2021/04/Mockup-home1-1.png" alt="">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="-mt-12 py-24"
-  style="background-color: #F5F6F7; background-image:url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png); background-repeat: no-repeat; background-size: contain;">
-  <div class="flex-col">
-    <div class="md:absolute static grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-3">
-      <div>
-        <div class=" md:pb-28 pb-10">
-          <h1 class="font-medium">[SERVICES]</h1>
-          <h1 class="py-8 md:text-5xl text-3xl font-bold">Consulting
-            Services</h1>
-          <p class="md:text-lg text-base pt-2 text-gray-500">In our arsenal
-            – a full range of services for your
-            business, professional experience and our own
-            experience.
-          </p>
-          <button class="Service mt-6 px-10 py-4 text-black
+  </section>
+  <section class="-mt-12 py-24"
+    style="background-color: #F5F6F7; background-image:url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png); background-repeat: no-repeat; background-size: contain;">
+    <div class="flex-col">
+      <div class="md:absolute static grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-3">
+        <div>
+          <div class=" md:pb-28 pb-10">
+            <h1 class="font-medium">[SERVICES]</h1>
+            <h1 class="py-8 md:text-5xl text-3xl font-bold">Consulting
+              Services</h1>
+            <p class="md:text-lg text-base pt-2 text-gray-500">In our arsenal
+              – a full range of services for your
+              business, professional experience and our own
+              experience.
+            </p>
+            <button class="Service mt-6 px-10 py-4 text-black
                         font-semibold hover:text-white
                         hover:border-transparent rounded-md" style="background-color: white; border: 1px
                         solid black; ">
-            <span class="px-3">All Services</span>
-            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-          </button>
+              <span class="px-3">All Services</span>
+              <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div *ngFor="let item of ConsultingServicesCards" class="
+        <div *ngFor="let item of ConsultingServicesCards" class="
                 md:mt-2 md:mb-2 mt-4 mb-4">
-        <div class="ConsultingServices-1 hover:bg-red-500 rounded-2xl
+          <div class="ConsultingServices-1 hover:bg-red-500 rounded-2xl
                     shadow-2xl bg-white">
-          <div class="bg-red-500 rounded-tl-2xl rounded-tr-2xl h-2"></div>
-          <div class="pr-12 pl-12 pt-8 pb-16">
-            <div>
-              <span><img src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-2.svg" alt=""></span>
-              <span>
-
-                <svg class=" w-16 h-16 -mt-16 mb-20
-                                ml-3">
-                  <use [attr.xlink:href]="item.svgId"></use>
-                            
-                </svg>
-              </span>
-            </div>
-            <div class="-mt-10">
-              <h1 class="text-xl font-bold pb-2 ">{{item.Title}}
-              </h1>
-              <p class="pt-2 md:text-lg text-base md:pb-40 pb-20">{{item.Shorttext}}
-              </p>
-              <P class="pt-2 md:text-lg text-base md:pb-40 pb-20 hidden">{{item.Longtext}}
-              </P>
+            <div class="bg-red-500 rounded-tl-2xl rounded-tr-2xl h-2"></div>
+            <div class="pr-12 pl-12 pt-8 pb-16">
               <div>
-                <button class=" contact-view-btn text-red-500 mt-5
+                <span><img src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-2.svg" alt=""></span>
+                <span>
+
+                  <svg class=" w-16 h-16 -mt-16 mb-20
+                                ml-3">
+                    <use [attr.xlink:href]="item.svgId"></use>
+                              
+                  </svg>
+                </span>
+              </div>
+              <div class="-mt-10">
+                <h1 class="text-xl font-bold pb-2 ">{{item.Title}}
+                </h1>
+                <p class="pt-2 md:text-lg text-base md:pb-40 pb-20">{{item.Shorttext}}
+                </p>
+                <P class="pt-2 md:text-lg text-base md:pb-40 pb-20 hidden">{{item.Longtext}}
+                </P>
+                <div>
+                  <button class=" contact-view-btn text-red-500 mt-5
                                     text-lg font-sans font-semibold">Order
-                  Now</button>
+                    Now</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <img class="-m-12 md:block hidden" src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png" alt="">
-</section>
+    <img class="-m-12 md:block hidden" src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png" alt="">
+  </section>
 
-<!-- William Blanchard CEO -->
-<!-- About-Us Section -->
-<section>
-  <div class="relative">
-    <app-about-us></app-about-us>
-    <div style="background-color: white;
+  <!-- William Blanchard CEO -->
+  <!-- About-Us Section -->
+  <section>
+    <div class="relative">
+      <app-about-us></app-about-us>
+      <div style="background-color: white;
             background-image:
             url(https://demo6.clientica.org/wp-content/uploads/2021/01/Decors-5.png);
             background-repeat: no-repeat;  left: 5%;" class="absolute grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 mx-auto lg:w-5/6 w-11/12
             h-auto rounded-lg p-6 shadow-xl -mt-24 ">
-      <div *ngFor="let item of PerformanceCard" class="px-4 py-8">
-        <div class="flex pb-5  justify-center">
-          <h1 class="font-extrabold lg:text-8xl text-6xl font-serif mr-2">{{item.Title}}</h1>
-          <h2 class="text-red-500 font-serif text-2xl
+        <div *ngFor="let item of PerformanceCard" class="px-4 py-8">
+          <div class="flex pb-5  justify-center">
+            <h1 class="font-extrabold lg:text-8xl text-6xl font-serif mr-2">{{item.Title}}</h1>
+            <h2 class="text-red-500 font-serif text-2xl
                         font-bold">{{item.Operand}}</h2>
-        </div>
-        <p class="text-base text-center md:text-start font-sans text-gray-700">{{item.Subtitle}}</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <app-best-team-cards></app-best-team-cards>
-</section>
-<section style="background-color: #F5F6F7;">
-  <div class="flex xl:flex-row flex-col pt-14">
-    <div class="-ml-60">
-      <img class="lg:rounded-r-xl rounded-none"
-        src="https://demo6.clientica.org/wp-content/uploads/2021/01/Image-661.jpg" height="auto" alt="">
-    </div>
-    <div class=" text-white xl:my-28 my-0 xl:-ml-56 -ml-0 w-full xl:rounded-l-xl rounded-none"
-      style="background-color: #09111A;">
-      <div class="xl:py-36 py-20 xl:pl-56 pl-5 text-white">
-        <div>
-          <h1 class="font-sans font-semibold text-base">[REVIEWS]</h1>
-          <h1 class="font-sans font-bold lg:text-5xl text-2xl pt-5">Testimonials</h1>
-          <app-carousel></app-carousel>
+          </div>
+          <p class="text-base text-center md:text-start font-sans text-gray-700">{{item.Subtitle}}</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section>
-  <div class=" relative grid xl:grid-cols-2 grid-cols-1 gap-28 overflow-hidden p-3">
-    <img class="absolute xl:block hidden top-36 left-2/4 " height="200px" width="200px"
-      style="rotate: 90deg; fill: grey;"
-      src="https://dbdzm869oupei.cloudfront.net/img/stickers/generated/35480-1-d4d4d4.png" alt="">
-    <img class="absolute top-32 left-36" src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-6.png"
-      alt="">
-    <div class="form-div xl:w-4/5 w-full relative xl:m-48 mt-16">
-      <div class="relative xl:mx-20 mx-5 py-16">
-        <div class="text-3xl text-white pb-7">
-          <span><b>Send your request</b></span>
+  </section>
+  <section>
+    <app-best-team-cards></app-best-team-cards>
+  </section>
+  <section style="background-color: #F5F6F7;">
+    <div class="flex xl:flex-row flex-col pt-14">
+      <div class="-ml-60">
+        <img class="lg:rounded-r-xl rounded-none"
+          src="https://demo6.clientica.org/wp-content/uploads/2021/01/Image-661.jpg" height="auto" alt="">
+      </div>
+      <div class=" text-white xl:my-28 my-0 xl:-ml-56 -ml-0 w-full xl:rounded-l-xl rounded-none"
+        style="background-color: #09111A;">
+        <div class="xl:py-36 py-20 xl:pl-56 pl-5 text-white">
+          <div>
+            <h1 class="font-sans font-semibold text-base">[REVIEWS]</h1>
+            <h1 class="font-sans font-bold lg:text-5xl text-2xl pt-5">Testimonials</h1>
+            <app-carousel></app-carousel>
+          </div>
         </div>
-        <div class="my-3">
-          <input class="p-4 w-full rounded-md" type="text" placeholder="Your name*">
-        </div>
-        <div class="my-6">
-          <input class="p-4 w-full rounded-md" type="text" placeholder="Phone number*">
-        </div>
-        <div class="my-3">
-          <textarea class="p-4 w-full rounded-md" name="text" id="" cols="30" rows="4"
-            placeholder="Enter your message"></textarea>
-        </div>
-        <div class="mt-10">
-          <button class="GetAQuoteButton mt-4 px-14 py-4
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class=" relative grid xl:grid-cols-2 grid-cols-1 gap-28 overflow-hidden p-3">
+      <img class="absolute xl:block hidden top-36 left-2/4 " height="200px" width="200px"
+        style="rotate: 90deg; fill: grey;"
+        src="https://dbdzm869oupei.cloudfront.net/img/stickers/generated/35480-1-d4d4d4.png" alt="">
+      <img class="absolute top-32 left-36" src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-6.png"
+        alt="">
+      <div class="form-div xl:w-4/5 w-full relative xl:m-48 mt-16">
+        <div class="relative xl:mx-20 mx-5 py-16">
+          <div class="text-3xl text-white pb-7">
+            <span><b>Send your request</b></span>
+          </div>
+          <div class="my-3">
+            <input class="p-4 w-full rounded-md" type="text" placeholder="Your name*">
+          </div>
+          <div class="my-6">
+            <input class="p-4 w-full rounded-md" type="text" placeholder="Phone number*">
+          </div>
+          <div class="my-3">
+            <textarea class="p-4 w-full rounded-md" name="text" id="" cols="30" rows="4"
+              placeholder="Enter your message"></textarea>
+          </div>
+          <div class="mt-10">
+            <button class="GetAQuoteButton mt-4 px-14 py-4
                         text-white
                         font-semibold hover:text-black border
                         border-none
                         hover:border-transparent rounded" style="background-color: #FF4949 ">
-            <span class="px-3">Send Message</span>
-            <span><i class="fa-solid fa-arrow-right-long"></i></span>
-          </button>
-        </div>
-        <img class="absolute bottom-0 right-0 " src="
+              <span class="px-3">Send Message</span>
+              <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </button>
+          </div>
+          <img class="absolute bottom-0 right-0 " src="
                     https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.svg" alt="">
+        </div>
+      </div>
+      <div class="xl:mt-20 mt-0  xl:absolute static top-0  xl:-right-56 -right-0">
+        <img src="https://demo6.clientica.org/wp-content/uploads/2021/04/Mockup-home1-2.png" alt="">
       </div>
     </div>
-    <div class="xl:mt-20 mt-0  xl:absolute static top-0  xl:-right-56 -right-0">
-      <img src="https://demo6.clientica.org/wp-content/uploads/2021/04/Mockup-home1-2.png" alt="">
-    </div>
-  </div>
-</section>
-<section class="mb-10" style="background-color: #F5F6F7; ">
-  <div class="relative">
-    <div class="md:pt-28 pt-5  w-full mx-auto "
-      style="background-image: url(	https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-5.svg) ; background-position: top; background-size: contain; background-repeat: no-repeat;">
-      <div>
-        <h1 class="text-center">[OUR BLOG]</h1>
-        <h1 class="text-center md:pt-6 pt-3 md:text-5xl text-2xl font-sans
+  </section>
+  <section class="mb-10" style="background-color: #F5F6F7; ">
+    <div class="relative">
+      <div class="md:pt-28 pt-5  w-full mx-auto "
+        style="background-image: url(	https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-5.svg) ; background-position: top; background-size: contain; background-repeat: no-repeat;">
+        <div>
+          <h1 class="text-center">[OUR BLOG]</h1>
+          <h1 class="text-center md:pt-6 pt-3 md:text-5xl text-2xl font-sans
                     font-bold">Latest News</h1>
-        <p class="text-center text-gray-700 px-3 md:pt-10 pt-5">Subscribe
-          to our newsletter and get unique bonuses that
-          you can use when <br class="md:block hidden"> ordering our services.</p>
-      </div>
-      <div class="grid  grid-flow-row lg:grid-cols-3 grid-cols-1 pt-20 ">
-        <div *ngFor="let items of Ourblog" class="LatestNewsCards md:ml-2
+          <p class="text-center text-gray-700 px-3 md:pt-10 pt-5">Subscribe
+            to our newsletter and get unique bonuses that
+            you can use when <br class="md:block hidden"> ordering our services.</p>
+        </div>
+        <div class="grid  grid-flow-row lg:grid-cols-3 grid-cols-1 pt-20 ">
+          <div *ngFor="let items of Ourblog" class="LatestNewsCards md:ml-2
                     md:mr-2 mx-2 bg-white rounded-md shadow-2xl lg:mb-0 mb-10">
-          <div class="bg-red-500 h-2 rounded-t-md"></div>
-          <div class=" relative rounded-md">
-            <a href="">
-              <img class=" h-96 w-full object-cover" src={{items.Img}} alt="">
-            </a>
-            <a class="hidden" href="">
-              <div class="LatestNewsCardsOverlay flex justify-center items-center
+            <div class="bg-red-500 h-2 rounded-t-md"></div>
+            <div class=" relative rounded-md">
+              <a href="">
+                <img class=" h-96 w-full object-cover" src={{items.Img}} alt="">
+              </a>
+              <a class="hidden" href="">
+                <div class="LatestNewsCardsOverlay flex justify-center items-center
                                 absolute top-0 left-0" style="
                                 background-color:#00000050;">
-                <div><img src="https://demo6.clientica.org/wp-content/uploads/2021/04/Btn-Plus-1.svg" alt=""></div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <p class="pt-10 pb-6 ml-8 mr-10 text-gray-700">{{items.Date}}</p>
-            <h1 class="text-2xl font-sans font-bold ml-8
+                  <div><img src="https://demo6.clientica.org/wp-content/uploads/2021/04/Btn-Plus-1.svg" alt=""></div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <p class="pt-10 pb-6 ml-8 mr-10 text-gray-700">{{items.Date}}</p>
+              <h1 class="text-2xl font-sans font-bold ml-8
                             mr-20"><a href="">{{items.Heading}}</a></h1>
-            <p class="pt-4 font-sans ml-8 mr-20
+              <p class="pt-4 font-sans ml-8 mr-20
                             text-gray-700">{{items.Note}}</p>
-            <button class=" contact-view-btn my-7 ml-8 mr-20
+              <button class=" contact-view-btn my-7 ml-8 mr-20
                             text-base font-sans font-medium" style="color: #FF4949;">Read More</button>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
-  </div>
-  <!-- <img class="mt-20" src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-5.svg" alt=""> -->
-  <div class="pb-28 md:mt-24 m-0 ">
-    <button class="md:hidden block Service mt-4 px-10 py-4 text-black font-semibold
+    <!-- <img class="mt-20" src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-5.svg" alt=""> -->
+    <div class="pb-28 md:mt-24 m-0 ">
+      <button class="md:hidden block Service mt-4 px-10 py-4 text-black font-semibold
             mx-auto hover:text-white hover:border-transparent rounded"
-      style="background-color: white; border: 1px solid black; ">
-      <span class="px-3">All News</span>
-      <span><i class="fa-solid fa-arrow-right-long"></i></span>
-    </button>
-  </div>
-</section>
+        style="background-color: white; border: 1px solid black; ">
+        <span class="px-3">All News</span>
+        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+      </button>
+    </div>
+  </section>
 
 </main>
