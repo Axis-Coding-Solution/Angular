@@ -251,65 +251,6 @@ mat-option {
   display: block;
 }
 
-// .LatestNewsCards {
-//     height: 678px;
-//     max-width: 453.51px;
-// }
-
-.LatestNewsCardsOverlay {
-  height: 384px;
-  width: 490.4px;
-}
-
-@media (min-width: 678px) {
-  .LatestNewsCardsOverlay {
-    width: 370px;
-  }
-}
-@media (max-width: 320px) {
-  .LatestNewsCardsOverlay {
-    width: 304px;
-  }
-}
-@media (min-width: 375px) {
-  .LatestNewsCardsOverlay {
-    width: 359.2px;
-  }
-}
-@media (min-width: 425px) {
-  .LatestNewsCardsOverlay {
-    width: 409.6px;
-  }
-}
-@media (min-width: 768px) {
-  .LatestNewsCardsOverlay {
-    width: 752px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .LatestNewsCardsOverlay {
-    width: 325.34px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .LatestNewsCardsOverlay {
-    width: 464px;
-  }
-}
-
-@media (min-width: 2560px) {
-  .LatestNewsCardsOverlay {
-    width: 837px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .LatestNewsCardsOverlay {
-    width: 546.67px;
-  }
-}
-
 
 .PlayButton:hover span:first-child {
   fill: #ff4949 !important;
