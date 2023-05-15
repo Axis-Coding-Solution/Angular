@@ -5,6 +5,8 @@
     left: 0;
     width: 100%;
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar ul {
@@ -70,3 +72,10 @@ mat-option{
     .navbar-toggle {
       display: block;
     }
+
+    @media (min-width: 1420px) {
+      .navbar-list{
+       padding-left: 80px;
+       padding-right: 80px;
+      }
+     }

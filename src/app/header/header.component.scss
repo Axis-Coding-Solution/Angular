@@ -6,3 +6,9 @@ mat-icon {
     color: white;
     margin-right: 10px;
 }
+@media (min-width: 1420px) {
+    .header{
+     padding-left: 80px;
+     padding-right: 80px;
+    }
+   }
