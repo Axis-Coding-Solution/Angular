@@ -41,19 +41,21 @@ mat-icon {
 
 .image-overlay {
     background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/04/Group-1212.png);
+    background-position: 50% 0px;
 }
 
 
 .image-section {
-    // position: relative;
     background-image:url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-441.jpg) ;
+    width: 100%;
+    height: 146%;
 }
 
-.image-section img {
-    display: block;
-    width: 120%;
-    height: auto;
-}
+// .image-section img {
+//     display: block;
+//     width: 120%;
+//     height: auto;
+// }
 
 .navbar a {
     text-decoration: none;
@@ -80,9 +82,9 @@ mat-option {
     color: white;
 }
 
-.GetAQuoteButton {
-    display: flex;
-}
+// .GetAQuoteButton {
+//     display: flex;
+// }
 
 .GetAQuoteButton:hover span:first-child {
     order: 2;
@@ -190,6 +192,8 @@ mat-option {
     padding-bottom: 80px;
 }
 
+
+
 @media screen and (max-width: 640px) {
     .ConsultingServices-1:hover p {
         padding-bottom: 20px;
@@ -252,16 +256,16 @@ mat-option {
     display: block;
 }
 
-.LatestNewsCards {
-    height: 678px;
-    max-width: 453.51px;
-}
+// .LatestNewsCards {
+//     height: 678px;
+//     max-width: 453.51px;
+// }
 
 @media screen and (max-width:678px) {
 
-    .LatestNewsCards {
-        width: 370px;
-    }
+    // .LatestNewsCards {
+    //     width: 370px;
+    // }
 }
 .LatestNewsCardsOverlay {
     height: 370px;
@@ -276,5 +280,5 @@ mat-option {
 }
 PlayButton:hover span:first-child{
     fill: #FF4949 !important;
-    
+
 }
