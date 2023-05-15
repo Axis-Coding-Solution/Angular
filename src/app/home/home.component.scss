@@ -1,54 +1,52 @@
 .example-spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .top-header {
-    background-color: black;
-    color: white;
-    display: flex;
+  background-color: black;
+  color: white;
+  display: flex;
 }
 
 .phone,
 .timing,
 .mail {
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
-    padding: 10px 10px;
-    padding-left: 60px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  padding-left: 60px;
 }
 
 .social-icons {
-    position: absolute;
-    right: 0px;
-    width: 300px;
-    padding: 10px;
-    padding-right: 0px;
-    vertical-align: middle;
-    display: flex;
-
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 10px;
+  padding-right: 0px;
+  vertical-align: middle;
+  display: flex;
 }
 
 mat-icon {
-    color: white;
-    margin-right: 20px;
+  color: white;
+  margin-right: 20px;
 }
 
 .main-image {
-    height: 900px;
-    width: 100%
+  height: 900px;
+  width: 100%;
 }
 
 .image-overlay {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/04/Group-1212.png);
-    background-position: 50% 0px;
+  background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/04/Group-1212.png);
+  background-position: 50% 0px;
 }
 
-
 .image-section {
-    background-image:url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-441.jpg) ;
-    width: 100%;
-    height: 146%;
+  background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-441.jpg);
+  width: 100%;
+  height: 146%;
 }
 
 // .image-section img {
@@ -58,28 +56,28 @@ mat-icon {
 // }
 
 .navbar a {
-    text-decoration: none;
-    color: white;
-    justify-self: center;
-    margin-left: 40px;
-    font-size: 24px;
+  text-decoration: none;
+  color: white;
+  justify-self: center;
+  margin-left: 40px;
+  font-size: 24px;
 }
 
 nav {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    box-sizing: border-box;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 mat-form-field {
-    margin-top: 3%;
-    margin-right: 3%;
-    text-transform: uppercase;
+  margin-top: 3%;
+  margin-right: 3%;
+  text-transform: uppercase;
 }
 
 mat-option {
-    color: white;
+  color: white;
 }
 
 // .GetAQuoteButton {
@@ -87,46 +85,44 @@ mat-option {
 // }
 
 .GetAQuoteButton:hover span:first-child {
-    order: 2;
-
+  order: 2;
 }
 
 .GetAQuoteButton:hover span:last-child {
-    order: 1;
+  order: 1;
 }
 
 .GetAQuoteButton:hover {
-    background-color: white !important;
+  background-color: white !important;
 }
 
 .primary-color:hover {
-    background-color: #FF4949;
+  background-color: #ff4949;
 }
 
 .primary-color:hover svg:first-child {
-    background-color: white;
-    fill: black;
+  background-color: white;
+  fill: black;
 }
 
 .transition-scss:hover div:last-child {
-    transform: translateY(-20px);
-    animation: move-up 1s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
-
+  transform: translateY(-20px);
+  animation: move-up 1s forwards;
+  transition: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 .contact-view-btn::after {
-    content: "  _____";
+  content: "  _____";
 }
 
 .contact-view-btn:hover::before {
-    color: white;
-    content: "_____  ";
+  color: white;
+  content: "_____  ";
 }
 
 .contact-view-btn:hover::after {
-    content: "";
+  content: "";
 }
 
 // .card1:hover button:last-child {
@@ -144,116 +140,115 @@ mat-option {
 //       }
 // }
 .Service {
-    display: flex;
+  display: flex;
 }
 
 .Service:hover span:first-child {
-    order: 2;
-
+  order: 2;
 }
 
 .Service:hover span:last-child {
-    order: 1;
+  order: 1;
 }
 
 .Service:hover {
-    background-color: black !important;
+  background-color: black !important;
 }
 
 .Arrow {
-    fill: black !important;
+  fill: black !important;
 }
 
 .card-row2 {
-    margin-top: 800px;
+  margin-top: 800px;
 }
 
 // ConsultingServices-1
 .ConsultingServices-1:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
+  display: block;
+  color: white;
+  transition: 0.5s;
+}
+.ConsultingServices-1:hover .topLine {
+  display: none;
 }
 
 .ConsultingServices-1:hover {
-    color: white !important;
-    fill: white;
-    transform: translateY(-20px);
-    animation: move-up 2s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
+  color: white !important;
+  fill: white;
+  transform: translateY(-20px);
+  animation: move-up 2s forwards;
+  transition: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 .ConsultingServices-1:hover img:first-child {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .ConsultingServices-1:hover p {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
-
-
 @media screen and (max-width: 640px) {
-    .ConsultingServices-1:hover p {
-        padding-bottom: 20px;
-    }
+  .ConsultingServices-1:hover p {
+    padding-bottom: 20px;
+  }
 }
 
 .ConsultingServices-1:hover p:first-of-type {
-    display: none;
+  display: none;
 }
 
-
 .ConsultingServices-1:hover p:last-of-type {
-    display: block;
+  display: block;
 }
 
 .ConsultingServices-1 {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: right;
+  background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: right;
 }
 
 .team-div {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .team-div:hover .team-text {
-    background-color: #FF4949;
-    color: white;
-    transition: all 300ms ease-in-out;
+  background-color: #ff4949;
+  color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .team-text {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .team-text div {
-    height: 100%;
-    width: 10px;
-    background: #FF4949;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #FF4949;
-    // border-radius: 0px 0px 01px 0px;
+  height: 100%;
+  width: 10px;
+  background: #ff4949;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff4949;
+  // border-radius: 0px 0px 01px 0px;
 }
 
 .team-text img {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .form-div {
-    background-color: #212830;
-    border-radius: 10px;
+  background-color: #212830;
+  border-radius: 10px;
 }
 
 .LatestNewsCards:hover a:last-of-type {
-    display: block;
+  display: block;
 }
 
 // .LatestNewsCards {
@@ -261,24 +256,43 @@ mat-option {
 //     max-width: 453.51px;
 // }
 
-@media screen and (max-width:678px) {
-
-    // .LatestNewsCards {
-    //     width: 370px;
-    // }
-}
 .LatestNewsCardsOverlay {
-    height: 370px;
-   width: 444.36px;
+  height: 370px;
+  width: 444.36px;
 }
 
-@media screen and (max-width:678px) {
-
-    .LatestNewsCardsOverlay {
-        width: 370px;
-    }
+@media screen and (max-width: 678px) {
+  .LatestNewsCardsOverlay {
+    width: 370px;
+  }
 }
-PlayButton:hover span:first-child{
-    fill: #FF4949 !important;
+.PlayButton:hover span:first-child {
+  fill: #ff4949 !important;
+}
 
+.service-section {
+  background-color: #f5f6f7;
+   background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png);
+  background-position: 45% -60px;
+  background-repeat: no-repeat;
+  background-size: 1500px auto;
+  // background-color: #F5F6F7; background-image:url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png); background-repeat: no-repeat; background-size: contain;
+}
+
+@media (max-width: 767px) {
+  .image-overlay {
+    background-position: 0px 0px !important;
+  }
+  .service-section {
+    background-position: 0 0 !important;
+  }
+}
+@media (max-width: 1024px) {
+  .image-overlay {
+    background-position: 0px 0px;
+  }
+  .service-section {
+    background-position: 800px 0;
+    background-size: contain;
+  }
 }
