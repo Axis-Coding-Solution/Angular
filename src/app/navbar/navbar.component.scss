@@ -5,6 +5,8 @@
     left: 0;
     width: 100%;
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar ul {
@@ -34,18 +36,18 @@ mat-form-field{
 mat-option{
     color: white;
 }
- 
+
   .navbar-toggle {
     position: relative;
     display: none;
-    width: 30px;
-    height: 22px;
+    width: 38px;
+    height: 26px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 2;
   }
-  
+
   .navbar-toggle-icon {
     position: absolute;
     left: 0;
@@ -54,19 +56,26 @@ mat-option{
     background-color: white;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .navbar-toggle-icon:nth-child(1) {
     top: 0;
   }
-  
+
   .navbar-toggle-icon:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
   }
-  
+
   .navbar-toggle-icon:nth-child(3) {
     bottom: 0;
   }
     .navbar-toggle {
       display: block;
     }
+
+    @media (min-width: 1420px) {
+      .navbar-list{
+       padding-left: 80px;
+       padding-right: 80px;
+      }
+     }
