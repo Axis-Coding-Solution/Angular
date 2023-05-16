@@ -1,6 +1,6 @@
 .team-div:hover .team-text {
     background-color: #FF4949;
-    color: white;
+    color: white !important;
     transition: all 300ms ease-in-out;
 }
 
@@ -112,10 +112,10 @@ img {
   transform: scale(1.02);
   transition: all 300ms ease-in-out;
 }
-.team-text:hover h5 {
+.team-div:hover h5 {
   color: #fff !important;
 }
-.team-text:hover p {
+.team-div:hover p {
   color: #fff !important;
 }
 .team-text img {
