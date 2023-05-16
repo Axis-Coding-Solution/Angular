@@ -9,6 +9,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ServicesComponent } from './services/services.component';
 import { ErrorComponent } from './error/error.component';
 import { SingleServiceComponent } from './single-service/single-service.component';
+import { AfzalComponent } from './afzal/afzal.component';
 const routes: Routes = [
   {
     path:'',
@@ -45,6 +46,10 @@ const routes: Routes = [
   {
     path:'single-service',
     component:SingleServiceComponent,
+  },
+  {
+    path:'afzal',
+    component:AfzalComponent,
   }
 ];
 

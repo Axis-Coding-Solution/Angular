@@ -20,6 +20,9 @@ import { SwiperModule } from 'swiper/angular';
 import { ServicesComponent } from './services/services.component';
 import { ErrorComponent } from './error/error.component';
 import { SingleServiceComponent } from './single-service/single-service.component'; 
+import SwiperCore from 'swiper';
+import { AfzalComponent } from './afzal/afzal.component';
+import { SaliderComponent } from './salider/salider.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,9 @@ import { SingleServiceComponent } from './single-service/single-service.componen
     TestimonialsComponent,
     TestimonialsFeedbackSliderComponent,
     ServicesComponent,
-    ErrorComponent
+    ErrorComponent,
+    AfzalComponent,
+    SaliderComponent
   ],
   imports: [
     BrowserModule,
