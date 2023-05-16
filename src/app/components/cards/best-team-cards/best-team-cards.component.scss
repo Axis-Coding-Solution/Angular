@@ -4,7 +4,7 @@
     transition: all 300ms ease-in-out;
 }
 
-.team-text {
+.team-div {
     overflow: hidden;
 }
 
@@ -56,7 +56,7 @@
     fill: black !important;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:640px){
     .Best-team-section{
         margin-top: 40rem !important;
     }

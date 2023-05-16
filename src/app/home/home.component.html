@@ -12,7 +12,8 @@
                         IN CONSULTING
                     </span>
                     <span class="font-light text-xl">]</span>
-                    <h1 class="md:text-7xl text-4xl font-bold leading-tight md:pr-20 xl:pr-0 pr-2 pt-4 pb-5 text-white">Business
+                    <h1 class="md:text-7xl text-4xl font-bold leading-tight md:pr-20 xl:pr-0 pr-2 pt-4 pb-5 text-white">
+                        Business
                         Services From Experts</h1>
                     <div>
                         <p class="lg:text-base text-lg font-normal leading-normal text-white pt-5
@@ -54,7 +55,7 @@
 
     <section class="rounded-xl">
         <div class="lg:w-auto w-full p-3">
-            <div class="grid xl:grid-cols-3 lg:grid-cols-1 rounded-xl xl:mx-40 relative
+            <div class="grid xl:grid-cols-3 lg:grid-cols-1 rounded-xl xl:mx-24 relative
         -mt-24  bg-white shadow-lg ">
                 <div *ngFor="let item of WorkPlanning" class=" grid z-10 border-none">
                     <app-work-planning-card [item]="item"></app-work-planning-card>
@@ -70,7 +71,8 @@
                     <span class="font-light text-xl">[</span>
                     <span class="text-sm font-medium  px-2">ABOUT US</span>
                     <span class="font-light text-xl">]</span>
-                    <h1 class="py-8 md:text-5xl md:font-bold text-3xl lg:text-4xl sm:text-xl font-semibold">Specialist In
+                    <h1 class="py-8 md:text-5xl md:font-bold text-3xl lg:text-4xl sm:text-xl font-semibold">Specialist
+                        In
                         Consulting</h1>
                     <p
                         class="md:text-lg text-base md:text-left sm:text-sm text-justify md:pr-16 pr-0 pt-2 text-gray-500 md:mr-9 mr-0">
@@ -205,20 +207,21 @@
         <div class="relative">
             <app-about-us></app-about-us>
             <div class="lg:container mx-auto md:w-full">
-            <div style="background-color: white;
+                <div style="background-color: white;
             background-image:
             url(https://demo6.clientica.org/wp-content/uploads/2021/01/Decors-5.png);
             background-repeat: no-repeat;" class="absolute grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 md:mx-3 xl:mx-24
             h-auto rounded-lg p-6 shadow-xl -mt-24">
-                <div *ngFor="let item of PerformanceCard" class="pr-4 pl-12 py-8">
-                    <div class="flex pb-5 md:justify-start justify-center">
-                        <h1 class="font-extrabold lg:text-7xl text-6xl font-serif mr-2">{{item.Title}}</h1>
-                        <h2 class="text-red-500 font-serif text-2xl
+                    <div *ngFor="let item of PerformanceCard" class="pr-4 pl-12 py-8">
+                        <div class="flex pb-5 md:justify-start justify-center">
+                            <h1 class="font-extrabold lg:text-7xl text-6xl font-serif mr-2">{{item.Title}}</h1>
+                            <h2 class="text-red-500 font-serif text-2xl
                         font-bold">{{item.Operand}}</h2>
+                        </div>
+                        <p class="text-lg md:pr-4 pr-0 text-center md:text-left font-sans text-gray-700">
+                            {{item.Subtitle}}</p>
                     </div>
-                    <p class="text-lg md:pr-4 pr-0 text-center md:text-left font-sans text-gray-700">{{item.Subtitle}}</p>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -250,7 +253,7 @@
                 src="https://dbdzm869oupei.cloudfront.net/img/stickers/generated/35480-1-d4d4d4.png" alt="">
             <img class="absolute top-32 left-36"
                 src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-6.png" alt="">
-            <div class="form-div xl:w-4/5 w-full relative xl:my-48 xl:mx-40 mt-16">
+            <div class="form-div xl:w-4/5 w-full relative xl:my-48 xl:mx-24 mt-16" style="background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.svg); background-repeat: no-repeat; background-position: bottom right;">
                 <div class="relative md:mx-20  mx-5 py-16">
                     <div class="text-3xl text-white pb-7">
                         <span><b>Send your request</b></span>
@@ -275,8 +278,6 @@
                             <span><i class="fa-solid fa-arrow-right-long"></i></span>
                         </button>
                     </div>
-                    <img class="absolute bottom-0 right-0 " src="
-                    https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.svg" alt="">
                 </div>
             </div>
             <div class="xl:mt-20 mt-0  xl:absolute static top-0  xl:-right-56 -right-0">
