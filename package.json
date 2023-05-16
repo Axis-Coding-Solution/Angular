@@ -27,6 +27,7 @@
     "angular-svg-icon": "^15.0.0",
     "angular-svg-icon-preloader": "^5.0.0",
     "autoprefixer": "^10.4.14",
+    "country-list-with-dial-code-and-flag": "^5.0.2",
     "fflate": "^0.7.3",
     "flowbite": "^1.6.5",
     "flowbite-angular": "^0.0.1",

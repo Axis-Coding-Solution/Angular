@@ -40,6 +40,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.team-card:hover div p{
+.team-card:hover p{
     color: #fff;
+    transition: width 2s
+    
+
 }

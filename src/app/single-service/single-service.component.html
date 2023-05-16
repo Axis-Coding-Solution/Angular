@@ -1,4 +1,4 @@
-<!-- Hero part -->
+ <!-- Hero part -->
 <header>
   <section class="image-section">
     <div
@@ -46,7 +46,7 @@
   </section>
 </header>
 
-<!-- Left part -->
+ <!-- Left part  -->
 
 <div>
   <div>
@@ -561,8 +561,7 @@
         <path
           d="M12.8594 7.1738L2.54688 1.08005C1.69727 0.582001 0.4375 1.08005 0.4375 2.28122V14.4687C0.4375 15.582 1.60938 16.2558 2.54688 15.6992L12.8594 9.60544C13.7676 9.0488 13.7676 7.73044 12.8594 7.1738Z"
           fill="#FF4949"
-        ></path></svg
-    ></a>
+        ></path></svg></a>
   </div>
 </div>
 
@@ -892,22 +891,22 @@
 
 <!-- next part  -->
 
- <h1 class="text-center">Feedback from our clients</h1>
+<h1 class="text-center">Feedback from our clients</h1>
 
-<!-- <div class="grid grid-cols-2 mt-10">
+<div class="grid grid-cols-2 mt-10">
   <div>
-    <div class="team-card h-96 w-96 border ml-auto rounded-3xl mb-40 " >
-      <div class="">
-        <p class="pr-10 pl-16 pt-10 text-lg" style="color: #676d73">
-          “I turned to the company because there was a need to change something,
-          the business "froze". Several strategies were suggested
-        </p>
-      </div>
+    <div class="relative team-card h-96 w-96 border ml-auto rounded-3xl mb-40 shadow-2xl ">
+      <p class="pr-10 pl-16 pt-10 text-lg text-gray-500">
+        “I turned to the company because there was a need to change something,
+        the business "froze". Several strategies were suggested
+      </p>
+      <img  style="position: absolute; right:10px; top:20px" src="https://demo6.clientica.org/wp-content/uploads/2021/01/quoteSmall.svg"/>
       <div class="">
         <img
           class="rounded-full mx-auto mt-5"
           src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-55.jpg"
         />
+       
         <h3 class="mx-auto text-center pt-5">Andrew Boreanaz</h3>
         <div class="mx-auto text-center pt-5"><span>Businessman</span></div>
       </div>
@@ -915,11 +914,13 @@
   </div>
   <div>
     <div>
-      <div class="h-96 w-96 border ml-auto mr-60 rounded-3xl mb-40">
-        <p class="pr-10 pl-16 pt-10 text-lg" style="color: #676d73">
+      <div class=" relative team-card h-96 w-96 border ml-auto mr-60 rounded-3xl mb-40">
+        <p class=" pr-10 pl-16 pt-10 text-lg text-gray-500" >
           “We were satisfied with our cooperation with this consulting company.
           Absolutely all services are provided on time and in full,
         </p>
+        <img  style="position: absolute; right:10px; top:20px" src="https://demo6.clientica.org/wp-content/uploads/2021/01/quoteSmall.svg"/>
+
         <img
           class="rounded-full mx-auto mt-5"
           src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-54.jpg"
@@ -929,4 +930,144 @@
       </div>
     </div>
   </div>
-</div>  -->
+</div>
+
+<!-- <swiper
+[slidesPerView]="3"
+[spaceBetween]="50"
+(swiper)="onSwiper($event)"
+(slideChange)="onSlideChange()"
+>
+<ng-template swiperSlide>Slide 1</ng-template>
+<ng-template swiperSlide>Slide 2</ng-template>
+<ng-template swiperSlide>Slide 3</ng-template>
+</swiper> -->
+<!-- 
+<div class="mr-2">
+  <swiper
+    [slidesPerView]="2"
+    [spaceBetween]="0"
+    [navigation]="false"
+    [autoplay]="true"
+    [loop]="true"
+    [pagination]="{ clickable: true }"
+  >
+    <ng-template swiperSlide let-data>
+      <div class="m-6 Slider-Card">
+        <div
+          class="rounded-2xl shadow-xl bg-white"
+          style="height: 417px; width: 344px"
+        >
+          <div class="Slider-card-image px-12 pt-8 pb-16 rounded-t-xl">
+            <div>
+              <h1
+                class="text-base font-normal text-center pb-3"
+                style="
+                  background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/quoteSmall.svg);
+                  background-repeat: no-repeat;
+                  background-size: 60px;
+                  background-position-x: right;
+                "
+              >
+                “Thank you for your help in resolving personnel policy issues!
+                We received logical recommendations, were able to implement
+                them, and
+              </h1>
+              <div style="margin-left: 72px">
+                <img
+                  src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-53.jpg"
+                  class="h-24 w-24 rounded-full shadow-lg dark:shadow-black/30"
+                  alt="smaple image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="-mt-8">
+            <p class="text-center font-medium font-sans text-lg">
+              Armand Pattinson
+            </p>
+            <p class="text-gray-700 text-center pt-3">HR Director</p>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide let-data>
+      <div class="m-6 Slider-Card">
+        <div
+          class="rounded-2xl shadow-xl bg-white"
+          style="height: 417px; width: 344px"
+        >
+          <div class="Slider-card-image px-12 pt-8 pb-16 rounded-t-xl">
+            <div>
+              <h1
+                class="text-base font-normal text-center pb-3"
+                style="
+                  background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/quoteSmall.svg);
+                  background-repeat: no-repeat;
+                  background-size: 60px;
+                  background-position-x: right;
+                "
+              >
+                “I turned to the company because there was a need to change
+                something, the business "froze". Several strategies were
+                suggested
+              </h1>
+              <div style="margin-left: 72px">
+                <img
+                  src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-55.jpg"
+                  class="h-24 w-24 rounded-full shadow-lg dark:shadow-black/30"
+                  alt="smaple image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="-mt-8">
+            <p class="text-center font-medium font-sans text-lg">
+              Andrew Boreanaz
+            </p>
+            <p class="text-gray-700 text-center pt-3">Businessman</p>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide let-data>
+      <div class="m-6 Slider-Card">
+        <div
+          class="rounded-2xl shadow-xl bg-white"
+          style="height: 417px; width: 344px"
+        >
+          <div class="Slider-card-image px-12 pt-8 pb-16 rounded-t-xl">
+            <div>
+              <h1
+                class="text-base font-normal text-center pb-3"
+                style="
+                  background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/quoteSmall.svg);
+                  background-repeat: no-repeat;
+                  background-size: 60px;
+                  background-position-x: right;
+                "
+              >
+                “We were satisfied with our cooperation with this consulting
+                company. Absolutely all services are provided on time and in
+                full,
+              </h1>
+              <div style="margin-left: 72px">
+                <img
+                  src="   https://demo6.clientica.org/wp-content/uploads/2020/12/Image-54.jpg"
+                  class="h-24 w-24 rounded-full shadow-lg dark:shadow-black/30"
+                  alt="smaple image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="-mt-8">
+            <p class="text-center font-medium font-sans text-lg">
+              Salma Jolie Bloom
+            </p>
+            <p class="text-gray-700 text-center pt-3">PR Manager</p>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+</div> -->

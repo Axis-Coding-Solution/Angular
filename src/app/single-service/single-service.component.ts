@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./single-service.component.scss']
 })
 export class SingleServiceComponent {
+
+
+  }
 //   lightbox:any;
 //   ngOnInit(){
            
@@ -20,6 +23,6 @@ export class SingleServiceComponent {
 //                'autoplayVideos': true,
 //              });
 //  }
- }
+ 
 
 

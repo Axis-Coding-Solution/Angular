@@ -10,6 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ServicesComponent } from './services/services.component';
 
+import { AfzalComponent } from './afzal/afzal.component';
 const routes: Routes = [
   {
     path:'',
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path:'single-service',
     component:SingleServiceComponent,
+  },
+  {
+    path:'afzal',
+    component:AfzalComponent,
   }
 ];
 

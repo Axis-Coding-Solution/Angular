@@ -24,6 +24,10 @@ import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-sli
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
+import SwiperCore from 'swiper';
+import { AfzalComponent } from './afzal/afzal.component';
+import { SaliderComponent } from './salider/salider.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,10 @@ import { ContactComponent } from './contact/contact.component';
     SendYourRequestComponent,
     ErrorComponent,
     TestimonialsComponent,
-    ContactComponent
+    ContactComponent,
+    AfzalComponent,
+    SaliderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

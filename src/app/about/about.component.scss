@@ -1,17 +1,25 @@
 .logo-div {
   text-align: center;
   cursor: pointer;
-  padding: 30px;
-  width: 15%;
+  padding: 20px;
+  // width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 200px;
 }
 .logo-div:hover {
-  box-shadow: 5px 5px 5px 5px #00000050;
+  // box-shadow: 5px 5px 5px 5px #00000050;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   border-radius: 10px;
+  transform: translateY(-2rem);
+  transition: all 300ms ease-in-out;
+}
+.logo-div:not(:hover) {
+  transform: translateY(0);
+  transition: all 300ms ease-in-out;
 }
 .logo-div:hover svg {
   fill: #ff4949;
@@ -37,43 +45,53 @@ img {
 .team-div:hover .team-text {
   background-color: #ff4949;
   transition: all 300ms ease-in-out;
+ 
+
   color: #fff;
 }
-.team-text:hover h5{
+
+.team-div:hover {
+  transform: scale(1.02);
+  transition: all 300ms ease-in-out;
+}
+.team-text:hover h5 {
   color: #fff !important;
 }
-.team-text:hover p{
+.team-text:hover p {
   color: #fff !important;
 }
-.team-text img{
+.team-text img {
   position: absolute;
   top: 0;
   right: 0;
+  
 }
-.team-icon{
+.team-div:hover ul{
+  opacity: 1;
+  top: -70px;
+}
+.team-icon {
   display: flex;
   justify-content: space-around;
   opacity: 0;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   top: 10px;
   position: absolute;
   width: 85%;
 }
-.team-text:hover .team-icon{
+.team-text:hover .team-icon {
   opacity: 1;
-  top: -50px;
+  top: -70px;
   // transition: .3s ease-in-out;
 }
-.team-icon li{
+.team-icon li {
   background: #fff;
-  padding: 10px;
+  padding: 17px;
   border-radius: 50%;
 }
-.team-icon li:hover{
+.team-icon li:hover {
   background-color: #ff4949;
 }
-
-
 
 // .team-text {
 //   overflow: hidden;
@@ -127,7 +145,7 @@ img {
 
 // }
 
-.GetAQuoteButton{
+.GetAQuoteButton {
   display: flex;
 }
 
@@ -144,8 +162,3 @@ img {
   background-color: white !important;
   transition: 300ms;
 }
-
-
-
-
-
