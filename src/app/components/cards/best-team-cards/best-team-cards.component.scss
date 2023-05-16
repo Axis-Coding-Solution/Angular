@@ -1,0 +1,167 @@
+.team-div:hover .team-text {
+    background-color: #FF4949;
+    color: white !important;
+    transition: all 300ms ease-in-out;
+}
+
+.team-div {
+    overflow: hidden;
+}
+
+.team-text div {
+    height: 100%;
+    width: 6px;
+    background: #FF4949;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FF4949;
+    // border-radius: 0px 0px 01px 0px;
+}
+
+.team-text img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.form-div {
+    background-color: #212830;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.LatestNewsCards:hover a:last-of-type {
+    display: block;
+}
+
+.Service {
+    display: flex;
+}
+
+.Service:hover span:first-child {
+    order: 2;
+
+}
+
+.Service:hover span:last-child {
+    order: 1;
+}
+
+.Service:hover {
+    background-color: black !important;
+}
+
+.Arrow {
+    fill: black !important;
+}
+
+@media screen and (max-width:640px){
+    .Best-team-section{
+        margin-top: 40rem !important;
+    }
+}
+.Best-team-section{
+    margin-top: 10rem;
+}
+
+.team-div:hover ul{
+    opacity: 1;
+    top: -70px;
+     
+}
+.team-icon {
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    top: 10px;
+    position: absolute;
+    width: 85%;
+  }
+  .team-div:hover .team-icon {
+    opacity: 1;
+    top: -70px;
+    // transition: .3s ease-in-out;
+  }
+  .team-icon li {
+    background: #fff;
+    padding: 17px;
+    border-radius: 50%;
+  }
+  .team-icon li:hover {
+    background-color: #ff4949;
+  }
+  
+  .team-div {
+  border-radius: 5%;
+}
+img {
+  border-radius: 5px;
+}
+
+.team-div:hover .team-text {
+  background-color: #ff4949;
+  transition: all 300ms ease-in-out;
+ 
+
+  color: #fff;
+}
+
+.team-div:hover {
+  transform: scale(1.02);
+  transition: all 300ms ease-in-out;
+}
+.team-div:hover h5 {
+  color: #fff !important;
+}
+.team-div:hover p {
+  color: #fff !important;
+}
+.team-text img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
+.team-div:hover ul{
+  opacity: 1;
+  top: -70px;
+}
+.team-icon {
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  top: 10px;
+  position: absolute;
+  width: 85%;
+}
+.team-text:hover .team-icon {
+  opacity: 1;
+  top: -70px;
+  // transition: .3s ease-in-out;
+}
+.team-icon li {
+  background: #fff;
+  padding: 17px;
+  border-radius: 50%;
+}
+.team-icon li:hover {
+  background-color: #ff4949;
+}
+
+// .team-text {
+//   overflow: hidden;
+// }
+.team-text div {
+  height: 100%;
+  width: 7px;
+  background: #ff4949;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff4949;
+
+  // border-radius: 0px 0px 01px 0px;
+}

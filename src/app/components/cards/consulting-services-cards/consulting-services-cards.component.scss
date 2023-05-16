@@ -1,0 +1,41 @@
+.ConsultingServices-1:hover button:last-child {
+    display: block;
+    color: white;
+    transition: 0.5s;
+}
+
+.ConsultingServices-1:hover {
+    color: white !important;
+    fill: white;
+    transform: translateY(-20px);
+    animation: move-up 2s forwards;
+    transition: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.ConsultingServices-1:hover img:first-child {
+    opacity: 0.5;
+}
+
+.ConsultingServices-1:hover p {
+    padding-bottom: 80px;
+}
+
+.ConsultingServices-1 p:first-of-type::before {
+    content: "from $499";
+}
+
+.ConsultingServices-1:hover p:first-of-type::before {
+    content: "";
+}
+
+.ConsultingServices-1:hover p:first-of-type::after {
+    content: "It includes a business model, a plan of strategic steps for the transition to it, and the consolidation of the financial model in the future.";
+}
+.ConsultingServices-1 {
+    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: right;
+}
+

@@ -1,143 +1,135 @@
 .example-spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .top-header {
-    background-color: black;
-    color: white;
-    display: flex;
+  background-color: black;
+  color: white;
+  display: flex;
 }
 
 .phone,
 .timing,
 .mail {
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
-    padding: 10px 10px;
-    padding-left: 60px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  padding-left: 60px;
 }
 
 .social-icons {
-    position: absolute;
-    right: 0px;
-    width: 300px;
-    padding: 10px;
-    padding-right: 0px;
-    vertical-align: middle;
-    display: flex;
-
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 10px;
+  padding-right: 0px;
+  vertical-align: middle;
+  display: flex;
 }
 
 mat-icon {
-    color: white;
-    margin-right: 20px;
+  color: white;
+  margin-right: 20px;
 }
 
 .main-image {
-    height: 900px;
-    width: 100%
+  height: 900px;
+  width: 100%;
 }
 
 .image-overlay {
-    position: relative;
-}
-
-.image-overlay::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(8, 15, 40, 0.516);
+  background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/04/Group-1212.png);
+  background-position: 50% 0px;
 }
 
 .image-section {
-    position: relative;
+  background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-441.jpg);
+  width: 100%;
+  height: 146%;
 }
 
-.image-section img {
-    display: block;
-    width: 120%;
-    height: auto;
-}
+// .image-section img {
+//     display: block;
+//     width: 120%;
+//     height: auto;
+// }
 
 .navbar a {
-    text-decoration: none;
-    color: white;
-    justify-self: center;
-    margin-left: 40px;
-    font-size: 24px;
+  text-decoration: none;
+  color: white;
+  justify-self: center;
+  margin-left: 40px;
+  font-size: 24px;
 }
 
 nav {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    box-sizing: border-box;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 mat-form-field {
-    margin-top: 3%;
-    margin-right: 3%;
-    text-transform: uppercase;
+  margin-top: 3%;
+  margin-right: 3%;
+  text-transform: uppercase;
 }
 
 mat-option {
-    color: white;
+  color: white;
 }
 
-.GetAQuoteButton {
-    display: flex;
-}
+// .GetAQuoteButton {
+//     display: flex;
+// }
 
 .GetAQuoteButton:hover span:first-child {
-    order: 2;
-
+  order: 2;
 }
 
 .GetAQuoteButton:hover span:last-child {
-    order: 1;
+  order: 1;
 }
 
 .GetAQuoteButton:hover {
-    background-color: white !important;
+  background-color: white !important;
 }
 
 .primary-color:hover {
-    background-color: #FF4949;
+  background-color: #ff4949;
 }
 
 .primary-color:hover svg:first-child {
-    background-color: white;
-    fill: black;
+  background-color: white;
+  fill: black;
 }
 
 .transition-scss:hover div:last-child {
-    transform: translateY(-20px);
-    animation: move-up 1s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
-
+  transform: translateY(-20px);
+  animation: move-up 1s forwards;
+  transition: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 .contact-view-btn::after {
-    content: "  _____";
+  content: "  _____";
 }
 
 .contact-view-btn:hover::before {
-    color: white;
-    content: "_____  ";
+  color: white;
+  content: "_____  ";
 }
 
 .contact-view-btn:hover::after {
-    content: "";
+  content: "";
 }
 
-.card1:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
-}
+// .card1:hover button:last-child {
+//     display: block;
+//     color: white;
+//     transition: 0.5s;
+// }
 
 // @keyframes animate-text {
 //     from {
@@ -148,273 +140,147 @@ mat-option {
 //       }
 // }
 .Service {
-    display: flex;
+  display: flex;
 }
 
 .Service:hover span:first-child {
-    order: 2;
-
+  order: 2;
 }
 
 .Service:hover span:last-child {
-    order: 1;
+  order: 1;
 }
 
 .Service:hover {
-    background-color: black !important;
+  background-color: black !important;
 }
 
 .Arrow {
-    fill: black !important;
+  fill: black !important;
 }
 
 .card-row2 {
-    margin-top: 800px;
+  margin-top: 800px;
 }
 
 // ConsultingServices-1
 .ConsultingServices-1:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
+  display: block;
+  color: white;
+  transition: 0.5s;
+}
+.ConsultingServices-1:hover .topLine {
+  display: none;
 }
 
 .ConsultingServices-1:hover {
-    color: white !important;
-    fill: white;
-    transform: translateY(-20px);
-    animation: move-up 2s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
+  color: white !important;
+  fill: white;
+  transform: translateY(-20px);
+  animation: move-up 2s forwards;
+  transition: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 .ConsultingServices-1:hover img:first-child {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .ConsultingServices-1:hover p {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
-.ConsultingServices-1 p:first-of-type::before {
-    content: "from $499";
+
+
+@media screen and (max-width: 640px) {
+  .ConsultingServices-1:hover p {
+    padding-bottom: 20px;
+  }
 }
 
-.ConsultingServices-1:hover p:first-of-type::before {
-    content: "";
+.ConsultingServices-1:hover p:first-of-type {
+  display: none;
 }
 
-.ConsultingServices-1:hover p:first-of-type::after {
-    content: "It includes a business model, a plan of strategic steps for the transition to it, and the consolidation of the financial model in the future.";
+.ConsultingServices-1:hover p:last-of-type {
+  display: block;
 }
+
 .ConsultingServices-1 {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: right;
+  background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: right;
 }
 
-
-// ConsultingServices-1
-.ConsultingServices-2:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
+.team-div {
+  border-radius: 20px;
 }
 
-.ConsultingServices-2:hover {
-    color: white !important;
-    fill: white;
-    transform: translateY(-20px);
-    animation: move-up 2s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
+.team-div:hover .team-text {
+  background-color: #ff4949;
+  color: white;
+  transition: all 300ms ease-in-out;
 }
 
-.ConsultingServices-2:hover img:first-child {
-    opacity: 0.5;
+.team-text {
+  overflow: hidden;
 }
 
-.ConsultingServices-2:hover p {
-    padding-bottom: 80px;
+.team-text div {
+  height: 100%;
+  width: 10px;
+  background: #ff4949;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff4949;
+  // border-radius: 0px 0px 01px 0px;
 }
 
-.ConsultingServices-2 p:first-of-type::before {
-    content: "from $249";
-}
-
-.ConsultingServices-2:hover p:first-of-type::before {
-    content: "";
-}
-
-.ConsultingServices-2:hover p:first-of-type::after {
-    content: "Step-by-step development of the top-level company’s organizational structure, principles of distribution of functions and powers.";
-}
-.ConsultingServices-2 {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: right;
-}
-
-// ConsultingServices-3
-.ConsultingServices-3:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
-}
-
-.ConsultingServices-3:hover {
-    color: white !important;
-    fill: white;
-    transform: translateY(-20px);
-    animation: move-up 2s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-.ConsultingServices-3:hover img:first-child {
-    opacity: 0.5;
-}
-
-.ConsultingServices-3:hover p {
-    padding-bottom: 80px;
-}
-
-.ConsultingServices-3 p:first-of-type::before {
-    content: "from $389";
-}
-
-.ConsultingServices-3:hover p:first-of-type::before {
-    content: "";
-}
-
-.ConsultingServices-3:hover p:first-of-type::after {
-    content: "we always use effective and key indicators to systematically monitor the implementation of our strategy for your business.";
-}
-.ConsultingServices-3 {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: right;
-}
-
-// ConsultingServices-4
-.ConsultingServices-4:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
-}
-
-.ConsultingServices-4:hover {
-    color: white !important;
-    fill: white;
-    transform: translateY(-20px);
-    animation: move-up 2s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-.ConsultingServices-4:hover img:first-child {
-    opacity: 0.5;
-}
-
-.ConsultingServices-4:hover p {
-    padding-bottom: 80px;
-}
-
-.ConsultingServices-4 p:first-of-type::before {
-    content: "from $199";
-}
-
-.ConsultingServices-4:hover p:first-of-type::before {
-    content: "";
-}
-
-.ConsultingServices-4:hover p:first-of-type::after {
-    content: "Formation of a team with good theoretical and practical training, professional knowledge and high motivation for success."
-}
-.ConsultingServices-4 {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: right;
-}
-
-// .ConsultingServices-5
-.ConsultingServices-5:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
-}
-
-.ConsultingServices-5:hover {
-    color: white !important;
-    fill: white;
-    transform: translateY(-20px);
-    animation: move-up 2s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-.ConsultingServices-5:hover img:first-child {
-    opacity: 0.5;
-}
-
-.ConsultingServices-5:hover p {
-    padding-bottom: 80px;
-}
-
-.ConsultingServices-5 p:first-of-type::before {
-    content: "from $889";
-}
-
-.ConsultingServices-5:hover p:first-of-type::before {
-    content: "";
-}
-
-.ConsultingServices-5:hover p:first-of-type::after {
-    content: "Solving various issues that arise in the course of the company’s activities. Prompt advice, timely advice and strategies.";
-}
-
-.ConsultingServices-5 {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: right;
-}
-.team-div{
-    border-radius: 20px;
-}
-.team-div:hover .team-text{
-    background-color: #FF4949;
-    color: white;
-    transition: all 300ms ease-in-out;
-}
-.team-text{
-    overflow: hidden;
-}
-.team-text div{
-    height: 100%;
-    width: 10px;
-    background: #FF4949;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #FF4949;
-    // border-radius: 0px 0px 01px 0px;
-}
-.team-text img{
-    position: absolute;
-    top:0 ;
-    right: 0;
+.team-text img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .form-div {
-    background-color: #212830;
-    border-radius: 10px;
-    width: 80%;
+  background-color: #212830;
+  border-radius: 10px;
 }
-.LatestNewsCards:hover a:last-of-type{
-    display: block;
+
+.LatestNewsCards:hover a:last-of-type {
+  display: block;
+}
+
+
+.PlayButton:hover span:first-child {
+  fill: #ff4949 !important;
+}
+
+.service-section {
+  background-color: #f5f6f7;
+   background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png);
+  background-position: 45% -60px;
+  background-repeat: no-repeat;
+  background-size: 1500px auto;
+  // background-color: #F5F6F7; background-image:url(https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-1.png); background-repeat: no-repeat; background-size: contain;
+}
+
+@media (max-width: 767px) {
+  .image-overlay {
+    background-position: 0px 0px !important;
+  }
+  .service-section {
+    background-position: 0 0 !important;
+  }
+}
+@media (max-width: 1024px) {
+  .image-overlay {
+    background-position: 0px 0px;
+  }
+  .service-section {
+    background-position: 800px 0;
+    background-size: contain;
+  }
 }

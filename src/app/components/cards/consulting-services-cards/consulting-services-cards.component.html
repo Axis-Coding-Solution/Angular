@@ -1,0 +1,23 @@
+<div *ngFor="let item of ConsultingServicesCards" class="mr-2">
+    <div  class="ConsultingServices-1 hover:bg-red-500 rounded-2xl shadow-2xl bg-white">
+        <div class="bg-red-500 rounded-tl-2xl rounded-tr-2xl h-2"></div>
+        <div class="pr-12 pl-12 pt-8 pb-16">
+            <div>
+                <span><img src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-2.svg"
+                        alt=""></span>
+                <span>
+                  
+                </span>
+            </div>
+            <div class="-mt-10">
+                <h1 class="text-xl font-bold pb-2">{{item.Title}} </h1>
+                <p class="pt-2 text-lg pb-40">{{item.Subtitle}} </p>
+                <div>
+                    <button
+                        class=" contact-view-btn  text-red-500 mt-5 text-lg font-sans font-semibold">Order
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

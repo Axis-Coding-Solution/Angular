@@ -9,6 +9,23 @@
     padding: 3px;
 }
 
+.Service:hover span:first-child {
+    order: 2;
+
+}
+
+.Service:hover span:last-child {
+    order: 1;
+}
+
+.Service:hover {
+    background-color: black !important;
+}
+
+.Arrow {
+    fill: black !important;
+}
+
 .card-row2 {
     margin-top: 800px;
 }
@@ -37,192 +54,22 @@
     padding-bottom: 80px;
 }
 
-.ConsultingServices-1 p:first-of-type::before {
-    content: "from $499";
+@media screen and (max-width: 640px) {
+    .ConsultingServices-1:hover p {
+        padding-bottom: 20px;
+    }
 }
 
-.ConsultingServices-1:hover p:first-of-type::before {
-    content: "";
+.ConsultingServices-1:hover p:first-of-type {
+    display: none;
 }
 
-.ConsultingServices-1:hover p:first-of-type::after {
-    content: "It includes a business model, a plan of strategic steps for the transition to it, and the consolidation of the financial model in the future.";
+
+.ConsultingServices-1:hover p:last-of-type {
+    display: block;
 }
 
 .ConsultingServices-1 {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: right;
-}
-
-
-// ConsultingServices-1
-.ConsultingServices-2:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
-}
-
-.ConsultingServices-2:hover {
-    color: white !important;
-    fill: white;
-    transform: translateY(-20px);
-    animation: move-up 2s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-.ConsultingServices-2:hover img:first-child {
-    opacity: 0.5;
-}
-
-.ConsultingServices-2:hover p {
-    padding-bottom: 80px;
-}
-
-.ConsultingServices-2 p:first-of-type::before {
-    content: "from $249";
-}
-
-.ConsultingServices-2:hover p:first-of-type::before {
-    content: "";
-}
-
-.ConsultingServices-2:hover p:first-of-type::after {
-    content: "Step-by-step development of the top-level company’s organizational structure, principles of distribution of functions and powers.";
-}
-
-.ConsultingServices-2 {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: right;
-}
-
-// ConsultingServices-3
-.ConsultingServices-3:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
-}
-
-.ConsultingServices-3:hover {
-    color: white !important;
-    fill: white;
-    transform: translateY(-20px);
-    animation: move-up 2s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-.ConsultingServices-3:hover img:first-child {
-    opacity: 0.5;
-}
-
-.ConsultingServices-3:hover p {
-    padding-bottom: 80px;
-}
-
-.ConsultingServices-3 p:first-of-type::before {
-    content: "from $389";
-}
-
-.ConsultingServices-3:hover p:first-of-type::before {
-    content: "";
-}
-
-.ConsultingServices-3:hover p:first-of-type::after {
-    content: "we always use effective and key indicators to systematically monitor the implementation of our strategy for your business.";
-}
-
-.ConsultingServices-3 {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: right;
-}
-
-// ConsultingServices-4
-.ConsultingServices-4:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
-}
-
-.ConsultingServices-4:hover {
-    color: white !important;
-    fill: white;
-    transform: translateY(-20px);
-    animation: move-up 2s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-.ConsultingServices-4:hover img:first-child {
-    opacity: 0.5;
-}
-
-.ConsultingServices-4:hover p {
-    padding-bottom: 80px;
-}
-
-.ConsultingServices-4 p:first-of-type::before {
-    content: "from $199";
-}
-
-.ConsultingServices-4:hover p:first-of-type::before {
-    content: "";
-}
-
-.ConsultingServices-4:hover p:first-of-type::after {
-    content: "Formation of a team with good theoretical and practical training, professional knowledge and high motivation for success."
-}
-
-.ConsultingServices-4 {
-    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: right;
-}
-
-// .ConsultingServices-5
-.ConsultingServices-5:hover button:last-child {
-    display: block;
-    color: white;
-    transition: 0.5s;
-}
-
-.ConsultingServices-5:hover {
-    color: white !important;
-    fill: white;
-    transform: translateY(-20px);
-    animation: move-up 2s forwards;
-    transition: 1s;
-    animation-timing-function: ease-in-out;
-}
-
-.ConsultingServices-5:hover img:first-child {
-    opacity: 0.5;
-}
-
-.ConsultingServices-5:hover p {
-    padding-bottom: 80px;
-}
-
-.ConsultingServices-5 p:first-of-type::before {
-    content: "from $889";
-}
-
-.ConsultingServices-5:hover p:first-of-type::before {
-    content: "";
-}
-
-.ConsultingServices-5:hover p:first-of-type::after {
-    content: "Solving various issues that arise in the course of the company’s activities. Prompt advice, timely advice and strategies.";
-}
-
-.ConsultingServices-5 {
     background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Vector-16.png);
     background-repeat: no-repeat;
     background-position: bottom;

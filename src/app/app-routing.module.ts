@@ -1,14 +1,15 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ErrorComponent } from './error/error.component';
+import { SingleServiceComponent } from './single-service/single-service.component';
+import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ServicesComponent } from './services/services.component';
-import { ErrorComponent } from './error/error.component';
-import { SingleServiceComponent } from './single-service/single-service.component';
+
 import { AfzalComponent } from './afzal/afzal.component';
 const routes: Routes = [
   {

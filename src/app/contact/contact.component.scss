@@ -6,7 +6,6 @@
     text-transform: none;
     font-style: normal;
     text-decoration: none;
-    padding: 3px;
 }
 
 .GetAQuoteButton {
@@ -28,9 +27,7 @@
     transition: 500ms;
 }
 
-.contact-div {
-    width: 80%;
-}
+
 
 .from-div {
     background-color: #212830;
@@ -43,6 +40,27 @@
     fill: #ff4949;
 }
 
-.card1:hover button:last-child {
-    display: block;
+.card1:hover .contact-view-btn {
+    opacity: 0.9;
+    // color: #ff4949;
+}
+
+.ho {
+    color: #5E636F;
+}
+
+.ho:hover {
+    color: #ff4949;
+}
+
+.contact-view-btn:after {
+    content: "_____  ";
+}
+
+.contact-view-btn:hover:before {
+    content: "_____  ";
+}
+
+.contact-view-btn:hover:after {
+    content: "";
 }

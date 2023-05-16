@@ -1,0 +1,33 @@
+.transition-scss:hover div:last-child {
+    transform: translateY(-20px);
+    animation: move-up 1s forwards;
+    transition: 1s;
+    animation-timing-function: ease-in-out;
+
+}
+
+.contact-view-btn::after {
+    content: "  _____";
+}
+
+.contact-view-btn:hover::before {
+    color: white;
+    content: "_____  ";
+}
+
+.contact-view-btn:hover::after {
+    content: "";
+}
+.primary-color:hover {
+    background-color: #FF4949;
+}
+
+.primary-color:hover svg:first-child {
+    background-color: white;
+    fill: black;
+}
+.transition-scss:hover button:last-child {
+    display: block;
+    color: white;
+    transition: 0.5s;
+}
