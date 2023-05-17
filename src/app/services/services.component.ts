@@ -5,6 +5,10 @@ interface ConsultingServicesCards {
   Longtext: string;
   svgId: string;
 }
+interface GraphCard {
+  svgId: string;
+  Title: string;
+}
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
@@ -19,5 +23,13 @@ export class ServicesComponent {
     { Title: 'Selection of suitable personnel', Shorttext: 'from $199', Longtext: 'Formation of a team with good theoretical and practical training, professional knowledge and high motivation for success.', svgId: './assets/icons/sprite.svg#SuitablePersonnel' },
     { Title: 'Effective support for your business', Shorttext: 'from $889', Longtext: 'Solving various issues that arise in the course of the company’s activities. Prompt advice, timely advice and strategies.', svgId: './assets/icons/sprite.svg#System_Approach' }
   ]
+  GraphCard: GraphCard[] = [
+    { svgId: './assets/icons/sprite.svg#man', Title: 'Personal strategic audit' },
+    { svgId: ' ./assets/icons/sprite.svg#elearning', Title: 'Training your employees' },
+    { svgId: ' ./assets/icons/sprite.svg#shipping', Title: ' Strategy of globalization' },
+    { svgId: './assets/icons/sprite.svg#analysis', Title: 'Expertise of your company' },
+    { svgId: './assets/icons/sprite.svg#skills', Title: ' Optimization of processes' }
+  ]
 
 }
+
