@@ -11,16 +11,33 @@
     height: 100%;
     width: 100%;
 }
+
 .swiper-pagination-bullet-active {
     background-color: #FF4949 !important;
 }
+
 .swiper-pagination-bullet {
     background-color: white;
     border: 0.8px solid #FF4949;
     width: 18px;
     height: 18px;
     opacity: 0.9;
+}
 
+#OnlyRealReviews {
+    .swiper-pagination-bullet {
+        background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-53.jpg);
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        bottom: 265px;
+        border: none; 
+        opacity: 1;
+        margin-right: 10px;
+    }
+    .swiper-pagination-horizontal{
+        bottom: 220px;
+    }
 }
 
 
