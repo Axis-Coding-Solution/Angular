@@ -8,3 +8,19 @@
     text-decoration: none;
     padding: 3px;
 }
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+.swiper {
+    height: 100%;
+    width: 100%;
+}
+
+.swiperSlide {
+    height: 100%;
+    width: 100%;
+}
+.swiper-pagination-bullet-active {
+    background-color: #FF4949 !important;
+}
