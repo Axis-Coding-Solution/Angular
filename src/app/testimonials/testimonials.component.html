@@ -7,7 +7,7 @@
         <img class=" h-96 w-full" src="https://demo6.clientica.org/wp-content/uploads/2020/12/Group-1212-1.png" alt="">
 
         <div class="absolute">
-            <h1 class="font-bold text-7xl text-white">Testimonials</h1>
+            <h1 class="font-bold md:text-7xl text-5xl text-white">Testimonials</h1>
             <div class="flex justify-center items-center gap-5 font-bold">
                 <div style="color: white">
                     <span>Home</span>
@@ -26,31 +26,50 @@
 <section>
     <app-testimonials-feedback-slider></app-testimonials-feedback-slider>
 </section>
-<section class="mt-40">
+<section class="pt-20">
+    <div class="flex xl:flex-row flex-col pt-14">
+        <div class="xl:-ml-60 -ml-0">
+            <img class="lg:rounded-r-xl rounded-none"
+                src="https://demo6.clientica.org/wp-content/uploads/2021/01/Image-661.jpg" height="auto" alt="">
+        </div>
+        <div class="ReviewsImage xl:mt-16 lg:-mt-80 md:-mt-48 sm:-mt-28  text-white xl:my-28 my-0 xl:-ml-56 -ml-0 w-full xl:rounded-l-xl rounded-none"
+            style="background-color: #09111A;">
+            <div class="xl:py-36 py-20 xl:pl-56 pl-5 text-white">
+                <div>
+                    <h1 class="font-sans font-semibold text-base">[REVIEWS]</h1>
+                    <h1 class="font-sans font-bold lg:text-5xl text-2xl pt-5">Testimonials</h1>
+                    <app-carousel></app-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mt-40 mb-40 OnlyRealReviewsImg">
     <div class="text-center">
         <span class="font-light text-xl">[</span>
         <span class="text-sm font-medium  px-2">
             TESTIMONIALS
         </span>
         <span class="font-light text-xl">]</span>
-        <h1 class="text-5xl font-sans font-bold pt-6">Only Real Reviews</h1>
+        <h1 class="xl:text-5xl text-3xl font-sans font-bold pt-6">Only Real Reviews</h1>
     </div>
-    <div id="OnlyRealReviews" class="pt-10 grid grid-cols-1 mx-9 overflow-hidden">
-        <div class="mr-2 pt-20"
-            style="height:110vh; background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/Bg.svg); background-repeat: no-repeat; background-size: inherit; background-position: top center;">
-            <swiper [slidesPerView]="1" [spaceBetween]="0" [navigation]="false" [autoplay]="false" [loop]="true"
+    <div id="OnlyRealReviews" class=" grid grid-cols-1 xl:mx-9 mx-0 overflow-hidden">
+        <div class="mr-2 xl:pt-10 pt-5">
+            <swiper style="height: 600px;" [slidesPerView]="1" [spaceBetween]="0" [navigation]="false" [autoplay]="false" [loop]="true"
                 [pagination]="{ clickable: true }">
                 <ng-template *ngFor="let item of OnlyRealReviews" swiperSlide let-data>
-                    <div class="m-6">
+                    <div class="my-6 md:mx-6 mx-2">
                         <div class=" rounded-2xl shadow-xl bg-white w-full">
-                            <div class=" px-5 pt-8 rounded-t-xl "
-                                style="background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/mark-side-bar-01.svg); background-repeat: no-repeat; background-size: 31px; background-position: center">
-                                <div>
-                                    <h1
-                                        class="text-lg font-sans text-gray-600 font-normal text-center px-48 pt-20 pb-3">
-                                        {{item.review}}</h1>
-                                </div>
+                            <img class="mx-auto xl:pt-14 pt-5 pb-5"
+                                src="https://demo6.clientica.org/wp-content/uploads/2021/01/mark-side-bar-01.svg"
+                                height="31px" width="31px" alt="">
+                            <!-- <div class=" px-5 xl:pt-8 pt-2 rounded-t-xl "
+                                style="background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/mark-side-bar-01.svg); background-repeat: no-repeat; background-size: 31px; background-position: center"> -->
+                            <div>
+                                <h1 class="text-lg font-sans text-gray-600 font-normal text-center xl:px-48 px-6">
+                                    {{item.review}}</h1>
                             </div>
+                            <!-- </div> -->
                             <div class="pt-10">
                                 <p class="text-center font-medium font-sans text-lg">{{item.reviewer}}</p>
                                 <div class="flex justify-center pt-5 pb-16">

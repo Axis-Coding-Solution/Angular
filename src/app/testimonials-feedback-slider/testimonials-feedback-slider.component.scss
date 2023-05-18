@@ -2,14 +2,22 @@
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
 
-.swiper {
-    height: 100%;
-    width: 120%;
+#FeedBackSlider {
+        height: 100%;
+        width: 150% !important;  
 }
 
 .swiperSlide {
     height: 100%;
     width: 100%;
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+    #FeedBackSlider {
+        height: 100%;
+        width: 100% !important;
+    }
+
 }
 
 .swiper-pagination-bullet-active {
@@ -24,30 +32,43 @@
     opacity: 0.9;
 }
 
+.swiper-pagination {
+    bottom: -4px;
+}
+
+
 #OnlyRealReviews {
+
     .swiper-pagination-bullet {
         background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-53.jpg);
         height: 100px;
         width: 100px;
         border-radius: 50%;
-        bottom: 265px;
-        border: none; 
+        bottom: 400px;
+        border: none;
         opacity: 1;
         margin-right: 10px;
     }
-    // .swiper-pagination-bullet-0{
-    //     background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-55.jpg);
-    // }
-    // .swiper-pagination-bullet-1 {
-    //     background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-54.jpg);
-    // }
-    // .swiper-pagination-bullet-2 {
-        
 
-    // }
+    @media screen and (min-width:320px) and (max-width:620px) {
+        .swiper-pagination-bullet :nth-child(1) {
+            background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-53.jpg);
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            bottom: 400px;
+            border: none;
+            opacity: 1;
+            margin-right: 10px;
+        }    
+    }
 
-    .swiper-pagination-horizontal{
-        bottom: 220px;
+    .swiper-pagination-horizontal {
+        bottom: 0px;
+    }
+    .swiper {
+        height: 100%;
+        width: 100% !important;
     }
 }
 
@@ -58,9 +79,6 @@
     color: gray;
 }
 
-// .Slider-card-image:hover{
-
-// }
 .Slider-Card:hover .Slider-card-image {
 
     background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/Line-Bg-1.png);
@@ -74,4 +92,9 @@
     animation: move-up 2s forwards;
     transition: 0.5s;
     animation-timing-function: ease-in-out;
+}
+
+card-width {
+    height: 417px;
+    width: 344px;
 }

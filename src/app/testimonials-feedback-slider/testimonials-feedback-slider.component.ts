@@ -18,5 +18,17 @@ export class TestimonialsFeedbackSliderComponent{
       disableOnInteraction: false,
     },
   });
+
+  public swiperConfig = {
+    slidesPerView: 2,
+    breakpoints:{
+      320:{
+           slidesPerView: 1, 
+          },
+      768:{
+        slidesPerView: 2, 
+      }
+   }
+  } 
 }
 

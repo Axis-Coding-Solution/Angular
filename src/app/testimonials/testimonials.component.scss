@@ -8,19 +8,41 @@
     text-decoration: none;
     padding: 3px;
 }
+
 @import 'swiper/scss';
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
-
-.swiper {
-    height: 100%;
-    width: 100%;
-}
 
 .swiperSlide {
     height: 100%;
     width: 100%;
 }
+
 .swiper-pagination-bullet-active {
     background-color: #FF4949 !important;
+}
+
+.OnlyRealReviewsImg {
+    background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/Bg.svg);
+    background-repeat: no-repeat;
+    background-position: center 75px;
+    background-size: auto;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .OnlyRealReviewsImg {
+        background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/Bg.svg);
+        background-repeat: no-repeat;
+        background-position: left 0px;
+        background-size: auto;
+    }
+}
+
+@media screen and (min-width:2000px)  {
+    
+}
+.ReviewsImage{
+background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-2.svg);
+    background-position: 85% 50%;
+    background-repeat: no-repeat;
 }

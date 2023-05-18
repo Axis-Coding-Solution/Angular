@@ -1,16 +1,16 @@
-<section class="h-screen">
+<section>
     <div class="text-center pt-28 pb-10">
         <h1 class="text-lg font-sans font-semibold pb-8">[ONLY REAL ONES]</h1>
-        <h1 class="text-5xl font-sans font-bold">Feedback From Our Clients </h1>
+        <h1 class="md:text-5xl text-3xl font-sans font-bold">Feedback From Our Clients </h1>
     </div>
-    <div class="pt-10 grid grid-cols-2 ml-28 mr-28">
-        <div class="mr-2">
-            <swiper [slidesPerView]="2" [spaceBetween]="0" [navigation]="false" [autoplay]="true" [loop]="true"
-                [pagination]="{ clickable: true }">
+    <div class="pt-10 grid xl:grid-cols-2 grid-cols-1">
+        <div class="lg:ml-20 lg:mr-28 ml-3 mr-3">
+            <swiper style="height: 550px;" [config]="swiperConfig" [spaceBetween]="0" [navigation]="false" [autoplay]="false" [loop]="true"
+                [pagination]="{ clickable: true }" id="FeedBackSlider">
                 <ng-template swiperSlide let-data>
                     <div class="m-6 Slider-Card">
-                        <div class=" rounded-2xl shadow-xl bg-white" style="height: 417px; width: 344px;">
-                            <div class="px-12 pt-8 pb-16 rounded-t-xl ">
+                        <div class="rounded-2xl shadow-xl bg-white" style="height: 417px; width: 344px;">
+                            <div class="Slider-card-image px-12 pt-8 pb-16 rounded-t-xl ">
                                 <div>
                                     <h1 class="text-base font-normal text-center pb-3"
                                         style="background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/quoteSmall.svg); background-repeat: no-repeat; background-size: 60px; background-position-x:right;">
@@ -21,7 +21,6 @@
                                             src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-53.jpg"
                                             class="h-24 w-24 rounded-full shadow-lg dark:shadow-black/30"
                                             alt="smaple image" /></div>
-
                                 </div>
                             </div>
                             <div class="-mt-8">
@@ -79,26 +78,9 @@
                 </ng-template>
             </swiper>
         </div>
-        <div class="overflow-hidden">
-            <img class="relative overflow-hidden left-36 "
+        <div class="overflow-hidden xl:pt-0 pt-28 flex xl:block lg:justify-center md:justify-end ">
+            <img class="relative overflow-hidden xl:left-36 left-0"
                 src="https://demo6.clientica.org/wp-content/uploads/2021/04/Mockup-testimon-1-1.png" alt="">
-        </div>
-    </div>
-</section>
-<section class="pt-20">
-    <div class="flex pt-14">
-        <div class="-ml-60">
-            <img class="rounded-r-xl " src="https://demo6.clientica.org/wp-content/uploads/2021/01/Image-661.jpg"
-                height="auto" alt="">
-        </div>
-        <div class=" text-white my-28 -ml-56 w-full rounded-l-xl" style="background-color: #09111A;">
-            <div class="pt-36 pl-56 text-white">
-                <div>
-                    <h1 class="font-sans font-semibold text-base">[REVIEWS]</h1>
-                    <h1 class="font-sans font-bold text-5xl pt-5">The Result of Our Work</h1>
-                    <app-carousel></app-carousel>
-                </div>
-            </div>
         </div>
     </div>
 </section>
