@@ -4,46 +4,63 @@
         <app-header></app-header>
     </div>
     <div>
-    <div class="navbar-list w-full lex justify-between items-center px-5 py-5">
-        <img class=" mt-0 float-left"
-            src="https://demo6.clientica.org/wp-content/uploads/2020/12/Logo-ABC-white.svg" alt="logo">
-        <span class="inline-block lg:hidden  mt-0 float-right">
-            <button type="button" class="navbar-toggle" (click)="toggleNavbar()">
-                <span class="navbar-toggle-icon"></span>
-                <span class="navbar-toggle-icon"></span>
-                <span class="navbar-toggle-icon"></span>
-            </button>
-        </span>
-        <div class="lg:inline-flex hidden float-right">
-            <ul class="inline-flex list-none text-white">
-                <div class=" capitalize text-lg font-sans font-semibold
-                tracking-wider items-center cursor-pointer from-white
-                hover:to-orange-700">
-                    <Span routerLink="" class="mr-16 hover:text-red-600 text-sm">HOME</Span>
-                    <Span routerLink="" class="mr-16 hover:text-red-600 text-sm">SERVICES</Span>
-                    <Span routerLink="" class="mr-16 hover:text-red-600 text-sm">ABOUT</Span>
-                    <Span routerLink="" class="mr-16 hover:text-red-600 text-sm">PORTFOLIO</Span>
-                    <Span routerLink="" class="mr-16 hover:text-red-600 text-sm">TESTIMONIALS</Span>
-                    <Span routerLink="" class=" hover:text-red-600 text-sm">CONTACT</Span>
-                </div>
-            </ul>
+        <div class="navbar-list w-full lex justify-between items-center px-5
+            py-5">
+            <img class=" mt-0 float-left"
+                src="https://demo6.clientica.org/wp-content/uploads/2020/12/Logo-ABC-white.svg"
+                alt="logo">
+            <span class="inline-block lg:hidden mt-0 float-right">
+                <button type="button" class="navbar-toggle"
+                    (click)="toggleNavbar()">
+                    <span class="navbar-toggle-icon"></span>
+                    <span class="navbar-toggle-icon"></span>
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+            </span>
+            <div class="lg:inline-flex hidden float-right">
+                <ul class="inline-flex list-none text-white">
+                    <div class=" capitalize text-lg font-sans font-semibold
+                        tracking-wider items-center cursor-pointer from-white
+                        hover:to-orange-700">
+                        <Span routerLink="" class="mr-16 hover:text-red-600
+                            text-sm">HOME</Span>
+                        <Span routerLink="/services" class="mr-16
+                            hover:text-red-600
+                            text-sm">SERVICES</Span>
+                        <Span routerLink="" class="mr-16 hover:text-red-600
+                            text-sm">ABOUT</Span>
+                        <Span routerLink="/portfolio" class="mr-16
+                            hover:text-red-600 text-sm">PORTFOLIO</Span>
+                        <Span routerLink="" class="mr-16 hover:text-red-600
+                            text-sm">TESTIMONIALS</Span>
+                        <Span routerLink="/contact" class=" hover:text-red-600
+                            text-sm">CONTACT</Span>
+                    </div>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="fixed z-90  flex justify-center items-center bg-gray-900 opacity-0 duration-700"
-        [ngClass]="{'w-0 h-0 opacity-0 hidden': !isNavbarOpen, 'w-screen h-screen opacity-95':isNavbarOpen}">
-        <!-- <a href="javascript:void(0)"
+        <div class="fixed z-90 flex justify-center items-center bg-gray-900
+            opacity-0 duration-700"
+            [ngClass]="{'w-0 h-0 opacity-0 hidden': !isNavbarOpen, 'w-screen
+            h-screen opacity-95':isNavbarOpen}">
+            <!-- <a href="javascript:void(0)"
                 class="fixed top-6 right-8 text-white hover:text-amber-500 text-7xl font-semibold duration-300"
                 (click)="toggleNavbar()">&times;</a> -->
-        <div class="flex flex-col text-white text-center text-xl font-light
-            space-y-3">
-            <a class="hover:text-amber-500 duration-300" href="#">Home</a>
-            <a class="hover:text-amber-500 duration-300" href="#">Services</a>
-            <a class="hover:text-amber-500 duration-300" href="#">SINGLE-SERVICE</a>
-            <a class="hover:text-amber-500 duration-300" href="#">About</a>
-            <a class="hover:text-amber-500 duration-300" href="#">Portfolio</a>
-            <a class="hover:text-amber-500 duration-300" href="#">Testimonials</a>
-            <a class="hover:text-amber-500 duration-300" href="#">Contact</a>
+            <div class="flex flex-col text-white text-center text-xl font-light
+                space-y-3">
+                <a class="hover:text-amber-500 duration-300" routerLink="">Home</a>
+                <a class="hover:text-amber-500 duration-300"
+                    routerLink="/Services">Services</a>
+                <a class="hover:text-amber-500 duration-300" routerLink="/">SINGLE-SERVICE</a>
+                <a class="hover:text-amber-500 duration-300"
+                    routerLink="/about">About</a>
+                <a class="hover:text-amber-500 duration-300"
+                    routerLink="/portfolio">Portfolio</a>
+                <a class="hover:text-amber-500 duration-300"
+                    routerLink="/testimonials">Testimonials</a>
+                <a class="hover:text-amber-500 duration-300"
+                    routerLink="/contact">Contact</a>
+            </div>
         </div>
     </div>
-</div>
 </nav>
