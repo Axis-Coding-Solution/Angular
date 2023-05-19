@@ -10,48 +10,45 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ServicesComponent } from './services/services.component';
 
-import { AfzalComponent } from './afzal/afzal.component';
+
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: HomeComponent,
   },
   {
-    path:'about',
+    path: 'about',
     component: AboutComponent,
   },
   {
-    path:'contact',
+    path: 'contact',
     component: ContactComponent,
   },
   {
-    path:'footer',
+    path: 'footer',
     component: FooterComponent,
   },
   {
-    path:'portfolio',
+    path: 'portfolio',
     component: PortfolioComponent,
   },
   {
-    path:'testimonials',
+    path: 'testimonials',
     component: TestimonialsComponent,
   },
   {
-    path:'services',
+    path: 'services',
     component: ServicesComponent,
   },
   {
-    path:'error',
-    component:ErrorComponent,
+    path: 'error',
+    component: ErrorComponent,
   },
   {
-    path:'single-service',
-    component:SingleServiceComponent,
+    path: 'single-service',
+    component: SingleServiceComponent,
   },
-  {
-    path:'afzal',
-    component:AfzalComponent,
-  }
+
 ];
 
 @NgModule({
