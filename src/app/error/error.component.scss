@@ -65,3 +65,24 @@ mat-option{
     padding: 3px;
   }
   
+
+
+
+  @media (max-width: 640px) {
+    .content {
+      font-size: 104px;
+      color: #ff4949;
+      font-weight: 700;
+      
+    }
+  }
+  @media (min-width: 640px) {
+    .content{
+    color: #ff4949;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size:204px;
+ 
+    
+  }
+}
