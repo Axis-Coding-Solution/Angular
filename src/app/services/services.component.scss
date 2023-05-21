@@ -88,3 +88,59 @@
 .contact-view-btn:hover::after {
     content: "";
 }
+
+.GetAQuoteButton {
+    display: flex;
+}
+
+.GetAQuoteButton:hover span:first-child {
+    order: 2;
+    transition: .5s;
+}
+
+.GetAQuoteButton:hover span:last-child {
+    order: 1;
+    transition: 300ms;
+}
+
+.GetAQuoteButton:hover {
+    background-color: black !important;
+    transition: 500ms;
+}
+
+.GetAQuoteButton1 {
+    display: flex;
+}
+
+.GetAQuoteButton1 {
+    color: #ff4949;
+}
+
+.GetAQuoteButton1:hover span:first-child {
+    order: 2;
+    transition: .5s;
+}
+
+.GetAQuoteButton1:hover span:last-child {
+    order: 1;
+    transition: 300ms;
+}
+
+.GetAQuoteButton1:hover {
+    background-color: black !important;
+    color: white;
+    transition: 500ms;
+}
+
+.pricing-bullet {
+    list-style: none;
+}
+
+.pricing-bullet li::before {
+    content: "\2022";
+    color: #ff4949;
+    font-weight: bolder;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1em;
+}

@@ -24,10 +24,11 @@ import { TestimonialsFeedbackSliderComponent } from './testimonials-feedback-sli
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
-import SwiperCore from 'swiper';
-import { AfzalComponent } from './afzal/afzal.component';
+
+
 import { SaliderComponent } from './salider/salider.component';
 import { AboutComponent } from './about/about.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -49,9 +50,10 @@ import { AboutComponent } from './about/about.component';
     ErrorComponent,
     TestimonialsComponent,
     ContactComponent,
-    AfzalComponent,
+
     SaliderComponent,
-    AboutComponent
+    AboutComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -60,7 +62,8 @@ import { AboutComponent } from './about/about.component';
     MaterialModule,
     FontAwesomeModule,
     HttpClientModule,
-    SwiperModule
+    SwiperModule,
+    NgChartsModule
   ],
 
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

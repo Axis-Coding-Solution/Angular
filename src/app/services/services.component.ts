@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ChartConfiguration, ChartData, ChartEvent, ChartType } from 'chart.js';
+import { BaseChartDirective } from 'ng2-charts';
 interface ConsultingServicesCards {
   Title: string;
   Shorttext: string;
@@ -30,6 +32,45 @@ export class ServicesComponent {
     { svgId: './assets/icons/sprite.svg#analysis', Title: 'Expertise of your company' },
     { svgId: './assets/icons/sprite.svg#skills', Title: ' Optimization of processes' }
   ]
+  @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
+
+  public barChartOptions: ChartConfiguration['options'] = {
+    responsive: true,
+    // We use these empty structures as placeholders for dynamic theming.
+
+    scales: {
+      x: {},
+      y: {
+        beginAtZero: true
+      },
+    },
+    plugins: {
+      legend: {
+        display: true,
+      }
+    },
+
+  };
+  public barChartType: ChartType = 'bar';
+
+  public barChartData: ChartData<'bar'> = {
+    labels: ['OCT', 'NOV', 'DEC', 'JAN'],
+
+    datasets: [
+      { data: [8, 18, 14, 12], label: 'Before', backgroundColor: '#c7c8c1', hoverBackgroundColor: '#b5b8a8' },
+      { data: [12, 25, 28, 26], label: 'After', backgroundColor: '#ff4949', hoverBackgroundColor: '#ff4949' }
+    ]
+  };
+
+  // events
+  public chartClicked({ event, active }: { event?: ChartEvent, active?: {}[] }): void {
+    console.log(event, active);
+  }
+
+  public chartHovered({ event, active }: { event?: ChartEvent, active?: {}[] }): void {
+    console.log(event, active);
+  }
+
 
 }
 
