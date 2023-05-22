@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartConfiguration, ChartData, ChartEvent, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 interface ConsultingServicesCards {
@@ -17,7 +17,7 @@ interface GraphCard {
   styleUrls: ['./services.component.scss']
 
 })
-export class ServicesComponent {
+export class ServicesComponent implements OnInit{
   ConsultingServicesCards: ConsultingServicesCards[] = [
     { Title: 'Developing a profitability strategy', Shorttext: 'from $499', Longtext: 'It includes a business model, a plan of strategic steps for the transition to it, and the consolidation of the financial model in the future.', svgId: './assets/icons/sprite.svg#MoneyLogo' },
     { Title: 'Optimization of company structure', Shorttext: 'from $249', Longtext: 'Step-by-step development of the top-level company’s organizational structure, principles of distribution of functions and powers.', svgId: './assets/icons/sprite.svg#Optimization' },
@@ -127,6 +127,11 @@ export class ServicesComponent {
 
   public chartHovered({ event, active }: { event?: ChartEvent, active?: {}[] }): void {
     console.log(event, active);
+  }
+
+  // filterData: 
+  ngOnInit(): void {
+    
   }
 
 

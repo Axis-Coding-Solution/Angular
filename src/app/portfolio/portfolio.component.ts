@@ -43,6 +43,7 @@ export class PortfolioComponent implements OnInit {
   filterCards(cat: string) {
     if (cat === 'All') {
       this.filterData = this.realworks
+      
     } else {
       this.filterData = this.realworks.filter(item => item.heading.includes(cat));
     }
