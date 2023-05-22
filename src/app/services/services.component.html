@@ -154,7 +154,7 @@
                 text-black bg-white shadow-2xl
                 font-semibold border-none
                 hover:border-transparent rounded-xl mx-2 "
-                style="background-color: #FF4949; width: 200px;">
+                style="width: 200px;">
                 <div>
                     <svg class="justify-start" style="height: 70px; width:
                         70px">
@@ -226,8 +226,7 @@
                     </div>
                 </div>
                 <div class="p-4">
-                    <div
-                        *ngIf="item.graphName === cardType && item.id === cardId">
+                    <div *ngIf="item.graphName === 'LineChart'">
                         <canvas baseChart
                             [data]="LineChartData"
                             [options]="LineChartOptions"
@@ -250,9 +249,7 @@
                 width="480"
                 height="460">
             </canvas> -->
-                    <canvas
-                        *ngIf="item.graphName === cardType && item.id === cardId"
-                        baseChart
+                    <canvas *ngIf="item.graphName === 'BarChart'" baseChart
                         class="chart"
                         [data]="barChartData"
                         [options]="barChartOptions"
