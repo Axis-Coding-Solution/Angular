@@ -33,7 +33,8 @@
 <section class="-mt-12 py-24 service-section">
     <div class="lg:container mx-auto">
         <div class="flex m-auto mx-0 xl:mx-24">
-            <div class=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-6
+            <div
+                class=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-6
                 gap-4 p-3">
                 <div>
                     <div class=" md:pb-28 pb-10">
@@ -52,7 +53,8 @@
                         </p>
                         <button class="Service mt-6 px-10 py-4 text-black
                             font-semibold hover:text-white
-                            hover:border-transparent rounded-md" style=" border:
+                            hover:border-transparent rounded-md"
+                            style=" border:
                             1px
                             solid black; ">
                             <span class="px-3">All Services</span>
@@ -72,7 +74,7 @@
                             <div>
                                 <span><img
                                         src="https://demo6.clientica.org/wp-content/uploads/2020/12/Decor-2.svg"
-                                        alt=""></span>
+                                        alt></span>
                                 <span>
 
                                     <svg class=" w-16 h-16 -mt-16 mb-20
@@ -88,9 +90,9 @@
                                 <p class="pt-2 md:text-lg text-base md:pb-40
                                     pb-20">{{item.Shorttext}}
                                 </p>
-                                <P class="pt-2 md:text-lg text-base md:pb-40
+                                <p class="pt-2 md:text-lg text-base md:pb-40
                                     pb-20 hidden">{{item.Longtext}}
-                                </P>
+                                </p>
                                 <div>
                                     <button class=" contact-view-btn
                                         text-red-500 mt-5
@@ -111,7 +113,7 @@
         <div class="xl:-ml-60 -ml-0">
             <img class="lg:rounded-r-xl rounded-none"
                 src="https://demo6.clientica.org/wp-content/uploads/2021/01/Image-681.jpg"
-                height="auto" alt="">
+                height="auto" alt>
         </div>
 
         <div class="xl:mt-16 lg:-mt-80 md:-mt-48 sm:-mt-28 text-white xl:my-28
@@ -208,16 +210,16 @@
                     </div>
                 </div>
                 <div class="p-4">
-                    <canvas baseChart 
-                    [data]="LineChartData"
-                    [options]="LineChartOptions"
-                    [type]="LineChartType"
-                    [legend]="lineChartLegend"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                    width="480"
-                    height="460">
-                </canvas>
+                    <canvas baseChart
+                        [data]="LineChartData"
+                        [options]="LineChartOptions"
+                        [type]="LineChartType"
+                        [legend]="lineChartLegend"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"
+                        width="480"
+                        height="460">
+                    </canvas>
                 </div>
             </div>
             <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
@@ -263,6 +265,7 @@
                         width="480"
                         height="460">
                     </canvas>
+
                 </div>
             </div>
             <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
@@ -306,15 +309,15 @@
                     </div>
                 </div>
                 <div class="p-4">
-                    <canvas baseChart 
-                    [data]="DoughnutChartData"
-                    [options]="DoughnutChartOptions"
-                    [type]="DoughnutChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                    width="480"
-                    height="460">
-                </canvas>
+                    <canvas baseChart
+                        [data]="DoughnutChartData"
+                        [options]="DoughnutChartOptions"
+                        [type]="DoughnutChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"
+                        width="480"
+                        height="460">
+                    </canvas>
                 </div>
             </div>
             <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
@@ -350,16 +353,16 @@
                     </div>
                 </div>
                 <div class="p-4">
-                    <canvas baseChart 
-                    [data]="LineChartData"
-                    [options]="LineChartOptions"
-                    [type]="LineChartType"
-                    [legend]="lineChartLegend"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                    width="480"
-                    height="460">
-                </canvas>
+                    <canvas baseChart
+                        [data]="LineChartData"
+                        [options]="LineChartOptions"
+                        [type]="LineChartType"
+                        [legend]="lineChartLegend"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"
+                        width="480"
+                        height="460">
+                    </canvas>
                 </div>
             </div>
             <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
@@ -405,21 +408,21 @@
                 </div>
                 <div class="p-4">
                     <canvas baseChart class="chart"
-                    [data]="barChartData"
-                    [options]="barChartOptions"
-                    [type]="barChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                    width="480"
-                    height="460">
-                </canvas>
+                        [data]="barChartData"
+                        [options]="barChartOptions"
+                        [type]="barChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"
+                        width="480"
+                        height="460">
+                    </canvas>
 
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="">
+<section class>
     <div class="pt-28 ">
         <h1 class="mx-auto text-center">
             <span class="font-light text-xl">[</span>
@@ -474,7 +477,7 @@
             #FF4949;">
             <img
                 src="https://demo6.clientica.org/wp-content/uploads/2021/01/Decor.png"
-                class="absolute top-0 right-0" alt="">
+                class="absolute top-0 right-0" alt>
             <span class="absolute top-7 right-5 font-semibold text-lg "
                 style="color:
                 #FF4949;">Popular</span>
