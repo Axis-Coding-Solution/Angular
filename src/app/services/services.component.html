@@ -207,9 +207,17 @@
 
                     </div>
                 </div>
-                <div class="pt-4">
-
-
+                <div class="p-4">
+                    <canvas baseChart 
+                    [data]="LineChartData"
+                    [options]="LineChartOptions"
+                    [type]="LineChartType"
+                    [legend]="lineChartLegend"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"
+                    width="480"
+                    height="460">
+                </canvas>
                 </div>
             </div>
             <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
@@ -244,7 +252,7 @@
 
                     </div>
                 </div>
-                <div className="p-4">
+                <div class="p-4">
 
                     <canvas baseChart class="chart"
                         [data]="barChartData"
@@ -297,8 +305,16 @@
                         </div>
                     </div>
                 </div>
-                <div className="w-1/2">
-
+                <div class="p-4">
+                    <canvas baseChart 
+                    [data]="DoughnutChartData"
+                    [options]="DoughnutChartOptions"
+                    [type]="DoughnutChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"
+                    width="480"
+                    height="460">
+                </canvas>
                 </div>
             </div>
             <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
@@ -333,9 +349,17 @@
 
                     </div>
                 </div>
-                <div className="w-1/2">
-
-
+                <div class="p-4">
+                    <canvas baseChart 
+                    [data]="LineChartData"
+                    [options]="LineChartOptions"
+                    [type]="LineChartType"
+                    [legend]="lineChartLegend"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"
+                    width="480"
+                    height="460">
+                </canvas>
                 </div>
             </div>
             <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
@@ -379,8 +403,16 @@
 
                     </div>
                 </div>
-                <div className="w-1/2">
-
+                <div class="p-4">
+                    <canvas baseChart class="chart"
+                    [data]="barChartData"
+                    [options]="barChartOptions"
+                    [type]="barChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"
+                    width="480"
+                    height="460">
+                </canvas>
 
                 </div>
             </div>

@@ -32,7 +32,7 @@ export class ServicesComponent {
     { svgId: './assets/icons/sprite.svg#analysis', Title: 'Expertise of your company' },
     { svgId: './assets/icons/sprite.svg#skills', Title: ' Optimization of processes' }
   ]
-  @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
+  @ViewChild(BaseChartDirective,) chart: BaseChartDirective | undefined;
 
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
@@ -51,14 +51,72 @@ export class ServicesComponent {
     },
 
   };
+
+  public LineChartOptions: ChartConfiguration['options'] = {
+    responsive: true,
+    // We use these empty structures as placeholders for dynamic theming.
+
+    scales: {
+      x: {},
+      y: {
+        beginAtZero: true
+      },
+    },
+    plugins: {
+      legend: {
+        display: true,
+      }
+    },
+
+  };
+
+  
+  public DoughnutChartOptions: ChartConfiguration['options'] = {
+    responsive: true,
+    // We use these empty structures as placeholders for dynamic theming.
+
+    scales: {
+      x: {},
+      y: {
+        beginAtZero: true
+      },
+    },
+    plugins: {
+      legend: {
+        display: true,
+      }
+    },
+
+  };
+
   public barChartType: ChartType = 'bar';
+  public LineChartType: ChartType = 'line';
+  public DoughnutChartType: ChartType = 'doughnut';
+
+  public lineChartLegend:boolean = true;
 
   public barChartData: ChartData<'bar'> = {
-    labels: ['OCT', 'NOV', 'DEC', 'JAN'],
 
     datasets: [
       { data: [8, 18, 14, 12], label: 'Before', backgroundColor: '#c7c8c1', hoverBackgroundColor: '#b5b8a8' },
       { data: [12, 25, 28, 26], label: 'After', backgroundColor: '#ff4949', hoverBackgroundColor: '#ff4949' }
+    ]
+  };
+
+  
+  public LineChartData: ChartData<'line'> = {
+    labels: ['OCT', 'NOV', 'DEC', 'JAN', 'FEB', 'MARCH', 'APRIL'],
+
+    datasets: [
+      { data: [0, 7, 10, 8, 8, 10, 6, 4], label: 'Before', backgroundColor: '#c7c8c1', borderColor: '#c7c8c1', hoverBackgroundColor: '#b5b8a8' },
+      { data: [0, 23, 27, 23, 20, 29, 40, 50], label: 'After', backgroundColor: '#ff4949', borderColor: '#ff4949', hoverBackgroundColor: '#ff4949' }
+    ]
+  };
+
+  public DoughnutChartData: ChartData<'doughnut'> = {
+    labels: ['Profit', 'Growth', 'Costs', 'Reduction'],
+    datasets: [
+      { data: [10,20,30,40], backgroundColor:['#BCC2CA','#4E5458', '#09111A', '#ff4949' ] }
     ]
   };
 
