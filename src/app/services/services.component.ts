@@ -35,17 +35,12 @@ export class ServicesComponent implements OnInit {
 
 
   ServiceCards: ServiceCards[] = [
-    { id: 'POS', svgId: './assets/icons/sprite.svg#man', Heading: 'Personal strategic audit', graphName: 'LineChart', divName: 'grid', Description: 'Analysis of the current business model, assessment of the company’s competitiveness and market position, financial condition, as well as all possible risks and their minimization in the medium and long-term prospects.' },
-    { id: 'TYE', svgId: ' ./assets/icons/sprite.svg#elearning', Heading: 'Training your employees', graphName: 'BarChart', divName: 'flex', Description: 'Consultations and seminars, trainings, training programs and practical exercises. Advanced training courses. All this will increase the efficiency of all your employees in just 3 months, on average by 50-60%.' },
-    { id: 'SOG', svgId: ' ./assets/icons/sprite.svg#shipping', Heading: 'Strategy of globalization', graphName: 'DoughnutChart', divName: 'grid', Description: 'Analysis of the current business model, assessment of the company’s competitiveness and market position, financial condition, as well as all possible risks and their minimization in the medium and long-term prospects.' },
-    { id: 'EOYC', svgId: './assets/icons/sprite.svg#analysis', Heading: 'Expertise of your company', graphName: 'LineChart', divName: 'flex', Description: 'Consultations and seminars, trainings, training programs and practical exercises. Advanced training courses. All this will increase the efficiency of all your employees in just 3 months, on average by 50-60%.' },
-    { id: 'OOP', svgId: './assets/icons/sprite.svg#skills', Heading: 'Optimization of processes', graphName: 'BarChart', divName: 'grid', Description: 'Analysis of the current business model, assessment of the company’s competitiveness and market position, financial condition, as well as all possible risks and their minimization in the medium and long-term prospects.' }
+    { id: 'POS', svgId: './assets/icons/sprite.svg#man', Heading: 'Personal strategic audit', graphName: 'LineChart', divName: 'grid', Description: 'Analysis of the current business model, assessment of the company’s competitiveness and market position, financial condition, as well as all possible risks and their minimization in the medium and long-term prospects.'},
+    { id: 'TYE', svgId: ' ./assets/icons/sprite.svg#elearning', Heading: 'Training your employees', graphName: 'BarChart', divName: 'flex', Description: 'Consultations and seminars, trainings, training programs and practical exercises. Advanced training courses. All this will increase the efficiency of all your employees in just 3 months, on average by 50-60%.',},
+    { id: 'SOG', svgId: ' ./assets/icons/sprite.svg#shipping', Heading: 'Strategy of globalization', graphName: 'DoughnutChart', divName: 'grid', Description: 'Analysis of the current business model, assessment of the company’s competitiveness and market position, financial condition, as well as all possible risks and their minimization in the medium and long-term prospects.'},
+    { id: 'EOYC', svgId: './assets/icons/sprite.svg#analysis', Heading: 'Expertise of your company', graphName: 'LineChart', divName: 'flex', Description: 'Consultations and seminars, trainings, training programs and practical exercises. Advanced training courses. All this will increase the efficiency of all your employees in just 3 months, on average by 50-60%.'},
+    { id: 'OOP', svgId: './assets/icons/sprite.svg#skills', Heading: 'Optimization of processes', graphName: 'BarChart', divName: 'grid', Description: 'Analysis of the current business model, assessment of the company’s competitiveness and market position, financial condition, as well as all possible risks and their minimization in the medium and long-term prospects.'}
   ]
-
-  isShowDivIf = false;
-  toggleDisplayDivIf() {
-    this.isShowDivIf = !this.isShowDivIf;
-  }
 
   @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
 
@@ -159,7 +154,34 @@ export class ServicesComponent implements OnInit {
 
   // filterData: 
   ngOnInit(): void {
+    this.filterData = [this.ServiceCards[0]]
+  }
+
+
+  filterData: ServiceCards[] = [];
+  title = "appComponent"
+  category = "POS"
+  isShowDivIf = false;
+  filteredCategory: string = 'POS';
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
+
+  onClick(cat: string) {
+   
+      this.filterData = this.ServiceCards.filter(item => item.id.includes(cat));
     
+    this.category = cat;
+    console.log('IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII', this.filterData)
+  }
+
+  getClass(cat: string) {
+    return { 'btnActive': this.category == cat }
+
+  }
+  findClass(cat: string) {
+    return { 'buttonActive': this.category == cat }
+
   }
 
 }
