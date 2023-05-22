@@ -7,17 +7,24 @@ interface ConsultingServicesCards {
   Longtext: string;
   svgId: string;
 }
-interface GraphCard {
+
+
+interface ServiceCards {
+  Heading: string;
+  graphName: string;
+  Description: string;
+  divName: string;
   svgId: string;
-  Title: string;
+  id: string;
 }
+
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss']
 
 })
-export class ServicesComponent implements OnInit{
+export class ServicesComponent implements OnInit {
   ConsultingServicesCards: ConsultingServicesCards[] = [
     { Title: 'Developing a profitability strategy', Shorttext: 'from $499', Longtext: 'It includes a business model, a plan of strategic steps for the transition to it, and the consolidation of the financial model in the future.', svgId: './assets/icons/sprite.svg#MoneyLogo' },
     { Title: 'Optimization of company structure', Shorttext: 'from $249', Longtext: 'Step-by-step development of the top-level company’s organizational structure, principles of distribution of functions and powers.', svgId: './assets/icons/sprite.svg#Optimization' },
@@ -25,13 +32,20 @@ export class ServicesComponent implements OnInit{
     { Title: 'Selection of suitable personnel', Shorttext: 'from $199', Longtext: 'Formation of a team with good theoretical and practical training, professional knowledge and high motivation for success.', svgId: './assets/icons/sprite.svg#SuitablePersonnel' },
     { Title: 'Effective support for your business', Shorttext: 'from $889', Longtext: 'Solving various issues that arise in the course of the company’s activities. Prompt advice, timely advice and strategies.', svgId: './assets/icons/sprite.svg#System_Approach' }
   ]
-  GraphCard: GraphCard[] = [
-    { svgId: './assets/icons/sprite.svg#man', Title: 'Personal strategic audit' },
-    { svgId: ' ./assets/icons/sprite.svg#elearning', Title: 'Training your employees' },
-    { svgId: ' ./assets/icons/sprite.svg#shipping', Title: ' Strategy of globalization' },
-    { svgId: './assets/icons/sprite.svg#analysis', Title: 'Expertise of your company' },
-    { svgId: './assets/icons/sprite.svg#skills', Title: ' Optimization of processes' }
+
+
+  ServiceCards: ServiceCards[] = [
+    { id: 'POS', svgId: './assets/icons/sprite.svg#man', Heading: 'Personal strategic audit', graphName: 'LineChart', divName: 'grid', Description: 'Analysis of the current business model, assessment of the company’s competitiveness and market position, financial condition, as well as all possible risks and their minimization in the medium and long-term prospects.' },
+    { id: 'TYE', svgId: ' ./assets/icons/sprite.svg#elearning', Heading: 'Training your employees', graphName: 'BarChart', divName: 'flex', Description: 'Consultations and seminars, trainings, training programs and practical exercises. Advanced training courses. All this will increase the efficiency of all your employees in just 3 months, on average by 50-60%.' },
+    { id: 'SOG', svgId: ' ./assets/icons/sprite.svg#shipping', Heading: 'Strategy of globalization', graphName: 'DoughnutChart', divName: 'grid', Description: 'Analysis of the current business model, assessment of the company’s competitiveness and market position, financial condition, as well as all possible risks and their minimization in the medium and long-term prospects.' },
+    { id: 'EOYC', svgId: './assets/icons/sprite.svg#analysis', Heading: 'Expertise of your company', graphName: 'LineChart', divName: 'flex', Description: 'Consultations and seminars, trainings, training programs and practical exercises. Advanced training courses. All this will increase the efficiency of all your employees in just 3 months, on average by 50-60%.' },
+    { id: 'OOP', svgId: './assets/icons/sprite.svg#skills', Heading: 'Optimization of processes', graphName: 'BarChart', divName: 'grid', Description: 'Analysis of the current business model, assessment of the company’s competitiveness and market position, financial condition, as well as all possible risks and their minimization in the medium and long-term prospects.' }
   ]
+
+  isShowDivIf = false;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
 
   @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
 
@@ -147,7 +161,6 @@ export class ServicesComponent implements OnInit{
   ngOnInit(): void {
     
   }
-
 
 }
 

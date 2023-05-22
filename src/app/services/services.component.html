@@ -149,7 +149,7 @@
     <div>
         <div class="w-full flex flex-col
             md:flex-row justify-center mt-32">
-            <div *ngFor="let items of GraphCard" class="p-6
+            <div *ngFor="let item of ServiceCards" class="p-6 
                 text-white
                 font-semibold border-none
                 hover:border-transparent rounded-xl mx-2 "
@@ -157,31 +157,26 @@
                 <div>
                     <svg class="justify-start" style="height: 70px; width:
                         70px">
-                        <use [attr.xlink:href]="items.svgId"></use>
+                        <use [attr.xlink:href]="item.svgId"></use>
                     </svg>
                 </div>
                 <h1 class="mt-4 text-lg ">
-                    {{items.Title}}
+                    {{item.Heading}}
                 </h1>
 
             </div>
         </div>
         <div>
             <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
-                " style="width: 70%;">
+                " style="width: 70%;" *ngFor="let item of ServiceCards">
                 <div class="py-24 px-8 w-1/2">
-                    <h1 class="font-bold text-2xl">Personal strategic audit</h1>
-                    <p class="mt-5" style="color: #676d73;">Analysis of the
-                        current
-                        business model, assessment of the
-                        company’s competitiveness and market position, financial
-                        condition, as well as all possible risks and their
-                        minimization in the medium and long-term prospects.</p>
+                    <h1 class="font-bold text-2xl">{{item.Heading}}</h1>
+                    <p class="mt-5" style="color: #676d73;">{{item.Description}}</p>
                     <button class=" contact-view-btn
                         text-red-500 mt-5
                         text-sm font-sans font-semibold">Order
                         Now</button>
-                    <div class="grid grid-cols-2 w-full pt-10">
+                    <div class="grid grid-cols-2 w-full pt-10" *ngIf="item.divName === 'grid'">
                         <div class="mr-10 inline-flex rounded-r-lg"
                             style="background-color: #F5F6F7">
                             <div class="w-1 h-full rounded-l-lg"
@@ -208,8 +203,27 @@
                         </div>
 
                     </div>
+                    <div  class="w-full pt-4" *ngIf="item.divName === 'flex'">
+                        <div class="mr-10 inline-flex rounded-r-lg"
+                            style="background-color: #F5F6F7">
+                            <div class=" h-full rounded-l-lg"
+                                style="background-color:
+                                #FF4949;"></div>
+                            <div class="py-5 ">
+                                <p>
+                                    We also offer full support for the
+                                    implementation and control of new strategies
+                                    for your business. We always strive to make
+                                    our service better and better.
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 <div class="p-4">
+                    <div *ngIf="item.graphName === 'LineChart'">
                     <canvas baseChart
                         [data]="LineChartData"
                         [options]="LineChartOptions"
@@ -220,9 +234,48 @@
                         width="480"
                         height="460">
                     </canvas>
+                    
+                </div>
+                <!-- <canvas *ngIf="item.graphName === 'EOYC'" baseChart
+                [data]="LineChartData"
+                [options]="LineChartOptions"
+                [type]="LineChartType"
+                [legend]="lineChartLegend"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"
+                width="480"
+                height="460">
+            </canvas> -->
+                    <canvas *ngIf="item.graphName === 'BarChart'" baseChart class="chart"
+                    [data]="barChartData"
+                    [options]="barChartOptions"
+                    [type]="barChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"
+                    width="480"
+                    height="460">
+                </canvas>
+                <!-- <canvas *ngIf="item.graphName === 'OOP'" baseChart class="chart"
+                    [data]="barChartData"
+                    [options]="barChartOptions"
+                    [type]="barChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"
+                    width="480"
+                    height="460">
+                </canvas> -->
+                <canvas *ngIf="item.graphName === 'DoughnutChart'" baseChart
+                [data]="DoughnutChartData"
+                [options]="DoughnutChartOptions"
+                [type]="DoughnutChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"
+                width="480"
+                height="460">
+            </canvas>
                 </div>
             </div>
-            <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
+            <!-- <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
                 " style="width: 70%;">
                 <div class="py-24 px-8 w-1/2">
                     <h1 class="font-bold text-2xl">Training your employees</h1>
@@ -418,7 +471,7 @@
                     </canvas>
 
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
