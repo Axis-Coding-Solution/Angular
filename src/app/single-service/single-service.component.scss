@@ -1,48 +1,53 @@
 .divider {
-    color: #ff4949;
-    font-family: "Roboto", Sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: none;
-    font-style: normal;
-    text-decoration: none;
-    padding: 3px;
-  }
-  
-.icon:hover{
-    fill:white;
-}
-.pdf-div:hover svg{
-    fill: white;
+  color: #ff4949;
+  font-family: "Roboto", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  padding: 3px;
 }
 
-.pdf-div{
-    box-shadow: 1px 3px 3px 3px rgb(139, 133, 133);
+.icon:hover {
+  fill: white;
+}
+.pdf-div:hover svg {
+  fill: white;
 }
 
-#cc{
-    background-color:#FF4949;;
-}
-#cc:hover{
-    background-color: black;
+.pdf-div {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-.team-card{
-    background-image: url("https://demo6.clientica.org/wp-content/uploads/2021/01/Line-Bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#cc {
+  background-color: #ff4949;
 }
-.team-card:hover{
-    background-image: url("https://demo6.clientica.org/wp-content/uploads/2021/01/Line-Bg-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#cc:hover {
+  background-color: black;
 }
-.team-card:hover p{
-    color: #fff;
-    transition: width 2s
-    
 
+.team-card {
+  background-image: url("https://demo6.clientica.org/wp-content/uploads/2021/01/Line-Bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team-card:hover {
+  background-image: url("https://demo6.clientica.org/wp-content/uploads/2021/01/Line-Bg-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team-card:hover p {
+  color: #fff;
+  transition: width 2s;
+}
+
+.g:hover {
+  background-color: #ff4949;
+}
+
+.pic:hover {
+  background-color: #ff4949;
 }
