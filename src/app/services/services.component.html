@@ -149,7 +149,8 @@
     <div>
         <div class="w-full flex flex-col
             md:flex-row justify-center mt-32">
-            <div *ngFor="let item of ServiceCards" (click)="onClick(item.id)" [ngClass]="getClass(item.id)" class="p-6 
+            <div *ngFor="let item of ServiceCards" (click)="onClick(item.id)"
+                [ngClass]="getClass(item.id)" class="p-6 
                 text-black bg-white shadow-2xl
                 font-semibold border-none
                 hover:border-transparent rounded-xl mx-2 "
@@ -168,7 +169,8 @@
         </div>
         <div>
             <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
-                " style="width: 70%;" *ngFor="let item of filterData"  [ngClass]="findClass(item.id)">
+                " style="width: 70%;" *ngFor="let item of filterData"
+                [ngClass]="findClass(item.id)">
                 <div class="py-24 px-8 w-1/2">
                     <h1 class="font-bold text-2xl">{{item.Heading}}</h1>
                     <p class="mt-5" style="color: #676d73;">{{item.Description}}</p>
@@ -176,7 +178,8 @@
                         text-red-500 mt-5
                         text-sm font-sans font-semibold">Order
                         Now</button>
-                    <div class="grid grid-cols-2 w-full pt-10" *ngIf="item.divName === 'grid'">
+                    <div class="grid grid-cols-2 w-full pt-10"
+                        *ngIf="item.divName === 'grid'">
                         <div class="mr-10 inline-flex rounded-r-lg"
                             style="background-color: #F5F6F7">
                             <div class="w-1 h-full rounded-l-lg"
@@ -203,7 +206,7 @@
                         </div>
 
                     </div>
-                    <div  class="w-full pt-4" *ngIf="item.divName === 'flex'">
+                    <div class="w-full pt-4" *ngIf="item.divName === 'flex'">
                         <div class="mr-10 inline-flex rounded-r-lg"
                             style="background-color: #F5F6F7">
                             <div class=" h-full rounded-l-lg"
@@ -224,19 +227,19 @@
                 </div>
                 <div class="p-4">
                     <div *ngIf="item.graphName === 'LineChart'">
-                    <canvas baseChart
-                        [data]="LineChartData"
-                        [options]="LineChartOptions"
-                        [type]="LineChartType"
-                        [legend]="lineChartLegend"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"
-                        width="480"
-                        height="460">
-                    </canvas>
-                    
-                </div>
-                <!-- <canvas *ngIf="item.graphName === 'EOYC'" baseChart
+                        <canvas baseChart
+                            [data]="LineChartData"
+                            [options]="LineChartOptions"
+                            [type]="LineChartType"
+                            [legend]="lineChartLegend"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"
+                            width="480"
+                            height="460">
+                        </canvas>
+
+                    </div>
+                    <!-- <canvas *ngIf="item.graphName === 'EOYC'" baseChart
                 [data]="LineChartData"
                 [options]="LineChartOptions"
                 [type]="LineChartType"
@@ -246,16 +249,17 @@
                 width="480"
                 height="460">
             </canvas> -->
-                    <canvas *ngIf="item.graphName === 'BarChart'" baseChart class="chart"
-                    [data]="barChartData"
-                    [options]="barChartOptions"
-                    [type]="barChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                    width="480"
-                    height="460">
-                </canvas>
-                <!-- <canvas *ngIf="item.graphName === 'OOP'" baseChart class="chart"
+                    <canvas *ngIf="item.graphName === 'BarChart'" baseChart
+                        class="chart"
+                        [data]="barChartData"
+                        [options]="barChartOptions"
+                        [type]="barChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"
+                        width="480"
+                        height="460">
+                    </canvas>
+                    <!-- <canvas *ngIf="item.graphName === 'OOP'" baseChart class="chart"
                     [data]="barChartData"
                     [options]="barChartOptions"
                     [type]="barChartType"
@@ -264,15 +268,15 @@
                     width="480"
                     height="460">
                 </canvas> -->
-                <canvas *ngIf="item.graphName === 'DoughnutChart'" baseChart
-                [data]="DoughnutChartData"
-                [options]="DoughnutChartOptions"
-                [type]="DoughnutChartType"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"
-                width="480"
-                height="460">
-            </canvas>
+                    <canvas *ngIf="item.graphName === 'DoughnutChart'" baseChart
+                        [data]="DoughnutChartData"
+                        [options]="DoughnutChartOptions"
+                        [type]="DoughnutChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"
+                        width="480"
+                        height="460">
+                    </canvas>
                 </div>
             </div>
             <!-- <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
