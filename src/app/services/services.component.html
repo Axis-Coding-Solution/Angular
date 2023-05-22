@@ -140,7 +140,7 @@
             <span class="font-light text-xl">]</span>
         </h1>
         <h1 class=" mt-6 mx-auto text-center text-4xl font-bold ">What We Offer</h1>
-        <p class="mt-8 px-96 text-center" style="color:
+        <p class="mt-8 lg:px-96 md:px-14 px-5 text-center" style="color:
             #676E7E;">We provide services that help our
             clients
             strengthen their positions in
@@ -148,39 +148,42 @@
     </div>
     <div>
         <div class="w-full flex flex-col
-            md:flex-row justify-center mt-32">
+            lg:flex-row justify-center mt-32">
             <div *ngFor="let item of ServiceCards" (click)="onClick(item.id)"
                 [ngClass]="getClass(item.id)" class="p-6 
                 text-black bg-white shadow-2xl
                 font-semibold border-none
-                hover:border-transparent rounded-xl mx-2 "
-                style="width: 200px;">
-                <div>
-                    <svg class="justify-start" style="height: 70px; width:
+                hover:border-transparent rounded-xl md:mx-0 mx-2 lg:mb-0 mb-4 ">
+                <div
+                    class="flex md:justify-center lg:justify-start justify-start">
+                    <svg class="md:ml-0 ml-12"
+                        style="height: 70px; width:
                         70px">
                         <use [attr.xlink:href]="item.svgId"></use>
                     </svg>
                 </div>
-                <h1 class="mt-4 text-lg ">
+                <h1
+                    class="flex md:justify-center lg:justify-start justify-start mt-4 text-xl md:ml-0 ml-12 ">
                     {{item.Heading}}
                 </h1>
 
             </div>
         </div>
         <div>
-            <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
-                " style="width: 70%;" *ngFor="let item of filterData"
+            <div
+                class="flex lg:flex-row flex-col px-4 mt-14 mx-auto shadow-2xl rounded-2xl med
+                " *ngFor="let item of filterData"
                 [ngClass]="findClass(item.id)">
-                <div class="py-24 px-8 w-1/2">
+                <div class="md:py-24 py-8 md:px-8 px-2 lg:w-1/2 w-full">
                     <h1 class="font-bold text-2xl">{{item.Heading}}</h1>
                     <p class="mt-5" style="color: #676d73;">{{item.Description}}</p>
                     <button class=" contact-view-btn
                         text-red-500 mt-5
                         text-sm font-sans font-semibold">Order
                         Now</button>
-                    <div class="grid grid-cols-2 w-full pt-10"
+                    <div class="grid lg:grid-cols-2 grid-rows-2 w-full pt-10"
                         *ngIf="item.divName === 'grid'">
-                        <div class="mr-10 inline-flex rounded-r-lg"
+                        <div class="lg:mr-10 mr-2 inline-flex rounded-r-lg"
                             style="background-color: #F5F6F7">
                             <div class="w-1 h-full rounded-l-lg"
                                 style="background-color:
@@ -192,7 +195,8 @@
                                     Company
                                     growth</p></div>
                         </div>
-                        <div class="mr-10 inline-flex rounded-r-lg"
+                        <div
+                            class="lg:mr-10 mr-2 inline-flex rounded-r-lg md:mt-0 mt-4"
                             style="background-color: #F5F6F7">
                             <div class="w-1 h-full rounded-l-lg"
                                 style="background-color:
@@ -239,16 +243,6 @@
                         </canvas>
 
                     </div>
-                    <!-- <canvas *ngIf="item.graphName === 'EOYC'" baseChart
-                [data]="LineChartData"
-                [options]="LineChartOptions"
-                [type]="LineChartType"
-                [legend]="lineChartLegend"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"
-                width="480"
-                height="460">
-            </canvas> -->
                     <canvas *ngIf="item.graphName === 'BarChart'" baseChart
                         class="chart"
                         [data]="barChartData"
@@ -259,15 +253,6 @@
                         width="480"
                         height="460">
                     </canvas>
-                    <!-- <canvas *ngIf="item.graphName === 'OOP'" baseChart class="chart"
-                    [data]="barChartData"
-                    [options]="barChartOptions"
-                    [type]="barChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"
-                    width="480"
-                    height="460">
-                </canvas> -->
                     <canvas *ngIf="item.graphName === 'DoughnutChart'" baseChart
                         [data]="DoughnutChartData"
                         [options]="DoughnutChartOptions"
@@ -279,203 +264,6 @@
                     </canvas>
                 </div>
             </div>
-            <!-- <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
-                " style="width: 70%;">
-                <div class="py-24 px-8 w-1/2">
-                    <h1 class="font-bold text-2xl">Training your employees</h1>
-                    <p class="mt-5" style="color: #676d73;">Consultations and
-                        seminars, trainings, training programs and practical
-                        exercises. Advanced training courses. All this will
-                        increase the efficiency of all your employees in just 3
-                        months, on average by 50-60%</p>
-                    <button class=" contact-view-btn
-                        text-red-500 mt-5
-                        text-sm font-sans font-semibold">Order
-                        Now</button>
-                    <div class="w-full pt-4">
-                        <div class="mr-10 inline-flex rounded-r-lg"
-                            style="background-color: #F5F6F7">
-                            <div class=" h-full rounded-l-lg"
-                                style="background-color:
-                                #FF4949;"></div>
-                            <div class="py-5 ">
-                                <p>
-                                    We also offer full support for the
-                                    implementation and control of new strategies
-                                    for your business. We always strive to make
-                                    our service better and better.
-
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="p-4">
-
-                    <canvas baseChart class="chart"
-                        [data]="barChartData"
-                        [options]="barChartOptions"
-                        [type]="barChartType"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"
-                        width="480"
-                        height="460">
-                    </canvas>
-
-                </div>
-            </div>
-            <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
-                " style="width: 70%;">
-                <div class="py-24 px-8 w-1/2">
-                    <h1 class="font-bold text-2xl">Strategy of globalization</h1>
-                    <p class="mt-5" style="color: #676d73;">Analysis of the
-                        current business model, assessment of the company’s
-                        competitiveness and market position, financial
-                        condition, as well as all possible risks and their
-                        minimization in the medium and long-term prospects.</p>
-                    <button class=" contact-view-btn
-                        text-red-500 mt-5
-                        text-sm font-sans font-semibold">Order
-                        Now</button>
-                    <div class="grid grid-cols-2 w-full pt-10">
-                        <div class="mr-10 inline-flex rounded-r-lg"
-                            style="background-color: #F5F6F7">
-                            <div class="w-1 h-full rounded-l-lg"
-                                style="background-color:
-                                #FF4949;"></div>
-                            <div class="py-5">
-                                <p class="font-bold text-2xl
-                                    pl-6 ">+48%</p>
-                                <p class="pl-6 pt-2" style="color: #7E858C;">
-                                    Company
-                                    growth</p></div>
-                        </div>
-                        <div class="mr-10 inline-flex rounded-r-lg"
-                            style="background-color: #F5F6F7">
-                            <div class="w-1 h-full rounded-l-lg"
-                                style="background-color:
-                                #FF4949;"></div>
-                            <div class="py-5">
-                                <p class="font-bold text-2xl
-                                    pl-6 ">+120%</p>
-                                <p class="pl-6 pt-2" style="color: #7E858C;">
-                                    Company
-                                    growth</p></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <canvas baseChart
-                        [data]="DoughnutChartData"
-                        [options]="DoughnutChartOptions"
-                        [type]="DoughnutChartType"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"
-                        width="480"
-                        height="460">
-                    </canvas>
-                </div>
-            </div>
-            <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
-                " style="width: 70%;">
-                <div class="py-24 px-8 w-1/2">
-                    <h1 class="font-bold text-2xl">Expertise of your company</h1>
-                    <p class="mt-5" style="color: #676d73;">Consultations and
-                        seminars, trainings, training programs and practical
-                        exercises. Advanced training courses. All this will
-                        increase the efficiency of all your employees in just 3
-                        months, on average by 50-60%</p>
-                    <button class=" contact-view-btn
-                        text-red-500 mt-5
-                        text-sm font-sans font-semibold">Order
-                        Now</button>
-                    <div class="w-full pt-4">
-                        <div class="mr-10 inline-flex rounded-r-lg"
-                            style="background-color: #F5F6F7">
-                            <div class=" h-full rounded-l-lg"
-                                style="background-color:
-                                #FF4949;"></div>
-                            <div class="py-5 ">
-                                <p>
-                                    We also offer full support for the
-                                    implementation and control of new strategies
-                                    for your business. We always strive to make
-                                    our service better and better.
-
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="p-4">
-                    <canvas baseChart
-                        [data]="LineChartData"
-                        [options]="LineChartOptions"
-                        [type]="LineChartType"
-                        [legend]="lineChartLegend"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"
-                        width="480"
-                        height="460">
-                    </canvas>
-                </div>
-            </div>
-            <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
-                " style="width: 70%;">
-                <div class="py-24 px-8 w-1/2">
-                    <h1 class="font-bold text-2xl">Optimization of processes</h1>
-                    <p class="mt-5" style="color: #676d73;">Analysis of the
-                        current business model, assessment of the company’s
-                        competitiveness and market position, financial
-                        condition, as well as all possible risks and their
-                        minimization in the medium and long-term prospects.</p>
-                    <button class=" contact-view-btn
-                        text-red-500 mt-5
-                        text-sm font-sans font-semibold">Order
-                        Now</button>
-                    <div class="grid grid-cols-2 w-full pt-10">
-                        <div class="mr-10 inline-flex rounded-r-lg"
-                            style="background-color: #F5F6F7">
-                            <div class="w-1 h-full rounded-l-lg"
-                                style="background-color:
-                                #FF4949;"></div>
-                            <div class="py-5">
-                                <p class="font-bold text-2xl
-                                    pl-6 ">+48%</p>
-                                <p class="pl-6 pt-2" style="color: #7E858C;">
-                                    Company
-                                    growth</p></div>
-                        </div>
-                        <div class="mr-10 inline-flex rounded-r-lg"
-                            style="background-color: #F5F6F7">
-                            <div class="w-1 h-full rounded-l-lg"
-                                style="background-color:
-                                #FF4949;"></div>
-                            <div class="py-5">
-                                <p class="font-bold text-2xl
-                                    pl-6 ">+120%</p>
-                                <p class="pl-6 pt-2" style="color: #7E858C;">
-                                    Company
-                                    growth</p></div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="p-4">
-                    <canvas baseChart class="chart"
-                        [data]="barChartData"
-                        [options]="barChartOptions"
-                        [type]="barChartType"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"
-                        width="480"
-                        height="460">
-                    </canvas>
-
-                </div>
-            </div> -->
         </div>
     </div>
 </section>
@@ -490,14 +278,14 @@
             <span class="font-light text-xl">]</span>
         </h1>
         <h1 class=" mt-6 mx-auto text-center text-4xl font-bold ">What We Offer</h1>
-        <p class="mt-8 px-96 text-center" style="color:
+        <p class="mt-8 md:px-96 px5 text-center" style="color:
             #676E7E;">We provide services that help our
             clients
             strengthen their positions in
             the market by implementing progressive strategic solutions.</p>
     </div>
-    <div class="flex flex-row justify-center gap-6 py-20">
-        <div class="shadow-2xl rounded-2xl">
+    <div class="flex md:flex-row flex-col justify-center gap-6 py-20">
+        <div class="shadow-2xl rounded-2xl ">
             <div class="py-10 px-16">
                 <h1 class="font-semibold">BEGINNER</h1>
                 <div class="flex items-center">
