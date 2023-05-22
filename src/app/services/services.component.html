@@ -149,11 +149,11 @@
     <div>
         <div class="w-full flex flex-col
             md:flex-row justify-center mt-32">
-            <div *ngFor="let item of ServiceCards" class="p-6 
-                text-white
+            <div *ngFor="let item of ServiceCards" (click)="onClick(item.id)"
+                [ngClass]="getClass(item.id)" class="p-6 
+                text-black bg-white shadow-2xl
                 font-semibold border-none
                 hover:border-transparent rounded-xl mx-2 "
-                (click)="onClick(item.id, item.graphName)"
                 style="background-color: #FF4949; width: 200px;">
                 <div>
                     <svg class="justify-start" style="height: 70px; width:
@@ -169,7 +169,8 @@
         </div>
         <div>
             <div class="flex flex-row px-4 mt-14 mx-auto shadow-2xl rounded-2xl
-                " style="width: 70%;" *ngFor="let item of ServiceCards">
+                " style="width: 70%;" *ngFor="let item of filterData"
+                [ngClass]="findClass(item.id)">
                 <div class="py-24 px-8 w-1/2">
                     <h1 class="font-bold text-2xl">{{item.Heading}}</h1>
                     <p class="mt-5" style="color: #676d73;">{{item.Description}}</p>
