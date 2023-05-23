@@ -35,6 +35,16 @@
     border-radius: 10px 0 0 10px;
 }
 
+.pricing-bullet li::before {
+    content: "\2022";
+    color: #ff4949;
+    font-weight: bolder;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1em;
+    font-size: 24px;
+}
+
 @media (max-width: 800px) {
     .card-rounded {
         border-radius: 10px;
