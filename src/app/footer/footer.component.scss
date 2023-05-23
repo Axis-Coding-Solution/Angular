@@ -64,6 +64,21 @@
 
 .footer-card-info {
     width: -webkit-fill-available;
+
+}
+@media (min-width: 640px) and (max-width:767px) {
+    .footer-card-info {
+        width: -webkit-fill-available;
+        margin-top: 78px;
+    
+    }
+}
+@media (min-width: 767px) and (max-width:1024px) {
+    .footer-card-info {
+        width: -webkit-fill-available;
+        margin-top: 0px;
+    
+    }
 }
 
 

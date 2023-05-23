@@ -3,7 +3,12 @@ let colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/app/app.component.{html,ts}","./node_modules/tw-elements/dist/js/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        '70': '70%',
+        
+      }
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

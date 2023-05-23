@@ -40,9 +40,19 @@
 
 @media screen and (min-width:2000px)  {
     
+    .ReviewsImage{
+    background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-2.svg);
+        background-position: 85% 50%;
+        background-repeat: no-repeat;
+    }
 }
-.ReviewsImage{
-background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-2.svg);
-    background-position: 85% 50%;
-    background-repeat: no-repeat;
+@media screen and (min-width:1024px) and (max-width:1999px) {
+    
+    .ReviewsImage{
+        background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-2.svg);
+            background-position: 160% 50%;
+            background-repeat: no-repeat;
+            
+        }
+    
 }
