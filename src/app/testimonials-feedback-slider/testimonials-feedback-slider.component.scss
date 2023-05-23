@@ -71,8 +71,28 @@
         margin-right: 10px;
     }
 
-    @media screen and (min-width:320px) and (max-width:620px) {
-        .swiper-pagination-bullet {
+    @media screen and (min-width:320px) and (max-width:768px) {
+        div.swiper-pagination-bullets :nth-child(1) {
+            background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-55.jpg);
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            bottom: 400px;
+            border: none;
+            opacity: 1;
+            margin-right: 10px;
+        }
+        div.swiper-pagination-bullets :nth-child(2) {
+            background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-54.jpg);
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            bottom: 400px;
+            border: none;
+            opacity: 1;
+            margin-right: 10px;
+        }
+        div.swiper-pagination-bullets :nth-child(3) {
             background-image: url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-53.jpg);
             height: 80px;
             width: 80px;
