@@ -64,3 +64,9 @@
 .contact-view-btn:hover:after {
     content: "";
 }
+
+@media only screen and (max-width: 766px) {
+    .bg-positions {
+        background-position: 50%;
+    }
+}

@@ -68,3 +68,9 @@
     background-color: #ff4949;
     color: #FFFFFF
 }
+
+@media only screen and (max-width: 766px) {
+    .bg-positions {
+        background-position: 50%;
+    }
+}
