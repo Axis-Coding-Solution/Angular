@@ -1,28 +1,35 @@
-<section class="image-section">
-    <div class="flex justify-center items-center flex-col h-96
-        relative w-full bg-center bg-cover" style="background-color:
-        rgba(000,000,000, .7);">
-        <img src="https://demo6.clientica.org/wp-content/uploads/2020/12/Image-301-scaled.jpg"
-            class="absolute mix-blend-overlay h-96 w-full">
-        <img class=" h-96 w-full" src="https://demo6.clientica.org/wp-content/uploads/2020/12/Group-1212-1.png" alt="">
-
-        <div class="absolute">
-            <h1 class="font-bold md:text-7xl text-5xl text-white">Testimonials</h1>
-            <div class="flex justify-center items-center gap-5 font-bold">
+<header>
+    <section class="relative w-full bg-no-repeat bg-center py-28
+        "
+        style="background-image:
+        url(https://demo6.clientica.org/wp-content/uploads/2020/12/Image-301-scaled.jpg);
+        ">
+        <div class="absolute w-full bg-no-repeat
+            top-0 left-0 bg-opacity-70 bg-black bg-positions  "
+            style="background-image:
+            url(https://demo6.clientica.org/wp-content/uploads/2020/12/Group-1212-1.png);
+            height: 100%; width: 100%;">
+        </div>
+        <div class="relative text-white p-3 xl:mx-20 mx-0">
+            <h1 class="text-center font-bold xl:text-7xl lg:text-7xl text-5xl
+                text-white lg:mt-6 mt-0">Portfolio</h1>
+            <div class="flex justify-center items-center md:gap-3 lg:gap-5
+                gap-3 font-bold
+                lg:mt-9 mt-9">
                 <div style="color: white">
                     <span>Home</span>
                 </div>
                 <div>
-                    <div class="divider bg-red-500 rounded-full"></div>
+                    <div class="divider bg-red-500 rounded-full p-1 "></div>
                 </div>
                 <div>
-                    <span style="color: #ff4949;">Testimonials</span>
+                    <span style="color: #ff4949;">Portfolio</span>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
+
+    </section>
+</header>
 <section>
     <app-testimonials-feedback-slider></app-testimonials-feedback-slider>
 </section>
@@ -30,9 +37,11 @@
     <div class="flex xl:flex-row flex-col pt-14">
         <div class="xl:-ml-60 -ml-0">
             <img class="lg:rounded-r-xl rounded-none"
-                src="https://demo6.clientica.org/wp-content/uploads/2021/01/Image-661.jpg" height="auto" alt="">
+                src="https://demo6.clientica.org/wp-content/uploads/2021/01/Image-661.jpg"
+                height="auto" alt>
         </div>
-        <div class="ReviewsImage xl:mt-16 lg:-mt-80 md:-mt-48 sm:-mt-28  text-white xl:my-28 my-0 xl:-ml-56 -ml-0 w-full xl:rounded-l-xl rounded-none"
+        <div
+            class="ReviewsImage xl:mt-16 lg:-mt-80 md:-mt-48 sm:-mt-28  text-white xl:my-28 my-0 xl:-ml-56 -ml-0 w-full xl:rounded-l-xl rounded-none"
             style="background-color: #09111A;">
             <div class="xl:py-36 py-20 xl:pl-56 pl-5 text-white">
                 <div>
@@ -51,49 +60,66 @@
             TESTIMONIALS
         </span>
         <span class="font-light text-xl">]</span>
-        <h1 class="xl:text-5xl text-3xl font-sans font-bold pt-6">Only Real Reviews</h1>
+        <h1 class="xl:text-5xl text-3xl font-sans font-bold pt-6">Only Real
+            Reviews</h1>
     </div>
-    <div id="OnlyRealReviews" class=" grid grid-cols-1 xl:mx-9 mx-0 overflow-hidden">
+    <div id="OnlyRealReviews"
+        class=" grid grid-cols-1 xl:mx-9 mx-0 overflow-hidden">
         <div class="mr-2 xl:pt-10 pt-5">
-            <swiper style="height: 600px;" [slidesPerView]="1" [spaceBetween]="0" [navigation]="false" [autoplay]="false" [loop]="true"
+            <swiper style="height: 600px;" [slidesPerView]="1"
+                [spaceBetween]="0" [navigation]="false" [autoplay]="false"
+                [loop]="true"
                 [pagination]="{ clickable: true }">
-                <ng-template *ngFor="let item of OnlyRealReviews" swiperSlide let-data>
+                <ng-template *ngFor="let item of OnlyRealReviews" swiperSlide
+                    let-data>
                     <div class="my-6 md:mx-6 mx-2">
                         <div class=" rounded-2xl shadow-xl bg-white w-full">
                             <img class="mx-auto xl:pt-14 pt-5 pb-5"
                                 src="https://demo6.clientica.org/wp-content/uploads/2021/01/mark-side-bar-01.svg"
-                                height="31px" width="31px" alt="">
+                                height="31px" width="31px" alt>
                             <!-- <div class=" px-5 xl:pt-8 pt-2 rounded-t-xl "
                                 style="background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/mark-side-bar-01.svg); background-repeat: no-repeat; background-size: 31px; background-position: center"> -->
                             <div>
-                                <h1 class="text-lg font-sans text-gray-600 font-normal text-center xl:px-48 px-6">
+                                <h1
+                                    class="text-lg font-sans text-gray-600 font-normal text-center xl:px-48 px-6">
                                     {{item.review}}</h1>
                             </div>
                             <!-- </div> -->
                             <div class="pt-10">
-                                <p class="text-center font-medium font-sans text-lg">{{item.reviewer}}</p>
+                                <p
+                                    class="text-center font-medium font-sans text-lg">{{item.reviewer}}</p>
                                 <div class="flex justify-center pt-5 pb-16">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    <span><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24"
                                             viewBox="0 0 24 24">
                                             <path fill="#ff4949"
                                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
                                         </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    <span><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24"
                                             viewBox="0 0 24 24">
                                             <path fill="#ff4949"
                                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
                                         </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    <span><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24"
                                             viewBox="0 0 24 24">
                                             <path fill="#ff4949"
                                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
                                         </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    <span><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24"
                                             viewBox="0 0 24 24">
                                             <path fill="#ff4949"
                                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
                                         </svg></span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    <span><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24"
                                             viewBox="0 0 24 24">
                                             <path fill="#ff4949"
                                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
@@ -102,15 +128,18 @@
                             </div>
                         </div>
                         <div class="justify-center flex -mt-7">
-                            <div *ngIf="item.reviewer === 'Andrew Boreanaz'" class="bg-white rounded-md md:mr-64 mr-52 h-14 w-14 transform rotate-45">
+                            <div *ngIf="item.reviewer === 'Andrew Boreanaz'"
+                                class="bg-white rounded-md md:mr-64 mr-52 h-14 w-14 transform rotate-45">
                             </div>
-                            <div *ngIf="item.reviewer === 'Salma Jolie Bloom'"  class="bg-white rounded-md mr-5 h-14 w-14 transform rotate-45">
+                            <div *ngIf="item.reviewer === 'Salma Jolie Bloom'"
+                                class="bg-white rounded-md mr-5 h-14 w-14 transform rotate-45">
                             </div>
-                            <div *ngIf="item.reviewer === 'Armand Pattinson'"  class="bg-white rounded-md md:ml-56 ml-44 h-14 w-14 transform  rotate-45">
+                            <div *ngIf="item.reviewer === 'Armand Pattinson'"
+                                class="bg-white rounded-md md:ml-56 ml-44 h-14 w-14 transform  rotate-45">
                             </div>
                         </div>
                     </div>
-                    
+
                 </ng-template>
             </swiper>
         </div>
