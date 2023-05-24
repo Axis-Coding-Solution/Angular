@@ -26,7 +26,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
 
 
-import { SaliderComponent } from './salider/salider.component';
+import { SaliderComponent } from './components/salider/salider.component';
 import { AboutComponent } from './about/about.component';
 import { NgChartsModule } from 'ng2-charts';
 import { AccordionComponent } from './components/accordion/accordion.component';
