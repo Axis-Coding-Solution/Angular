@@ -40,14 +40,15 @@ const routes: Routes = [
     path: 'services',
     component: ServicesComponent,
   },
-  {
-    path: 'error',
-    component: ErrorComponent,
-  },
+
   {
     path: 'single-service',
     component: SingleServiceComponent,
   },
+  {
+    path: '**',
+    component: ErrorComponent,
+  }
 
 ];
 
