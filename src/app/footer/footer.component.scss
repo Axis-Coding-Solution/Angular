@@ -45,6 +45,12 @@
     font-size: 24px;
 }
 
+.zoom {
+    zoom: 2;
+    -moz-transform: scale(2);
+    -moz-transform-origin: 0 0;
+}
+
 @media (max-width: 800px) {
     .card-rounded {
         border-radius: 10px;
@@ -66,18 +72,20 @@
     width: -webkit-fill-available;
 
 }
+
 @media (min-width: 640px) and (max-width:767px) {
     .footer-card-info {
         width: -webkit-fill-available;
         margin-top: 78px;
-    
+
     }
 }
+
 @media (min-width: 767px) and (max-width:1024px) {
     .footer-card-info {
         width: -webkit-fill-available;
         margin-top: 0px;
-    
+
     }
 }
 
