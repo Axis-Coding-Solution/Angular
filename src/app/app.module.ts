@@ -29,6 +29,9 @@ import { ContactComponent } from './contact/contact.component';
 import { SaliderComponent } from './salider/salider.component';
 import { AboutComponent } from './about/about.component';
 import { NgChartsModule } from 'ng2-charts';
+import { AccordionComponent } from './components/accordion/accordion.component';
+import { Accordion1Component } from './components/accordion1/accordion1.component';
+import { ServiceAdvantagesComponent } from './components/service-advantages/service-advantages.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +56,9 @@ import { NgChartsModule } from 'ng2-charts';
 
     SaliderComponent,
     AboutComponent,
+    AccordionComponent,
+    Accordion1Component,
+    ServiceAdvantagesComponent,
 
   ],
   imports: [

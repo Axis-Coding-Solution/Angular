@@ -43,6 +43,9 @@
   color: #fff;
   transition: width 2s;
 }
+.g {
+  background-color: #f5f6f7;
+}
 
 .g:hover {
   background-color: #ff4949;
@@ -82,7 +85,6 @@
   width: 18px;
   height: 18px;
   opacity: 0.9;
-  
 }
 
 .swiper-pagination {
@@ -119,65 +121,55 @@ card-width {
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 50px !important;
 }
-@media (min-width:1024px) {
-   .hello{
+@media (min-width: 1024px) {
+  .hello {
     width: 50%;
     margin-right: 13%;
-    
-   }
-}
-
-
-@media (min-width:1024px) {
-  .xx{
-   width: 30%;
-   
- 
   }
 }
 
-@media (min-width:1024px) {
-  .graph{
-   
+@media (min-width: 1024px) {
+  .xx {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .graph {
     margin-left: 33%;
-   
- 
   }
 }
 
-@media (min-width:1024px) {
-  .accordion{
-   
-    margin-left: 30%;
-    
-   
- 
-  }
-}
-
-
-@media (max-width:640px) {
+@media (max-width: 640px) {
   .swiper-pagination-fraction,
   .swiper-pagination-custom,
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 70px;
   }
- 
-  }
+}
 
-  .afza{
-    @keyframes slideInLeft {
-      0% {
-        transform: translateX(-100%);
-      }
-      100% {
-        transform: translateX(0);
-      }
+.dd {
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
     }
-    .afzal {
-      animation: 1s ease-out 0s 1 slideInLeft;
-      // background: #666;
-     
+    100% {
+      transform: translateX(0);
     }
   }
+  .af {
+    animation: 1s ease-out 0s 1 slideInLeft;
+  }
+}
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-size: 23px;
+}

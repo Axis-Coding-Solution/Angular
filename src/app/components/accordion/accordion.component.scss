@@ -1,0 +1,15 @@
+@media (min-width: 1024px) {
+    .accordion {
+      background-image: none;
+      width: 60%;
+    }
+  }
+  @media (max-width: 640px) {
+    .accordion {
+      background-image: url(https://demo6.clientica.org/wp-content/uploads/2021/01/Bg-5.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-bottom: 200px;
+      width: 90%;
+    }
+  }

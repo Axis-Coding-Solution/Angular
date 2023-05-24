@@ -1,0 +1,153 @@
+<div class="accordion lg:mr-40 mt-24">
+  <div class="rounded-lg w-[100%]">
+    <details
+      class="w-full bg-white border border-none cursor-pointer mb-3"
+      style="border-radius: 15px"
+    >
+      <summary
+        class="w-full text-dark flex justify-between px-8 py-8 text-xl"
+        style="
+          color: #09111a;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 18px;
+          font-weight: 600;
+          border-radius: 15px;
+        "
+      >
+        What is the experience of your experts?
+      </summary>
+      <p
+        class="px-10 pt-3 pb-10"
+        style="color: #676d73; font-family: serif; font-size: 18px"
+      >
+        We solve a variety of tasks as part of developing a strategy and
+        implementing recommendations. More than a hundred organizations of
+        various sizes and structures have already used our services
+      </p>
+    </details>
+
+    <details class="w-full bg-white border border-none cursor-pointer mb-3">
+      <summary
+        class="w-full bg-white text-dark flex justify-between px-8 py-8 text-xl"
+        style="
+          color: #09111a;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 18px;
+          font-weight: 600;
+          border-radius: 15px;
+        "
+      >
+        Do you help with maintaining accounting records?
+      </summary>
+      <p
+        class="px-10 pt-3 pb-10"
+        style="color: #676d73; font-family: serif; font-size: 18px"
+      >
+        Yes, this is included in our additional services. We will always help
+        you structure your documentation and reporting by profit and other
+        categories of your business.
+      </p>
+    </details>
+
+    <details class="w-full bg-white border border-none cursor-pointer mb-3">
+      <summary
+        class="w-full bg-white text-dark flex justify-between px-8 py-8 text-xl"
+        style="
+          color: #09111a;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 18px;
+          font-weight: 600;
+          border-radius: 15px;
+        "
+      >
+        What technologies do you use in your work?
+      </summary>
+      <p
+        class="px-10 pt-3 pb-10"
+        style="color: #676d73; font-family: serif; font-size: 18px"
+      >
+        We use all modern methods of analysis, forecasting and development of
+        business strategies. You can view our work in the portfolio to learn
+        more about the methods and results of our work.
+      </p>
+    </details>
+
+    <details class="w-full bg-white border border-none cursor-pointer mb-3">
+      <summary
+        class="w-full bg-white text-dark flex justify-between px-8 py-8 text-xl"
+        style="
+          color: #09111a;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 18px;
+          font-weight: 600;
+          border-radius: 15px;
+        "
+      >
+        Do you have the office in the USA?
+      </summary>
+      <p
+        class="px-10 pt-3 pb-10"
+        style="color: #676d73; font-family: serif; font-size: 18px"
+      >
+        Of course, we have an office in the United States of America, it is
+        located at New York, NY 10004. we work on this schedule mon-sat 8: 00-9:
+        00. We Are always happy to talk to you live!
+      </p>
+    </details>
+
+    <!--  THE CSS  -->
+    <style>
+      details summary::-webkit-details-marker {
+        display: block;
+      }
+
+      details summary::after {
+        content: "+";
+        color: red;
+        font-size: 30px;
+      }
+
+      details[open] summary::after {
+        content: "-";
+        color: red;
+        font-size: 30px;
+      }
+
+      details[open] summary ~ * {
+        animation: slideDown 0.3s ease-in-out;
+      }
+
+      details[open] summary p {
+        opacity: 0;
+        animation-name: showContent;
+        animation-duration: 0.6s;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
+        margin: 0;
+      }
+
+      @keyframes showContent {
+        from {
+          opacity: 0;
+          height: 0;
+        }
+        to {
+          opacity: 1;
+          height: auto;
+        }
+      }
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          height: 0;
+          padding: 0;
+        }
+
+        to {
+          opacity: 1;
+          height: auto;
+        }
+      }
+    </style>
+  </div>
+</div>
