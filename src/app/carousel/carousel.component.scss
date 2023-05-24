@@ -2,3 +2,71 @@
 body {
     background-color: hsl(0, 0%, 98%);
 }
+.swiper-button{
+    justify-content: center;
+}
+.swiper-button-next{
+    // right: 100px;
+    // left: auto;
+    top: 80%;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+    color: white !important;
+}
+.swiper-button-prev{
+    left: 83%;
+    right: auto;
+    top: 80%;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 10px 0 0 10px;
+    color: white !important;
+}
+.swiper-pagination{
+    bottom: -100px;
+}
+
+@media screen and (min-width:1400px) and (max-width:1519px) {
+    .swiper-button-prev{
+        left: 79.5%;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1399px) {
+    .swiper-button-prev{
+        left: 86.9%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .swiper-button-prev{
+        left: 82.4%;
+    }
+}
+@media screen and (min-width:320px) and (max-width:374px) {
+    .swiper-button-prev{
+        left: 55.6%;
+    }
+}
+@media screen and (min-width:374px) and (max-width:424px) {
+    .swiper-button-prev{
+        left: 62.9%;
+    }
+}
+@media screen and (min-width:425px) and (max-width:620px) {
+    .swiper-button-prev{
+        left: 67.4%;
+    }
+}
+
+.swiper-button-next:hover {
+    background-color: white !important;
+    color: black !important;
+    transition: 0.8s !important;
+
+}
+.swiper-button-prev:hover {
+    background-color: white !important;
+    color: black !important;
+    transition: 0.8s !important;
+
+}
