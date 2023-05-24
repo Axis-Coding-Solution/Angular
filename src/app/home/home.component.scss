@@ -86,14 +86,17 @@ mat-option {
 
 .GetAQuoteButton:hover span:first-child {
   order: 2;
+  transition: .5s;
 }
 
 .GetAQuoteButton:hover span:last-child {
   order: 1;
+  transition: 300ms;
 }
 
 .GetAQuoteButton:hover {
   background-color: white !important;
+  transition: 500ms;
 }
 
 .primary-color:hover {
