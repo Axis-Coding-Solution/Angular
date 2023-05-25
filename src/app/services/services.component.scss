@@ -37,9 +37,24 @@
     transition: 0.5s;
 }
 
+.ConsultingServices-1:hover .topLine {
+    display: none;
+}
+
+.read-more-button {
+    color: #ff4949 !important;
+    stroke: #ff4949 !important;
+}
+
+.ConsultingServices-1:hover .read-more-button {
+    color: white !important;
+    stroke: white !important;
+}
+
 .ConsultingServices-1:hover {
     color: white !important;
     fill: white;
+    stroke: white !important;
     transform: translateY(-20px);
     animation: move-up 2s forwards;
     transition: 1s;
@@ -54,6 +69,11 @@
     padding-bottom: 80px;
 }
 
+.ConsultingServices-1:hover .read svg {
+    fill: #fff;
+}
+
+
 @media screen and (max-width: 640px) {
     .ConsultingServices-1:hover p {
         padding-bottom: 20px;
@@ -63,7 +83,6 @@
 .ConsultingServices-1:hover p:first-of-type {
     display: none;
 }
-
 
 .ConsultingServices-1:hover p:last-of-type {
     display: block;
@@ -76,18 +95,21 @@
     background-position-x: right;
 }
 
-.contact-view-btn::after {
-    content: "______";
+.read-more-button:hover span:first-child {
+    transform: translateX(60px);
+    animation: 500ms forwards;
+    transition: 500ms;
+    animation-timing-function: ease-in-out;
 }
 
-.contact-view-btn:hover::before {
-    color: red;
-    content: "_____";
+.read-more-button:hover span:last-child {
+    transform: translateX(-90px);
+    animation: 500ms forwards;
+    transition: 500ms;
+    animation-timing-function: ease-in-out;
 }
 
-.contact-view-btn:hover::after {
-    content: "";
-}
+
 
 .GetAQuoteButton {
     display: flex;

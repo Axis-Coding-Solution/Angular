@@ -78,7 +78,7 @@ mat-option {
   display: inline-flex;
 }
 
-.GetAQuoteButton span:last-child{
+.GetAQuoteButton span:last-child {
   stroke: white;
 }
 
@@ -91,6 +91,7 @@ mat-option {
   order: 1;
   transition: 300ms;
 }
+
 .GetAQuoteButton:hover span:last-child {
   stroke: black !important;
 }
@@ -98,7 +99,7 @@ mat-option {
 .GetAQuoteButton:hover {
   background-color: white !important;
   transition: 300ms;
-  
+
 }
 
 .primary-color:hover {
@@ -118,19 +119,25 @@ mat-option {
   animation-timing-function: ease-in-out;
 }
 
-.read-more-button:hover span:first-child{
+.read-more-button:hover span:first-child {
   transform: translateX(60px);
   animation: 500ms forwards;
   transition: 500ms;
   animation-timing-function: ease-in-out;
+
 }
 
-.read-more-button:hover span:last-child{
- transform: translateX(-90px);
- animation: 500ms forwards;
- transition: 500ms;
- animation-timing-function: ease-in-out;
+.read-more-button:hover span:last-child {
+  transform: translateX(-90px);
+  animation: 500ms forwards;
+  transition: 500ms;
+  animation-timing-function: ease-in-out;
+
 }
+
+
+
+
 
 .Service {
   display: flex;
@@ -167,9 +174,20 @@ mat-option {
   display: none;
 }
 
+.read-more-button {
+  color: #ff4949 !important;
+  stroke: #ff4949 !important;
+}
+
+.ConsultingServices-1:hover .read-more-button {
+  color: white !important;
+  stroke: white !important;
+}
+
 .ConsultingServices-1:hover {
   color: white !important;
   fill: white;
+  stroke: white !important;
   transform: translateY(-20px);
   animation: move-up 2s forwards;
   transition: 1s;
@@ -184,6 +202,9 @@ mat-option {
   padding-bottom: 80px;
 }
 
+.ConsultingServices-1:hover .read svg {
+  fill: #fff;
+}
 
 
 @media screen and (max-width: 640px) {
