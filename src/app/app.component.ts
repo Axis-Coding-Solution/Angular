@@ -12,6 +12,7 @@ export class AppComponent {
   }
 
   isRoute() {
-    return this.router.url === '/**'
+    return this.router.url === '/' || this.router.url === '/about' || this.router.url === '/testimonials' || this.router.url === '/portfolio' || this.router.url === '/contact' || this.router.url === '/services' || this.router.url === '/single-service'
+
   }
 }

@@ -10,11 +10,12 @@
 
 .GetAQuoteButton {
     display: flex;
+    stroke: white;
 }
 
 .GetAQuoteButton:hover span:first-child {
     order: 2;
-    transition: .5s;
+    transition: 300ms;
 }
 
 .GetAQuoteButton:hover span:last-child {
@@ -24,7 +25,8 @@
 
 .GetAQuoteButton:hover {
     background-color: white !important;
-    transition: 500ms;
+    transition: 300ms;
+    stroke: black !important;
 }
 
 
