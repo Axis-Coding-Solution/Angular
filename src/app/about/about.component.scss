@@ -128,20 +128,6 @@ img {
   padding: 3px;
 }
 
-
-
-.hero::after {
-  content: "______";
-}
-
-.hero:hover:before {
-  content: "_____";
-}
-
-.hero:hover::after {
-  content: "";
-}
-
 .GetAQuoteButton {
   display: flex;
 }
@@ -199,4 +185,19 @@ img {
   .bg-positions {
     background-position: 50%;
   }
+}
+.read-more-button:hover span:first-child {
+  transform: translateX(60px);
+  animation: 500ms forwards;
+  transition: 500ms;
+  animation-timing-function: ease-in-out;
+
+}
+
+.read-more-button:hover span:last-child {
+  transform: translateX(-90px);
+  animation: 500ms forwards;
+  transition: 500ms;
+  animation-timing-function: ease-in-out;
+
 }
