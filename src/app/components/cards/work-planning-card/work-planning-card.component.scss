@@ -1,23 +1,10 @@
 .transition-scss:hover div:last-child {
-    transform: translateY(-20px);
-    animation: move-up 1s forwards;
-    transition: 1s;
+    transform: translateY(-15px);
+    animation: move-up 500ms forwards;
+    transition: 500ms;
     animation-timing-function: ease-in-out;
-
 }
 
-.contact-view-btn::after {
-    content: "  _____";
-}
-
-.contact-view-btn:hover::before {
-    color: white;
-    content: "_____  ";
-}
-
-.contact-view-btn:hover::after {
-    content: "";
-}
 .primary-color:hover {
     background-color: #FF4949;
 }
@@ -30,4 +17,18 @@
     display: block;
     color: white;
     transition: 0.5s;
+}
+
+.read-more-button:hover span:first-child{
+     transform: translateX(60px);
+     animation: 500ms forwards;
+     transition: 500ms;
+     animation-timing-function: ease-in-out;
+}
+
+.read-more-button:hover span:last-child{
+    transform: translateX(-90px);
+    animation: 500ms forwards;
+    transition: 500ms;
+    animation-timing-function: ease-in-out;
 }

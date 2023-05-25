@@ -49,12 +49,6 @@ mat-icon {
   height: 146%;
 }
 
-// .image-section img {
-//     display: block;
-//     width: 120%;
-//     height: auto;
-// }
-
 .navbar a {
   text-decoration: none;
   color: white;
@@ -81,22 +75,30 @@ mat-option {
 }
 
 .GetAQuoteButton {
-  display: flex;
+  display: inline-flex;
+}
+
+.GetAQuoteButton span:last-child{
+  stroke: white;
 }
 
 .GetAQuoteButton:hover span:first-child {
   order: 2;
-  transition: .5s;
+  transition: 300ms;
 }
 
 .GetAQuoteButton:hover span:last-child {
   order: 1;
   transition: 300ms;
 }
+.GetAQuoteButton:hover span:last-child {
+  stroke: black !important;
+}
 
 .GetAQuoteButton:hover {
   background-color: white !important;
-  transition: 500ms;
+  transition: 300ms;
+  
 }
 
 .primary-color:hover {
@@ -106,6 +108,7 @@ mat-option {
 .primary-color:hover svg:first-child {
   background-color: white;
   fill: black;
+  stroke: black !important;
 }
 
 .transition-scss:hover div:last-child {
@@ -115,33 +118,20 @@ mat-option {
   animation-timing-function: ease-in-out;
 }
 
-.contact-view-btn::after {
-  content: "  _____";
+.read-more-button:hover span:first-child{
+  transform: translateX(60px);
+  animation: 500ms forwards;
+  transition: 500ms;
+  animation-timing-function: ease-in-out;
 }
 
-.contact-view-btn:hover::before {
-  color: white;
-  content: "_____  ";
+.read-more-button:hover span:last-child{
+ transform: translateX(-90px);
+ animation: 500ms forwards;
+ transition: 500ms;
+ animation-timing-function: ease-in-out;
 }
 
-.contact-view-btn:hover::after {
-  content: "";
-}
-
-// .card1:hover button:last-child {
-//     display: block;
-//     color: white;
-//     transition: 0.5s;
-// }
-
-// @keyframes animate-text {
-//     from {
-//         transform: translateY(0);
-//       }
-//       to {
-//         transform: translateY(-20px);
-//       }
-// }
 .Service {
   display: flex;
 }
