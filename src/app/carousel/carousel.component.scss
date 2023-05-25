@@ -5,6 +5,15 @@ body {
 .swiper-button{
     justify-content: center;
 }
+ .swiper-button-prev {
+    background-image: url("../../assets/icons/a.svg");
+    background-color: aliceblue;
+  }
+ .swiper-button-next {
+    background-image: url("../../assets/icons/a.svg");
+    background-color: aliceblue;
+}
+
 .swiper-button-next{
     // right: 100px;
     // left: auto;
@@ -15,7 +24,7 @@ body {
     color: white !important;
 }
 .swiper-button-prev{
-    left: 83%;
+    left: 80.8%;
     right: auto;
     top: 80%;
     border: 1px solid white;
